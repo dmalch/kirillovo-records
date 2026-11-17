@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL, ECON_
                                    ECON_PEASANT_ZHONKA, PRIEST, SEXTON)
 
 kirillovo_births_1790 = birth_records(
-    "ГА Рязанской области", "627", "298", "24", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "24", "Кириллово", "Успенская",
     1790,
     # Книга 439 — Николай Стефанов
     *book("439", person("Николай", "Стефанов"),

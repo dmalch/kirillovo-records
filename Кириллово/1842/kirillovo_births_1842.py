@@ -8,7 +8,7 @@ from verso.ru.dsl.statuses import (HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PE
 # (IMG-даты); ч. 1 — кадры 2–38, кадр N = л. (655+N)об–(656+N) по штампу. Яниных-Антоновичей и
 # Денисовичей книга зовёт и «Хрипуновъ».
 kirillovo_births_1842 = birth_records(
-    "ЦГА республики Мордовия", "57", "1", "409", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "1", "409", "Кириллово", "Казанская",
     1842,
     *page("659об",
           *birth_month(Month.JANUARY,

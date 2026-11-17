@@ -6,7 +6,7 @@ from verso.ru.dsl.statuses import HIEREUS, KAZENNYJ_PEASANT_MAIDEN, KAZENNYJ_PEA
 # альбома «1842 (ЦГАРМ 57-1-409)», кадр N = л. (660+N)об–(661+N) (кадры 53 и 54 переставлены);
 # 76 браков. Жених и невеста — на обороте, поручители — на лицевой стороне листа.
 kirillovo_marriages_1842 = marriage_records(
-    "ЦГА республики Мордовия", "57", "1", "409", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "1", "409", "Кириллово", "Казанская",
     1842,
     *page("699об",
           *marriage_month(Month.JANUARY,

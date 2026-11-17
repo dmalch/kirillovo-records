@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, ECON_
                                    PEASANT_DAUGHTER, PEASANT_SON)
 
 kirillovo_deaths_1791 = death_records(
-    "ГА Рязанской области", "627", "298", "26", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "26", "Кириллово", "Успенская",
     1791,
     # Книга 1 — Стефан Казмин
     *book("1", person("Стефан", "Казмин"),

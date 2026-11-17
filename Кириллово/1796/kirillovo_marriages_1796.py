@@ -3,7 +3,7 @@ from verso.ru.dsl import (Month, RecordDefaults, book, marriage, marriage_month,
 from verso.ru.dsl.statuses import ECON_PEASANT_GIRL, ECON_PEASANT_MAIDEN, ECON_PEASANT_MALE, GIRL
 
 kirillovo_marriages_1796 = marriage_records(
-    "ГА Рязанской области", "627", "298", "32", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "32", "Кириллово", "Успенская",
     1796,
     *book("579", person("Иван", "Никитин"),
     *page("50",

@@ -9,7 +9,7 @@ from verso.ru.dsl.statuses import (HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PE
 # набор — альбом Photos «1861 (ЦГАРМ 57-6-449)», pk 1263). Импорта из таблицы нет; записи найдены поиском фамилий
 # по OCR Яндекса и прочитаны по оригиналам. page("?"), в comment — номер скана.
 kirillovo_births_1861 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "449", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "449", "Кириллово", "Казанская",
     1861,
     *page("?",
           *birth_month(Month.JANUARY,

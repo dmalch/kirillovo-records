@@ -6,7 +6,7 @@ from verso.ru.dsl.statuses import HIEREUS, KAZENNYJ_PEASANT_MAIDEN, KAZENNYJ_PEA
 # 7ed02b94-…, ч. 2 Кириллова — сканы 415–428, разворот л. (скан − 9)об–(скан − 8). Жених и невеста —
 # на обороте, поручители — на лицевой стороне листа.
 kirillovo_marriages_1849 = marriage_records(
-    "ЦГА республики Мордовия", "57", "6", "325", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "325", "Кириллово", "Казанская",
     1849,
     *page("411об",
           *marriage_month(Month.MAY,

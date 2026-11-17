@@ -4,7 +4,7 @@ from verso.ru.dsl.causes_of_death import NATURAL
 from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE
 
 kirillovo_deaths_1770 = death_records(
-    "ГА Рязанской области", "627", "255", "11", "Кириллово", "Успенская",
+    "ГАРО", "627", "255", "11", "Кириллово", "Успенская",
     1770,
     *page("19обр",
           *death_month(Month.JANUARY,

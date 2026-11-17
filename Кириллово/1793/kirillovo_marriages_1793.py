@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_GIRL, ECON_PEASANT_MAIDEN, ECON_
                                    ECON_PEASANT_WIDOW, ECON_PEASANT_ZHONKA, ODNODVORETS_DAUGHTER)
 
 kirillovo_marriages_1793 = marriage_records(
-    "ГА Рязанской области", "627", "298", "28", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "28", "Кириллово", "Успенская",
     1793,
     *page("98",
           *marriage_month(Month.JANUARY,

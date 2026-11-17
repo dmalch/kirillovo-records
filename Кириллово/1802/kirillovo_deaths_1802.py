@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE,
                                    ECON_PEASANT_WIDOW, PEASANT_DAUGHTER, PEASANT_SON, SOLDIER)
 
 kirillovo_deaths_1802 = death_records(
-    "ГА Тамбовской области", "1049", "10", "103", "Кириллово", "Успенская",
+    "ГАТО", "1049", "10", "103", "Кириллово", "Успенская",
     1802,
     *book("125", person("Иванъ", "Никитинъ"),
       *page("2об",

@@ -3,7 +3,7 @@ from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, bir
 from verso.ru.dsl.statuses import DYACHOK, ECON_PEASANT_FEMALE, ECON_PEASANT_MALE
 
 kirillovo_births_1772 = birth_records(
-    "ГА Рязанской области", "627", "255", "13", "Кириллово", "Успенская",
+    "ГАРО", "627", "255", "13", "Кириллово", "Успенская",
     1772,
     # Книга 31 — Дімитрій Артеміевъ
     *book("31", person("Дімитрій", "Артеміевъ"),

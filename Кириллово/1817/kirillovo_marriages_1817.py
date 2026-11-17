@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (DEACON, DYACHOK, ECON_PEASANT_GIRL, ECON_PEAS
 
 # Archive: ЦГАРМ 57-1-395
 kirillovo_marriages_1817 = marriage_records(
-    "ЦГА республики Мордовия", "57", "1", "395", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "1", "395", "Кириллово", "Успенская",
     1817,
     *page("313",
           *marriage_month(Month.JANUARY,

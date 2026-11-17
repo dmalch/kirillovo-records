@@ -1,7 +1,7 @@
 # Последняя выгрузка из рабочего репозитория; files — всё, что вправе лежать в этом дереве.
 schema = 1
-source_commit = "da18d2149ef6a39acfede03b79df780400f1bcfa"
-made_at = "2026-11-17T07:44:04+00:00"
+source_commit = "6c7e9f7d5cb561d755090d8180ab9b26c6af9c08"
+made_at = "2026-11-17T08:12:26+00:00"
 verso_tag = "v0.1.41"
 verso_commit = "dd473d4b45d4deb579049f42de37e2d0031319b4"
 dsl_files = 415

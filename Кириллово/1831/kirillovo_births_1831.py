@@ -10,7 +10,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE,
 _UNNUMBERED = "номер в книге не проставлен; здесь — порядковый"
 
 kirillovo_births_1831 = birth_records(
-    "ЦГА республики Мордовия", "57", "1", "402", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "1", "402", "Кириллово", "Казанская",
     1831,
     *page("400об",
           *birth_month(Month.JANUARY,

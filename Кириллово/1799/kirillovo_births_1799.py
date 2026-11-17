@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (DEACON, DYACHOK, ECON_PEASANT_FEMALE, ECON_PE
                                    PRIEST)
 
 kirillovo_births_1799 = birth_records(
-    "ГА Тамбовской области", "1049", "10", "94", "Кириллово", "Успенская",
+    "ГАТО", "1049", "10", "94", "Кириллово", "Успенская",
     1799,
     # Книга 194 — Стефан Казмин
     *book("194", person("Стефан", "Казмин"),

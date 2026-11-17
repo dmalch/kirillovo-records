@@ -7,7 +7,7 @@ from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE, 
 # Альбом «1828 (ЦГАРМ 57-1-400)», 28 кадров; ч. 1 — лл. 323–335 (архивная нумерация),
 # счёт сквозной, 182 рождения.
 kirillovo_births_1828 = birth_records(
-    "ЦГА республики Мордовия", "57", "1", "400", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "1", "400", "Кириллово", "Казанская",
     1828,
     *page("324",
           *birth_month(Month.JANUARY,

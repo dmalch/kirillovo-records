@@ -3,7 +3,7 @@ from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, bir
 from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE
 
 kirillovo_births_1766 = birth_records(
-    "ГА Рязанской области", "627", "298", "4", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "4", "Кириллово", "Успенская",
     1766,
     *page("1",
           *birth_month(Month.JANUARY,

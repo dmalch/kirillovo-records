@@ -9,7 +9,7 @@ from verso.ru.dsl.statuses import (DEACON, HIEREUS, KAZENNYJ_PEASANT_FEMALE,
 # набор — альбом Photos «1860 (ЦГАРМ 57-6-440)», pk 1358, 83 кадра). Импорта из таблицы нет; записи найдены поиском
 # фамилий по OCR Яндекса и прочитаны по оригиналам. page("?"), в comment — номер скана.
 kirillovo_births_1860 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "440", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "440", "Кириллово", "Казанская",
     1860,
     *page("?",
           *birth_month(Month.FEBRUARY,

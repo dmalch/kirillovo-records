@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL, ECON_
                                    ECON_PEASANT_WIDOWER, ECON_PEASANT_WIFE_OF, PEASANT_SON, WIDOW)
 
 kirillovo_deaths_1806 = death_records(
-    "ЦГА республики Мордовия", "57", "6", "59а", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "59а", "Кириллово", "Успенская",
     1806,
     *page("172",
           *death_month(Month.JANUARY,

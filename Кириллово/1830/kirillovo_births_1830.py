@@ -8,7 +8,7 @@ from verso.ru.dsl.statuses import (DYACHOK, ECON_PEASANT_FEMALE, ECON_PEASANT_LE
 # Альбом «1830 (ЦГАРМ 57-6-134)», 27 кадров; ч. 1 — лл. 271–284об (архивная нумерация),
 # счёт сквозной, 197 рождений.
 kirillovo_births_1830 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "134", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "134", "Кириллово", "Казанская",
     1830,
     *page("271об",
           *birth_month(Month.JANUARY,

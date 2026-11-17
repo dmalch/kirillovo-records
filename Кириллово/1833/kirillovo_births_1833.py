@@ -8,7 +8,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE,
 # Яндекс.Архива 358–399, вся книга (с 20.10.2026; 360 и 372 докачаны и прочитаны 21.10.2026);
 # ч. 1 — лл. 332–353 (93 м. / 91 ж.).
 kirillovo_births_1833 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "153", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "153", "Кириллово", "Казанская",
     1833,
     *page("334",
           *birth_month(Month.JANUARY,

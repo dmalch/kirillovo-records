@@ -8,7 +8,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE,
 # Альбом «1832 (ЦГАРМ 57-6-148)», 45 кадров: кадр N = л. (412+N)об–(413+N) (архивная нумерация);
 # ч. 1 — лл. 414–437, 70 м. / 76 ж.
 kirillovo_births_1832 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "148", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "148", "Кириллово", "Казанская",
     1832,
     *page("415об",
           *birth_month(Month.JANUARY,

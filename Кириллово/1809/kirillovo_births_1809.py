@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (DYACHOK, ECON_PEASANT_FEMALE, ECON_PEASANT_MA
                                    ECON_PEASANT_WIDOW)
 
 kirillovo_births_1809 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "68", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "68", "Кириллово", "Успенская",
     1809,
     *page("1",
           *birth_month(Month.JANUARY,

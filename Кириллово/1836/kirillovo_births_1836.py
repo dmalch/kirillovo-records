@@ -10,7 +10,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE,
 # (сканы 83, 85, 87, 89, 96) и прочитаны.
 # С сентября крестит новый иерей — Іоаннъ Васильевъ Ремезовъ.
 kirillovo_births_1836 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "168", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "168", "Кириллово", "Казанская",
     1836,
     *page("81",
           *birth_month(Month.JANUARY,

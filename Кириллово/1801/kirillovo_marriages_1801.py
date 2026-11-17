@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_BOY, ECON_PEASANT_GIRL, ECON_PEA
                                    ECON_PEASANT_MALE)
 
 kirillovo_marriages_1801 = marriage_records(
-    "ГА Тамбовской области", "1049", "10", "99", "Кириллово", "Успенская",
+    "ГАТО", "1049", "10", "99", "Кириллово", "Успенская",
     1801,
       *book("128", person("Стефанъ", "Казминъ"),
             *page("3",

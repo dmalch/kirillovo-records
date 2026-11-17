@@ -8,7 +8,7 @@ from verso.ru.dsl.statuses import (HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PE
 # и восприемники — на левой странице. Импорта из таблицы нет; читано по альбому целиком 02.10.2026. Штамп листа не
 # везде виден, поэтому page("?"), в comment — кадр альбома.
 kirillovo_births_1859 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "386", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "386", "Кириллово", "Казанская",
     1859,
     *page("?",
           *birth_month(Month.JANUARY,

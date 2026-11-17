@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (DEACON, ECON_PEASANT_FEMALE, ECON_PEASANT_MAL
                                    ECON_PEASANT_WIDOW, PEASANT_DAUGHTER, PEASANT_SON, PRIEST)
 
 kirillovo_deaths_1772 = death_records(
-    "ГА Рязанской области", "627", "255", "13", "Кириллово", "Успенская",
+    "ГАРО", "627", "255", "13", "Кириллово", "Успенская",
     1772,
     # Книга 31 — Дімитрій Артеміевъ
     *book("31", person("Дімитрій", "Артеміевъ"),

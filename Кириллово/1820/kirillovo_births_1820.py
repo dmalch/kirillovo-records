@@ -7,7 +7,7 @@ from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_LEGAL_WIFE, 
 # Альбом «1820 (ЦГАРМ 57-6-100)», кадры — развороты; ч. 1 на лл. 81–91, разворота
 # л. 91об–92 (конец декабря) в альбоме нет.
 kirillovo_births_1820 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "100", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "100", "Кириллово", "Успенская",
     1820,
     *page("83об",
           *birth_month(Month.MARCH,

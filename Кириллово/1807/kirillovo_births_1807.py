@@ -6,7 +6,7 @@ from verso.ru.dsl.statuses import (DEACON, ECON_PEASANT_FEMALE, ECON_PEASANT_GIR
 # Page 205 from 1805 metric book stored in 1807 directory
 # Archive: ЦГАРМ 57-6-63а (Tambov Spiritual Consistory directive dated January 17, 1805)
 kirillovo_births_1807 = birth_records(
-    "ЦГА республики Мордовия", "57", "6", "63а", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "63а", "Кириллово", "Успенская",
     1807,
     *page("205",
           *birth_month(Month.JANUARY,

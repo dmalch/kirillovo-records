@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, ECON_
                                    PEASANT_DAUGHTER, PEASANT_SON)
 
 kirillovo_deaths_1771 = death_records(
-    "ГА Рязанской области", "627", "255", "12", "Кириллово", "Успенская",
+    "ГАРО", "627", "255", "12", "Кириллово", "Успенская",
     1771,
     *page("103",
           *death_month(Month.JANUARY,

@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, PEASA
                                    PEASANT_SON)
 
 kirillovo_deaths_1796 = death_records(
-    "ГА Рязанской области", "627", "298", "32", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "32", "Кириллово", "Успенская",
     1796,
     *book("579", person("Иван", "Никитин"),
     *page("50об",

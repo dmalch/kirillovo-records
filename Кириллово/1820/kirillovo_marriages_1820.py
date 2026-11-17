@@ -5,7 +5,7 @@ from verso.ru.dsl.statuses import ECON_PEASANT_GIRL, ECON_PEASANT_MAIDEN, ECON_P
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (опознаны по имени и
 # отчеству — фамилий в книге нет). Ч. 2 — лл. 93–97 (54 брака).
 kirillovo_marriages_1820 = marriage_records(
-    "ЦГА республики Мордовия", "57", "6", "100", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "100", "Кириллово", "Успенская",
     1820,
     *page("93об",
           *marriage_month(Month.JANUARY,

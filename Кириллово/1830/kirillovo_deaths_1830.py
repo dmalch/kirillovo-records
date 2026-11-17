@@ -6,7 +6,7 @@ from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, PEASAN
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины. Ч. 3 — лл. 291–296
 # (архивная нумерация), 67 м. / 55 ж.
 kirillovo_deaths_1830 = death_records(
-    "ЦГА республики Мордовия", "57", "6", "134", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "134", "Кириллово", "Казанская",
     1830,
     *page("293",
           *death_month(Month.MAY,

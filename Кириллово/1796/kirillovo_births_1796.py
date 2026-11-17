@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL, ECON_
                                    ECON_PEASANT_ZHONKA)
 
 kirillovo_births_1796 = birth_records(
-    "ГА Рязанской области", "627", "298", "32", "Кириллово", "Успенская",
+    "ГАРО", "627", "298", "32", "Кириллово", "Успенская",
     1796,
     # Книга 579 — Иван Никитин
     *book("579", person("Иван", "Никитин"),

@@ -3,9 +3,9 @@ from verso.ru.dsl import (Month, RecordDefaults, marriage, marriage_month, marri
 from verso.ru.dsl.statuses import (DYACHOK, ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL,
                                    ECON_PEASANT_MALE, HIEREUS, ODNODVORETS_DAUGHTER)
 
-# Archive: ЦГА республики Мордовия 57-6-96
+# Archive: ЦГАРМ 57-6-96
 kirillovo_marriages_1818 = marriage_records(
-    "ЦГА республики Мордовия", "57", "6", "96", "Кириллово", "Успенская",
+    "ЦГАРМ", "57", "6", "96", "Кириллово", "Успенская",
     1818,
     *page("314",
           *marriage_month(Month.JANUARY,

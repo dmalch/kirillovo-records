@@ -7,7 +7,7 @@ from verso.ru.dsl.statuses import (HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PE
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины. ЦГАРМ 57-6-385, Яндекс.Архив 91de6417-…,
 # ч. 3 Кириллова — сканы 619–656.
 kirillovo_deaths_1855 = death_records(
-    "ЦГА республики Мордовия", "57", "6", "385", "Кириллово", "Казанская",
+    "ЦГАРМ", "57", "6", "385", "Кириллово", "Казанская",
     1855,
     *page("?",
           *death_month(Month.JANUARY,

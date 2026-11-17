@@ -4,7 +4,7 @@ from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL, ECON_
                                    ECON_PEASANT_MALE, ECON_PEASANT_WIDOW)
 
 kirillovo_marriages_1772 = marriage_records(
-    "ГА Рязанской области", "627", "255", "13", "Кириллово", "Успенская",
+    "ГАРО", "627", "255", "13", "Кириллово", "Успенская",
     1772,
     # Книга 31 — Дімитрій Артеміевъ
     *book("31", person("Дімитрій", "Артеміевъ"),
