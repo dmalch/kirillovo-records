@@ -1,0 +1,65 @@
+from verso.ru.dsl import (Month, RecordDefaults, marriage, marriage_month, marriage_records, page,
+                          person)
+from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE
+
+kirillovo_marriages_1841 = marriage_records(
+    "ЦГАРМ",
+    "57",
+    "6",
+    "217",
+    "Кириллово",
+    "Казанская церковь",
+    1841,
+    *page(
+        "?",
+        *marriage_month(
+            Month.APRIL,
+            marriage(
+                17,
+                9,
+                groom=person("Казма", "Андрианов", last_name_orig="Мальчиков"),
+                groom_marriage_num=1,
+                bride=person("Пелагея", "Михайлова", last_name_orig="Куранова"),
+                bride_marriage_num=1,
+                witness1=person("Афанасий", "Михайлов", last_name_orig="Егоров"),
+                witness2=person("Андрей", "Иванов", last_name_orig="Мальчиков"),
+                witness3=person("Гавриил", "Андреев", last_name_orig="Черепахин"),
+                witness4=person("Григорий", "Феодоров", last_name_orig="Чехин"),
+            ),
+        ),
+        *marriage_month(
+            Month.MAY,
+            marriage(
+                23,
+                16,
+                groom=person("Иван", "Фомин", last_name_orig="Мекинин"),
+                groom_marriage_num=1,
+                bride=person("Ксения", "Антонова", last_name_orig="Янина"),
+                bride_marriage_num=1,
+                groom_age=22,
+                bride_age=22,
+                witness1=person("Василий", "Киреев", last_name_orig="Зоткин"),
+                witness2=person("Андрей", "Семенов", last_name_orig="Широков"),
+                witness3=person("Иван", "Сергеев", last_name_orig="Калинин"),
+                witness4=person("Денис", "Иванов", last_name_orig="Янин"),
+                comment="также поруч. 5: Кирил ?",
+            ),
+        ),
+        *marriage_month(
+            Month.JULY,
+            marriage(
+                32,
+                2,
+                groom=person("Михаил", "Павлов", last_name_orig="Мальчиков"),
+                groom_marriage_num=2,
+                bride=person("Фекла", "Дементьева", last_name_orig="Баклушина"),
+                bride_marriage_num=2,
+                witness1=person("Нестер", "Дмитриев", last_name_orig="Мальчиков"),
+                witness2=person("Назар", "Алексеев", last_name_orig="Липатов"),
+                witness3=person("Евсигний", "Еремеев", last_name_orig="Баклушин"),
+                witness4=person("Артем", "Андреев", last_name_orig="Калинин"),
+            ),
+        ),
+    ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=ECON_PEASANT_MALE, status_female=ECON_PEASANT_FEMALE),
+)

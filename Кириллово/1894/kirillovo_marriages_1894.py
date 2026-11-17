@@ -1,0 +1,90 @@
+from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
+                          person)
+from verso.ru.dsl.statuses import (GOSUDARSTVENNYJ_PEASANT_FEMALE, GOSUDARSTVENNYJ_PEASANT_MALE,
+                                   SOLDIER)
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям). ГАПО 182-5-306, альбом
+# Photos «1894 (ГАПО 182-5-306)» (pk 1231), ч. 2 — лл. 70об–78об, 28 браков (январь 2, февраль 7, апрель 1, сентябрь 1,
+# октябрь 5, ноябрь 12); л. 70 — шмуцтитул; прочитана целиком 25.10.2026; импорта не было. Книга пишет «государственный
+# крестьянинъ». Жених и невеста — на левой странице, поручители — на правой. Венчали свящ. Александр Васильев Писарев и
+# Василий Георгиевич Кутин.
+kirillovo_marriages_1894 = marriage_records(
+    "ГАПО",
+    "182",
+    "5",
+    "306",
+    "Кириллово",
+    "Казанская церковь",
+    1894,
+    *marriage_month(Month.OCTOBER,
+                    # Иван Ефимович Стюхин — сын Ефима Михайловича Стюхина и Марии Егоровны Яниной (брак 1867 №6);
+                    # поручитель по невесте — Матвей Егорович Янин («Сырцевъ»)
+                    marriage(13, 7,
+                             groom=person("Іоаннъ", "Евфимовъ", "Стюхинъ"), groom_marriage_num=1, groom_age=21,
+                             bride=person("Ѳеодора", "Степанова", "Пичманова", comment="фамилия читается неуверенно"),
+                             bride_marriage_num=1, bride_age=23,
+                             witness1=person("Артамонъ", "Тимоѳеевъ", "Лапшинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
+                             witness2=person("Петръ", "Уваровъ", "Чекинъ", side=Side.GROOM),
+                             witness3=person("Матвѣй", "Егоровъ", "Сырцевъ", side=Side.BRIDE, comment="= Матвей Егорович Янин"),
+                             witness4=person("Ермолай", "Кононовъ", "Курановъ", side=Side.BRIDE),
+                             page="73об",
+                             reviewed=False),
+                    # невеста — дочь Ефима Михайловича Стюхина и Марии Егоровны Яниной?; поручитель по невесте — Матвей
+                    # Васильевич «Сырцевъ»
+                    marriage(14, 23,
+                             groom=person("Павелъ", "Ивановъ", "Щетининъ"), groom_marriage_num=1, groom_age=20,
+                             bride=person("Аксинія", "Ефимова", "Стюхина", comment="имя читается неуверенно"),
+                             bride_marriage_num=1, bride_age=25,
+                             witness1=person("Григорій", "Карповъ", "Щетининъ", side=Side.GROOM),
+                             witness2=person("Иванъ", "Яковлевъ", "Широковъ", side=Side.GROOM),
+                             witness3=person("Матвѣй", "Васильевъ", "Сырцевъ", side=Side.BRIDE),
+                             witness4=person("Степанъ", "Яковлевъ", "Тракуновъ", side=Side.BRIDE),
+                             page="74об",
+                             reviewed=False),
+                    ),
+    *marriage_month(Month.NOVEMBER,
+                    # Михаил Константинович Мальчиков
+                    marriage(18, 2,
+                             groom=person("Михаилъ", "Константиновъ", "Мальчиковъ"), groom_marriage_num=1, groom_age=24,
+                             bride=person("Варвара", "Трофимова", "Щетинина"), bride_marriage_num=1, bride_age=25,
+                             witness1=person("Иванъ", "Порфирьевъ", "Верховъ", side=Side.GROOM),
+                             witness2=person("Михаилъ", "Васильевъ", "Силуяновъ", side=Side.GROOM),
+                             witness3=person("Павелъ", "Никитинъ", "Егоровъ", side=Side.BRIDE),
+                             witness4=person("Ѳеодоръ", "Акимовъ", "Жариковъ", status=SOLDIER, side=Side.BRIDE, comment="«запасный рядовой»"),
+                             page="75об",
+                             reviewed=False),
+                    # поручители — Герасим Яковлевич и Василий Степанович Мальчиковы
+                    marriage(24, 9,
+                             groom=person("Андрей", "Ивановъ", "Карасевъ"), groom_marriage_num=1, groom_age=18,
+                             bride=person("Марія", "Архипова", "Кижекова", comment="фамилия читается неуверенно"),
+                             bride_marriage_num=1, bride_age=18,
+                             witness1=person("Герасимъ", "Яковлевъ", "Мальчиковъ", side=Side.GROOM),
+                             witness2=person("Иванъ", "Ѳеодоровъ", "Дорошинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
+                             witness3=person("Василій", "Степановъ", "Мальчиковъ", side=Side.BRIDE),
+                             witness4=person("Григорій", "Яковлевъ", "Киселевъ", side=Side.BRIDE),
+                             page="77об",
+                             reviewed=False),
+                    # Петр Федорович «Сырцевъ» — сын Федора … Янина? не установлено
+                    marriage(25, 9,
+                             groom=person("Петръ", "Ѳеодоровъ", "Сырцевъ"), groom_marriage_num=1, groom_age=18,
+                             bride=person("Марія", "Тимоѳеева", "Шевлягина"), bride_marriage_num=1, bride_age=21,
+                             witness1=person("Яковъ", "Касьяновъ", "Чечеровъ", side=Side.GROOM),
+                             witness2=person("Кириллъ", "Ивановъ", "Лёвинъ", side=Side.GROOM),
+                             witness3=person("Николай", "Ильинъ", "Ковальковъ", side=Side.BRIDE),
+                             witness4=person("Андрей", "Ивановъ", "Голубевъ", side=Side.BRIDE),
+                             page="77об",
+                             reviewed=False),
+                    # невеста — Параскева Никитична Мальчикова
+                    marriage(27, 11,
+                             groom=person("Николай", "Гавриловъ", "Спиряевъ"), groom_marriage_num=1, groom_age=28,
+                             bride=person("Параскева", "Никитина", "Мальчикова"), bride_marriage_num=1, bride_age=26,
+                             witness1=person("Яковъ", "Антоновъ", "Егоровъ", side=Side.GROOM),
+                             witness2=person("Василій", "Ѳеодоровъ", "Прошечковъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
+                             witness3=person("Егоръ", "Павловъ", "Жариковъ", side=Side.BRIDE),
+                             witness4=person("Иванъ", "Ермолаевъ", None, status=SOLDIER, side=Side.BRIDE, comment="«запасный рядовой»; фамилия не записана"),
+                             page="78об",
+                             reviewed=False),
+                    ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=GOSUDARSTVENNYJ_PEASANT_MALE,
+                            status_female=GOSUDARSTVENNYJ_PEASANT_FEMALE),
+)

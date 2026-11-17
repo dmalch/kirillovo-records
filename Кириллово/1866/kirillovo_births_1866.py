@@ -1,0 +1,127 @@
+from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, birth_records, page,
+                          person)
+from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS, MAIDEN,
+                                   PRIVATE_SOLDIER, SOLDIER_WIFE, ZHONKA)
+
+# SELECTIVE EXTRACT: Only Янин-family related entries from 1866 metric book.
+
+kirillovo_births_1866 = birth_records(
+    "ГАПО",
+    "182",
+    "5",
+    "710",
+    "Кириллово",
+    "Казанская церковь",
+    1866,
+    # Импорт держал здесь рожд. м. №37 (Василий, сын Фомы Яковлевича Янина, «8.04.1866») — это запись 1867 г.
+    # (л. 270об под шапкой «НА 1867»; в книге 1866 г. рождений с конца февраля по октябрь нет). Перенесена
+    # в 1867/kirillovo_births_1867.py 03.10.2026.
+    # Дописано при сплошном проходе (03.10.2026) по скану (альбом «1866 (ГАПО 182-5-710)», pk 1354; лист в comment) —
+    # записи первой волны, которых не было в импорте. 1-й раздел без конца февраля – октября (листов нет в деле).
+    *page("?",
+          *birth_month(Month.JANUARY,
+                       # восприемница — «женка Пелагія Андреева Мальчикова»
+                       birth(6, Gender.MALE, 3, 5,
+                             child=person("Іоаннъ"),
+                             father=person("Панкратъ", "Андреевъ", "Калинкинъ"),
+                             mother=person("Екатерина", "Павлова"),
+                             god_parent1=person("Иванъ", "Андреевъ", "Кишкинъ", comment="фамилия читается неуверенно"),
+                             god_parent2=person("Пелагія", "Андреева", "Мальчикова", status=ZHONKA),
+                             priest=person("Іоаннъ", "Васильевъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 211об",
+                             reviewed=False),
+                       # Василий Григорьевич Мальчиков
+                       birth(3, Gender.FEMALE, 9, 10,
+                             child=person("Доминика"),
+                             father=person("Василій", "Григорьевъ", "Мальчиковъ"),
+                             mother=person("Александра", "Семенова"),
+                             god_parent1=person("Кириллъ", "Зотовъ", "Галишниковъ"),
+                             god_parent2=person("?", "Зотова", "Чекмурина", status=SOLDIER_WIFE, comment="имя не разобрано"),
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             comment="л. 211об",
+                             reviewed=False),
+                       # Андрей Григорьевич Мальчиков; восприемник — Николай Григорьевич Мальчиков
+                       birth(11, Gender.MALE, 10, 11,
+                             child=person("Филиппъ"),
+                             father=person("Андрей", "Григорьевъ", "Мальчиковъ"),
+                             mother=person("Акилина", "Иванова"),
+                             god_parent1=person("Николай", "Григорьевъ", "Мальчиковъ"),
+                             god_parent2=person("Параскева", "Дементьева", "Каровина", status=ZHONKA, comment="фамилия читается неуверенно"),
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             comment="л. 212об",
+                             reviewed=False),
+                       # восприемники — Петр Акимович Мальчиков и «женка Пелагія Андреева Мальчикова»
+                       birth(4, Gender.FEMALE, 14, 15,
+                             child=person("Ксенія"),
+                             father=person("Илья", "Васильевъ", "Тепляковъ"),
+                             mother=person("Елена", "Абрамова"),
+                             god_parent1=person("Петръ", "Акимовъ", "Мальчиковъ"),
+                             god_parent2=person("Пелагія", "Андреева", "Мальчикова", status=ZHONKA),
+                             priest=person("Іоаннъ", "Васильевъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 212об",
+                             reviewed=False),
+                       # Климент Антонович Мальчиков; восприемники — Семен Емельянович и Варвара Ильинична Мальчиковы
+                       birth(20, Gender.FEMALE, 26, 27,
+                             child=person("Евдокія"),
+                             father=person("Климентъ", "Антоновъ", "Мальчиковъ"),
+                             mother=person("Вѣра", "Давыдова"),
+                             god_parent1=person("Семенъ", "Емельяновъ", "Мальчиковъ"),
+                             god_parent2=person("Варвара", "Ильина", "Мальчикова", status=MAIDEN),
+                             priest=person("Іоаннъ", "Васильевъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 216об",
+                             reviewed=False),
+                       ),
+          *birth_month(Month.NOVEMBER,
+                       # мать — Ѳеодосия Андреяновна Мальчикова; отец здесь «Трифоновъ», в записи о смерти дочери — «Тришкинъ»
+                       # (ср. 1864: «Андрея Трифонова Тришина дочь»). Матрона умерла 12.11.1866 (смерть ж. №64)
+                       birth(100, Gender.FEMALE, 6, None,
+                             child=person("Матрона"),
+                             father=person("Игнатій", "Андреевъ", "Трифоновъ", comment="= Игнат Андреевич Тришин"),
+                             mother=person("Ѳеодосія", "Андріанова"),
+                             god_parent1=person("Герасимъ", "Дементьевъ", "Каровинъ"),
+                             god_parent2=person("Евдокія", status=MAIDEN, comment="отчество и фамилия не разобраны («Ка…»)"),
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             comment="л. 217об; в графах дат одно число",
+                             reviewed=False),
+                       # восприемница — девица Варвара Ильинична Мальчикова
+                       birth(101, Gender.FEMALE, 10, None,
+                             child=person("Анастасія"),
+                             father=person("Михаилъ", "Ефимовъ", "Сапроновъ"),
+                             mother=person("Васса", "Михайлова"),
+                             god_parent1=person("Константинъ", "Сидоровъ", "Лапшинъ", comment="читается неуверенно"),
+                             god_parent2=person("Варвара", "Ильина", "Мальчикова", status=MAIDEN),
+                             priest=person("Василій", last_name_orig="Грандовъ", status=HIEREUS),
+                             comment="л. 217об; в графах дат одно число",
+                             reviewed=False),
+                       ),
+          *birth_month(Month.DECEMBER,
+                       # отец — тот же «Ѳеодоръ Ивановъ» с женой Марией Назаровой, что в 1865 (рожд. м. №8) записан «Сырцевъ»:
+                       # здесь — «Поздняковъ»; восприемник — Константин Яковлевич
+                       birth(115, Gender.MALE, 17, 18,
+                             child=person("Даніилъ"),
+                             father=person("Ѳеодоръ", "Ивановъ", "Поздняковъ"),
+                             mother=person("Марія", "Назарова"),
+                             god_parent1=person("Константинъ", "Яковлевъ", "Поздняковъ", comment="= Константин Яковлевич Мальчиков (1859)"),
+                             god_parent2=person("Марія", "Логинова", "Шевлягина", status=ZHONKA),
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             comment="л. 221об",
+                             reviewed=False),
+                       ),
+          ),
+    # Вторая волна (08.11.2026): дети замужних дочерей Мальчиковых и Яниных, найденные по имени мужа
+    *page("212об",
+          *birth_month(Month.JANUARY,
+                       # мать — Александра Андреевна Мальчикова (брак 1845 №35); отец — Михаил Денисович Стюхин
+                       birth(5, Gender.FEMALE, 14, 15,
+                             child=person("Татіана"),
+                             father=person("Михаилъ", "Денисовъ", "Стюхинъ", status=PRIVATE_SOLDIER, comment="«служащій по билету рядовой» — читается неуверенно"),
+                             mother=person("Александра", "Андреева", status=SOLDIER_WIFE),
+                             god_parent1=person("Леонтій", "Панферовъ", "Калмыковъ", status=PRIVATE_SOLDIER, comment="«служащій по билету рядовой»; отчество и фамилия читаются неуверенно"),
+                             god_parent2=person("Екатерина", "Гурьева", "Вавилкина", status=SOLDIER_WIFE, comment="«жена»; та же, что в 1861 и 1862"),
+                             priest=person("Іоаннъ", "Васильевъ", "Ремезовъ", status=HIEREUS),
+                             comment="кадр 6 альбома; іерей Іоаннъ Ремезовъ съ дьячкомъ Ильею Петровымъ",
+                             reviewed=False),
+                       ),
+          ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=ECON_PEASANT_MALE, status_female=ECON_PEASANT_FEMALE),
+)

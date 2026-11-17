@@ -1,0 +1,121 @@
+from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
+                          person)
+from verso.ru.dsl.statuses import (GOSUDARSTVENNYJ_PEASANT_FEMALE, GOSUDARSTVENNYJ_PEASANT_MALE,
+                                   HIEREUS, SOLDIER_WIFE)
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям), и импортные записи.
+# ГАПО 182-5-305, альбом Photos «1888 (ГАПО 182-5-305)» (pk 1303), ч. 2 — лл. 312об–320об, 28 браков (январь 3, февраль 5,
+# май 2, июнь 2, ноябрь 16); л. 311об — пустой, л. 312 — шмуцтитул; прочитана целиком 24.10.2026. Жених и невеста — на
+# левой странице, поручители — на правой. Венчал свящ. Александр Васильев Писарев. Книга пишет «государственный
+# крестьянинъ» (импорт ставил «экономический» — исправлено).
+kirillovo_marriages_1888 = marriage_records(
+    "ГАПО",
+    "182",
+    "5",
+    "305",
+    "Кириллово",
+    "Казанская церковь",
+    1888,
+    *marriage_month(Month.JANUARY,
+                    # поручитель по жениху — Василий Семенович Мальчиков
+                    marriage(1, 13,
+                             groom=person("Захарій", "Ѳеодоровъ", "Сапроновъ"), groom_marriage_num=2, groom_age=41,
+                             bride=person("Параскева", "Ѳеодотова", "Захарова", status=SOLDIER_WIFE, comment="«Керенскаго уѣзда Сергіевской волости деревни Лаговушки» (читается неуверенно)"),
+                             bride_marriage_num=2, bride_age=21,
+                             witness1=person("Ермолай", "Степановъ", "Сапроновъ", side=Side.GROOM),
+                             witness2=person("Василій", "Семеновъ", "Мальчиковъ", side=Side.GROOM),
+                             witness3=person("Дементій", "Тихоновъ", "Муравьевъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
+                             witness4=person("Лукьянъ", "Герасимовъ", None, side=Side.BRIDE, comment="фамилия не разобрана"),
+                             priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
+                             page="312об",
+                             reviewed=False),
+                    # импорт; сверено по скану 24.10.2026 (л. 313об): совпадает; лист и стороны поручителей дописаны
+                    marriage(
+                        4,
+                        25,
+                        groom=person("Максим", "Моисеев", last_name_orig="Бубенчиков"),
+                        groom_marriage_num=1,
+                        bride=person("Евдокия", "Никифорова", last_name_orig="Трушина"),
+                        bride_marriage_num=1,
+                        witness1=person("Григорий", "Семенов", last_name_orig="Оньтиков", side=Side.GROOM),
+                        witness2=person("Иван", "Клементьев", last_name_orig="Мальчиков", side=Side.GROOM),
+                        witness3=person("Леонтий", "Григорьев", last_name_orig="Лазутов", side=Side.BRIDE),
+                        witness4=person("Андрей", "Григорьев", last_name_orig="Юлин", side=Side.BRIDE),
+                        page="313об",
+                    ),
+                    ),
+    *marriage_month(Month.FEBRUARY,
+                    # импорт; сверено по скану 24.10.2026 (л. 313об): жених — «Мальчиковъ (Поздняковъ)», венчан по
+                    # разрешению епископа Виталия (несовершеннолетний); последний поручитель — «Поздняковъ» (в импорте
+                    # «Позняков»)
+                    marriage(
+                        5,
+                        3,
+                        groom=person("Алексей", "Герасимов", last_name_orig="Мальчиков"),
+                        groom_marriage_num=1,
+                        bride=person("Анна", "Никитина", last_name_orig="Егорова"),
+                        bride_marriage_num=1,
+                        witness1=person("Семен", "Марков", last_name_orig="Широков", side=Side.GROOM),
+                        witness2=person("Иван", "Федоров", last_name_orig="Платончиков", side=Side.GROOM),
+                        witness3=person("Леонтий", "Антонов", last_name_orig="Абашев", side=Side.BRIDE),
+                        witness4=person("Иван", "Яковлев", last_name_orig="Поздняков", side=Side.BRIDE),
+                        comment="Жених имеет двойную фамилию Мальчиков / Позняков; возраст жениха 17 лет и 10.5 месяцев; "
+                                "возраст невесты неразборчив (1?); венчан «на основаніи разрѣшенія Преосвященнѣйшаго Виталія, "
+                                "Епископа Тамбовскаго» от 18 декабря",
+                        page="313об",
+                    ),
+                    # поручитель по жениху — Герасим Яковлевич Мальчиков
+                    marriage(8, 24,
+                             groom=person("Иванъ", "Ивановъ", "Пузыревъ"), groom_marriage_num=1, groom_age=20,
+                             bride=person("Параскева", "Сергѣева", "Кондрашкина", comment="«солдатская дочь»"),
+                             bride_marriage_num=1, bride_age=18,
+                             witness1=person("Герасимъ", "Яковлевъ", "Мальчиковъ", side=Side.GROOM),
+                             witness2=person("Василій", "Григорьевъ", None, side=Side.GROOM, comment="фамилия не разобрана"),
+                             witness3=person("Ѳеодоръ", "Филипповъ", "Барановъ", side=Side.BRIDE, comment="«запасный рядовой деревни Свищевой Керенскаго уѣзда»"),
+                             witness4=person("Иванъ", "Ѳеодоровъ", "Платончиковъ", side=Side.BRIDE),
+                             priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
+                             page="314об",
+                             reviewed=False),
+                    ),
+    *marriage_month(Month.JUNE,
+                    # Гавриил Васильевич «Юлинъ», сын Василия Григорьевича Мальчикова; поручитель по жениху — Василий
+                    # Леонтьевич Белов, муж его сестры Домны
+                    marriage(11, 5,
+                             groom=person("Гавріилъ", "Васильевъ", "Юлинъ", comment="= Гавриил Васильевич Мальчиков"),
+                             groom_marriage_num=1, groom_age=18,
+                             bride=person("Матрона", "Семенова", "Егорова"), bride_marriage_num=1, bride_age=20,
+                             witness1=person("Иванъ", "Васильевъ", "Фесковъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
+                             witness2=person("Василій", "Леонтьевъ", "Бѣловъ", side=Side.GROOM),
+                             witness3=person("Василій", "Степановъ", "Егоровъ", side=Side.BRIDE),
+                             witness4=person("Лаврентій", "Андреевъ", "Оркишкинъ", side=Side.BRIDE),
+                             priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
+                             page="315об",
+                             reviewed=False),
+                    ),
+    *marriage_month(Month.NOVEMBER,
+                    # поручитель по жениху — Андрей Григорьевич Мальчиков («Юлинъ»)
+                    marriage(16, 6,
+                             groom=person("Василій", "Марковъ", "Абашевъ"), groom_marriage_num=1, groom_age=19,
+                             bride=person("Евдокія", "Іосифова", "Сильверстова"), bride_marriage_num=1, bride_age=18,
+                             witness1=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.GROOM, comment="= Андрей Григорьевич Мальчиков"),
+                             witness2=person("Яковъ", "Марковъ", "Абашевъ", side=Side.GROOM),
+                             witness3=person("Иванъ", "Васильевъ", "Сильверстовъ", side=Side.BRIDE),
+                             witness4=person("Семенъ", "Зотовъ", "Галишниковъ", side=Side.BRIDE),
+                             priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
+                             page="317об",
+                             reviewed=False),
+                    # поручитель по жениху — Андрей Сергеевич Ладыгин, сын Пелагии Семеновны Мальчиковой
+                    marriage(19, 6,
+                             groom=person("Михаилъ", "Петровъ", "Паршинъ"), groom_marriage_num=1, groom_age=18,
+                             bride=person("Марія", "Михайлова", "Сапроникова"), bride_marriage_num=1, bride_age=18,
+                             witness1=person("Антонъ", "Яковлевъ", "Аболмасовъ", side=Side.GROOM),
+                             witness2=person("Андрей", "Сергѣевъ", "Ладыгинъ", side=Side.GROOM),
+                             witness3=person("Алексѣй", "Даниловъ", "Панюковъ", side=Side.BRIDE, comment="«села Удева»"),
+                             witness4=person("Тимоѳей", "Трофимовъ", "Паршинъ", side=Side.BRIDE),
+                             priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
+                             page="318об",
+                             reviewed=False),
+                    ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=GOSUDARSTVENNYJ_PEASANT_MALE,
+                            status_female=GOSUDARSTVENNYJ_PEASANT_FEMALE),
+)

@@ -1,0 +1,100 @@
+from verso.ru.dsl import Month, RecordDefaults, marriage, marriage_month, marriage_records, person
+from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_MAIDEN, ECON_PEASANT_MALE,
+                                   RETIRED_SOLDIER)
+
+# SELECTIVE EXTRACT: Only Мальчиков-family related entries from 1865 metric book.
+# Archive reference unknown for this period; using placeholder.
+# No page numbers available in source extract.
+# No clergy names recorded in source extract.
+
+kirillovo_marriages_1865 = marriage_records(
+    "ГАПО",
+    "182",
+    "5",
+    "710",
+    "Кириллово",
+    "Казанская церковь",
+    1865,
+    *marriage_month(
+        Month.JANUARY,
+        marriage(
+            11,
+            31,
+            groom=person("Павел", "Матвеев", last_name_orig="Морозов"),
+            groom_marriage_num=1,
+            bride=person("Агафья", "Андреева", last_name_orig="Янина", residence="д. Гоголев Бор"),
+            groom_age=18,
+            bride_age=17,
+            witness1=person("Федор", "Петров", last_name_orig="Болдырев"),
+            witness2=person("Тихон", "Петров", last_name_orig="Болдырев"),
+            witness3=person("Василий", "Степанов", last_name_orig="Назаров"),
+            witness4=person("Родион", "Алексеев", last_name_orig="Янин", residence="д. Гоголев Бор"),
+        ),
+        marriage(
+            12,
+            31,
+            groom=person("Игнат", "Петров", last_name_orig="Белков", comment="Фамилия неточна: «Белков?»"),
+            groom_marriage_num=1,
+            bride=person("Мария", "Федорова", last_name_orig="Галишникова"),
+            bride_marriage_num=1,
+            witness1=person("Илья", "Павлов", last_name_orig="Мальчиков"),
+            witness2=person("Конон", "Михайлов", last_name_orig="Куранов"),
+            witness3=person("Зот", "Федоров", last_name_orig="Галишников"),
+            witness4=person("Гавриил", "Сергеев", last_name_orig="Коверкин"),
+            groom_age=20,
+            bride_age=18,
+        ),
+    ),
+    *marriage_month(
+        Month.JUNE,
+        marriage(
+            33,
+            26,
+            groom=person("Иван", "Леонтьев", last_name_orig="Абомласов", status=RETIRED_SOLDIER),
+            groom_marriage_num=1,
+            bride=person("?", "Зотова", comment="Имя невесты: «Марва» — нестандартное написание, возможно Марфа", residence="Пензенская губ. Керенского с. Чернышева"),
+            bride_marriage_num=2,
+            witness1=person("Семен", "Емельянов", last_name_orig="Мальчиков"),
+            witness2=person("Василий", "Степанов", last_name_orig="Широков"),
+            witness3=person("Леонтий", "?", last_name_orig="Абомласов", comment="Отчество неразборчиво"),
+            witness4=person("Влас", "Логинов", last_name_orig="Мастов", comment="Фамилия неточна: «Мастов?»"),
+            groom_age=39,
+            bride_age=28,
+        ),
+    ),
+    *marriage_month(
+        Month.NOVEMBER,
+        marriage(
+            46,
+            3,
+            groom=person("Данил", "Федоров", last_name_orig="Бородин", comment="Фамилия неточна: «Бородин?»"),
+            groom_marriage_num=2,
+            bride=person("Екатерина", "Иванова", last_name_orig="Мальчикова"),
+            bride_marriage_num=2,
+            witness1=person("Никита", "Павлов", last_name_orig="Белов", comment="Фамилия неточна: «Белов?»"),
+            witness2=person("Иван", "Петров", comment="Фамилия не указана"),
+            witness3=person("Василий", "Герасимов", last_name_orig="Мальчиков"),
+            witness4=person("Алексей", "Петров", last_name_orig="Мальчиков", comment="Запись (под вопросом в источнике)"),
+            groom_age=45,
+            bride_age=35,
+        ),
+    ),
+    *marriage_month(
+        Month.NOVEMBER,
+        marriage(
+            47,
+            3,
+            groom=person("Григорий", "Ермолаев", comment="фамилия жениха неразб"),
+            groom_marriage_num=1,
+            bride=person("Васса", "Михайлова", last_name_orig="Майорова", residence="с. Кирилово"),
+            bride_marriage_num=1,
+            groom_age=20,
+            bride_age=24,
+            witness1=person("Самсон", "Наумов", last_name_orig="Янин"),
+            witness2=person("Аким", "Филимонов"),
+            witness3=person("Иван"),
+            witness4=person("Родион", "Макаров"),
+        ),
+    ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=ECON_PEASANT_MALE, status_female=ECON_PEASANT_FEMALE, status_bride=ECON_PEASANT_MAIDEN),
+)

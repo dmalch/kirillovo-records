@@ -1,0 +1,128 @@
+from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, death, death_month,
+                          death_records, page, person, relative)
+from verso.ru.dsl.causes_of_death import COLIC, CONSUMPTION, FEVER, NATURAL, SMALLPOX, THROAT
+from verso.ru.dsl.statuses import (HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PEASANT_MALE,
+                                   PEASANT_DAUGHTER, PEASANT_SON, SOLDIER_WIFE, WIDOW)
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины. ЦГАРМ 57-6-385, Яндекс.Архив 91de6417-…,
+# ч. 3 Кириллова — сканы 619–656.
+kirillovo_deaths_1855 = death_records(
+    "ЦГА республики Мордовия", "57", "6", "385", "Кириллово", "Казанская",
+    1855,
+    *page("?",
+          *death_month(Month.JANUARY,
+                       # Ксения Васильевна — вдова Петра Григорьевича Мальчикова (умер 1854)
+                       death(5, Gender.MALE, 27, 29,
+                             deceased=person("Василій", status=PEASANT_SON), age=2,
+                             relatives=[relative(person("Ксенія", "Васильева", "Мальчикова", status=WIDOW), Relationship.MOTHER)],
+                             cause_of_death=THROAT,
+                             comment="«отъ гортани»; скан 621",
+                             reviewed=False),
+                       ),
+          *death_month(Month.APRIL,
+                       # Емельян Григорьевич Мальчиков, глава ветви (р. 1805)
+                       death(15, Gender.MALE, 14, 16,
+                             deceased=person("Емельянъ", "Григорьевъ", "Мальчиковъ"), age=60,
+                             comment="скан 626",
+                             reviewed=False),
+                       ),
+          *death_month(Month.MAY,
+                       # Емельян Емельянович Мальчиков; жена Федора Ивановна (рожд. 1855 ж. №31)
+                       death(18, Gender.MALE, 1, 3,
+                             deceased=person("Емельянъ", "Емельяновъ", "Мальчиковъ"), age=38,
+                             cause_of_death=FEVER,
+                             comment="скан 628",
+                             reviewed=False),
+                       ),
+          *death_month(Month.JUNE,
+                       # Феодосия — дочь Егора Денисовича Янина («Сырцевъ»), род. 27.05.1855 (рожд. ж. №42)
+                       death(32, Gender.FEMALE, 8, 10,
+                             deceased=person("Ѳеодосія", status=PEASANT_DAUGHTER), age="1 нед",
+                             relatives=[relative(person("Егоръ", "Денисовъ", "Сырцевъ", comment="так в подлиннике; Егор Денисович Янин"), Relationship.FATHER)],
+                             cause_of_death=COLIC,
+                             comment="возраст «1-й недѣли» (по рождению — 12 дней); скан 630",
+                             reviewed=False),
+                       ),
+          *death_month(Month.JULY,
+                       # солдатка Екатерина Григорьевна Мальчикова — частая восприемница 1842–1855
+                       death(44, Gender.FEMALE, 15, 17,
+                             deceased=person("Екатерина", "Григорьева", "Мальчикова", status=SOLDIER_WIFE), age=50,
+                             comment="скан 636",
+                             reviewed=False),
+                       # Мария — дочь Емельяна Емельяновича, род. 27.03.1855 (рожд. ж. №31)
+                       death(45, Gender.FEMALE, 20, 22,
+                             deceased=person("Марія", status=PEASANT_DAUGHTER), age=0.5,
+                             relatives=[relative(person("Ѳеодора", "Иванова", "Мальчикова", status=WIDOW), Relationship.MOTHER)],
+                             cause_of_death=COLIC,
+                             comment="«полугоду»; по рождению — около четырёх месяцев; скан 636",
+                             reviewed=False),
+                       ),
+          *death_month(Month.AUGUST,
+                       # Петр Акимович Мальчиков
+                       death(52, Gender.FEMALE, 28, 30,
+                             deceased=person("Евдокія", status=PEASANT_DAUGHTER), age=0.5,
+                             relatives=[relative(person("Петръ", "Акимовъ", "Мальчиковъ"), Relationship.FATHER)],
+                             cause_of_death=COLIC,
+                             comment="скан 640",
+                             reviewed=False),
+                       ),
+          *death_month(Month.SEPTEMBER,
+                       # Иван — сын Андрея Васильевича Мальчикова, род. 24.08.1855 (рожд. м. №85)
+                       death(59, Gender.MALE, 14, 16,
+                             deceased=person("Иванъ", status=PEASANT_SON), age="3 нед",
+                             relatives=[relative(person("Андрей", "Васильевъ", "Мальчиковъ"), Relationship.FATHER)],
+                             cause_of_death=COLIC,
+                             comment="скан 641",
+                             reviewed=False),
+                       # вдова Агриппина Семеновна — вероятно, вдова Емельяна Григорьевича (умер 14.04.1855)
+                       death(56, Gender.FEMALE, 20, 22,
+                             deceased=person("Агриппина", "Семенова", "Мальчикова", status=WIDOW), age=60,
+                             comment="скан 641",
+                             reviewed=False),
+                       ),
+          *death_month(Month.OCTOBER,
+                       # Даниил Иванович Янин из Гоголева Бора («Алексѣевъ», как в 1854); его посмертная дочь Мелания
+                       # родилась 25.12.1855 (рожд. ж. №98)
+                       death(65, Gender.MALE, 11, 13,
+                             deceased=person("Даніилъ", "Ивановъ", "Алексѣевъ", residence="Гоголев Бор", comment="так в подлиннике; Даниил Иванович Янин"),
+                             cause_of_death=CONSUMPTION,
+                             comment="возраст читается «15» — для отца детей 1848–1855 невозможно; не внесён; скан 643",
+                             reviewed=False),
+                       ),
+          *death_month(Month.NOVEMBER,
+                       # дети Козьмы Андреяновича Мальчикова (Иван — рожд. 1853 м. №12? в 1855 ему было бы два года; возраст «1»)
+                       death(76, Gender.FEMALE, 23, 24,
+                             deceased=person("Дарія", status=PEASANT_DAUGHTER), age=9,
+                             relatives=[relative(person("Козьма", "Андреяновъ", "Мальчиковъ", comment="в подлиннике «Казьма»"), Relationship.FATHER)],
+                             cause_of_death=SMALLPOX,
+                             comment="скан 649",
+                             reviewed=False),
+                       death(85, Gender.MALE, 23, 25,
+                             deceased=person("Иванъ", status=PEASANT_SON), age=1,
+                             relatives=[relative(person("Козьма", "Андреяновъ", "Мальчиковъ", comment="в подлиннике «Казьма»"), Relationship.FATHER)],
+                             cause_of_death=SMALLPOX,
+                             comment="«того жъ крестьянина»; скан 649",
+                             reviewed=False),
+                       ),
+          ),
+    # Вторая волна (07.11.2026): дети дочерей Мальчиковых и Яниных, найдены поиском фамилий мужей по OCR Яндекс.Архива и
+    # прочитаны по оригиналам
+    *page("?",
+          *death_month(Month.DECEMBER,
+                       # мать — Елена Несторовна Мальчикова (брак 1843 №28); Борис род. 23.07.1850 (рожд. м. №74)
+                       death(97, Gender.MALE, 12, 14,
+                             deceased=person("Борисъ", status=PEASANT_SON), age=4,
+                             relatives=[relative(person("Александръ", "Трофимовъ", "Калягинъ"), Relationship.FATHER)],
+                             cause_of_death=SMALLPOX,
+                             priest=person("Александръ", "Григорьевъ", "Халевъ", status=HIEREUS),
+                             comment="скан 654",
+                             reviewed=False),
+                       ),
+          ),
+    defaults=RecordDefaults(
+        residence="Кириллово",
+        status_male=KAZENNYJ_PEASANT_MALE,
+        status_female=KAZENNYJ_PEASANT_FEMALE,
+        cause_of_death=NATURAL
+    ),
+)

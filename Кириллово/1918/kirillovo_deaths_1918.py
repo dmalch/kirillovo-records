@@ -1,0 +1,74 @@
+from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, death, death_month,
+                          death_records, person, relative)
+from verso.ru.dsl.causes_of_death import CONSUMPTION, DIARRHEA, PNEUMONIA
+from verso.ru.dsl.statuses import WIDOW
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям). ГАПО 182-5-574, альбом
+# Photos «1918 (ГАПО 182-5-574)» (pk 1177), ч. 3 — лл. 412об–426об, прочитана целиком 27.10.2026; импорта не было.
+# Лл. 414об–417об (погребения середины января – начала марта) в альбоме НЕТ. Книга кончается погребениями 16/17 августа
+# (л. 426об: «В книге пронумеровано 420 листов»). На лл. 418об и далее графы счёта за краем кадра — номера не поставлены.
+# Погребали свящ. Николай Расказовский и Григорий Феодоровский.
+kirillovo_deaths_1918 = death_records(
+    "ГАПО",
+    "182",
+    "5",
+    "574",
+    "Кириллово",
+    "Казанская церковь",
+    1918,
+    *death_month(Month.MARCH,
+                 # Параскева Ивановна, вдова Степана Емельяновича Мальчикова («Бурлина», 2-й брак 1869)?
+                 death(None, Gender.FEMALE, 15, 16,
+                       deceased=person("Параскева", "Иванова", "Мальчикова", status=WIDOW, comment="= вдова Степана Емельяновича Мальчикова? не установлено"),
+                       cause_of_death=PNEUMONIA,
+                       comment="возраст у корешка («7…»?)",
+                       page="418об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.MAY,
+                 # Мария Ермолаевна, вдова Василия Константиновича Мальчикова (урожд. Данилова, брак 1882)
+                 death(None, Gender.FEMALE, 10, 12,
+                       deceased=person("Марія", "Ермолаева", "Мальчикова", status=WIDOW, comment="= вдова Василия Константиновича Мальчикова"),
+                       cause_of_death=CONSUMPTION,
+                       comment="возраст у корешка («45»? — по браку 1882 в 20 л. ей около 56)",
+                       page="420об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.AUGUST,
+                 # Феодор, сын Георгия (Егора) Семеновича «Юлина», р. 27.12.1917
+                 death(None, Gender.MALE, 3, 4,
+                       deceased=person("Ѳеодоръ"),
+                       relatives=[relative(person("Георгій", "Семеновъ", "Юлинъ"), Relationship.FATHER)],
+                       age="7 мес",
+                       comment="причина читается «отъ к…шки» (коклюш?); = рожд. 1917, 27/30 дек.",
+                       page="425об",
+                       reviewed=False),
+                 # «Иван Степанович Мальчиков»? — в корпусе такого нет
+                 death(None, Gender.MALE, 5, 6,
+                       deceased=person("Иванъ", "Стефановъ", "Мальчиковъ", comment="фамилия читается «Мальчиновъ/Мальчиковъ», неуверенно"),
+                       age=80, cause_of_death=PNEUMONIA,
+                       page="424об",
+                       reviewed=False),
+                 # Анастасия, дочь Алексея «Юлина» (Алексей Михайлович, брак 1914?)
+                 death(None, Gender.FEMALE, 5, 6,
+                       deceased=person("Анастасія"),
+                       relatives=[relative(person("Алексѣй", None, "Юлинъ", comment="отчество на переносе («Ма-/ксимова»? Михайлова?)"), Relationship.FATHER)],
+                       cause_of_death=DIARRHEA,
+                       comment="возраст у корешка",
+                       page="425об",
+                       reviewed=False),
+                 ),
+    # Вторая волна (08.11.2026): дети замужних дочерей Мальчиковых, найденные по имени мужа
+    *death_month(Month.JUNE,
+                 # Феодор — сын Евфимия Ивановича Молоткова и Натальи Васильевны (урожд. Мальчиковой, брак 1914)
+                 death(None, Gender.MALE, 29, 30,
+                       deceased=person("Ѳеодоръ"),
+                       relatives=[relative(person("Евфимій", "Ивановъ", "Молотковъ", comment="в подлиннике «Ефимъ»"), Relationship.FATHER)],
+                       age="3 мес",
+                       cause_of_death=DIARRHEA,
+                       comment="возраст «3 м.» у сгиба; погребалъ свящ. Николай Расказовскій съ псаломщикомъ А. Богословскимъ",
+                       page="423об",
+                       reviewed=False),
+                 ),
+    defaults=RecordDefaults(residence="Кириллово"),
+)

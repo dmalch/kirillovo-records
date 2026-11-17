@@ -1,0 +1,31 @@
+from verso.ru.dsl import (Month, RecordDefaults, marriage, marriage_month, marriage_records, page,
+                          person)
+
+kirillovo_marriages_1920 = marriage_records(
+    "ГАПО", "2854", "17", "15", "Кириллово", "",
+    1920,
+    *page("?",
+          *marriage_month(Month.NOVEMBER,
+                          marriage(14, 4,
+                                   groom=person("Петр", "Дмитриев", last_name_orig="Ванюков", residence="Гоголев Бор"),
+                                   groom_marriage_num=1,
+                                   groom_age=19,
+                                   bride=person("Дарья", "Стефанова", last_name_orig="Янина", residence="Гоголев Бор"),
+                                   bride_marriage_num=1,
+                                   bride_age=18,
+                                   comment="Гражданская регистрация (ЗАГС)"),
+                          marriage(44, 24,
+                                   groom=person("Гаврил?", "Андреев"),
+                                   groom_marriage_num=1,
+                                   groom_age=18,
+                                   bride=person("Мария", "Степанова", last_name_orig="Мальчикова"),
+                                   bride_marriage_num=1,
+                                   bride_age=17,
+                                   comment="Гражданская регистрация (ЗАГС). Имя жениха неразборчиво"),
+                          ),
+          ),
+    defaults=RecordDefaults(
+        residence="Кириллово",
+    ),
+    civil=True,
+)

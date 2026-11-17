@@ -1,0 +1,73 @@
+from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
+                          person)
+from verso.ru.dsl.statuses import PEASANT_FEMALE, PEASANT_MALE
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям). ГАПО 182-5-574, альбом
+# Photos «1917 (ГАПО 182-5-574)» (pk 1184), ч. 2 — лл. 346об–349об, 14 браков (январь 13, апрель 1), прочитана целиком
+# 26.10.2026; импорта не было. Венчали свящ. Николай Расказовский и Григорий Феодоровский.
+kirillovo_marriages_1917 = marriage_records(
+    "ГАПО",
+    "182",
+    "5",
+    "574",
+    "Кириллово",
+    "Казанская церковь",
+    1917,
+    *marriage_month(Month.JANUARY,
+                    # поручитель по жениху — Андрей Николаевич «Кистенев»
+                    marriage(1, 8,
+                             groom=person("Стефанъ", "Васильевъ", "Тимоновъ", comment="фамилия читается неуверенно"),
+                             bride=person("Дарія", "Ѳеодорова", "Паршина"), bride_age=18,
+                             witness1=person("Андрей", "Николаевъ", "Кистеневъ", side=Side.GROOM),
+                             witness2=person("Василій", "Леонтьевъ", "Бѣловъ", side=Side.GROOM),
+                             witness3=person("Семенъ", "Егоровъ", "Тимоновъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
+                             witness4=person("Тимоѳей", "Трофимовъ", "Паршинъ", side=Side.BRIDE),
+                             page="346об",
+                             reviewed=False),
+                    # поручители по жениху — Иван Николаевич «Кистенев» и «Александр Юлин»
+                    marriage(2, 8,
+                             groom=person("Петръ", "Ивановъ", "Игонинъ"), groom_marriage_num=1, groom_age=21,
+                             bride=person("?", comment="невеста в записи не вписана"),
+                             witness1=person("Иванъ", "Николаевъ", "Кистеневъ", side=Side.GROOM),
+                             witness2=person("Александръ", None, "Юлинъ", side=Side.GROOM, comment="отчество не записано"),
+                             witness3=person("Семенъ", "Спиридоновъ", side=Side.BRIDE, comment="фамилия не дочитана"),
+                             witness4=person("Егоръ", None, "Хромовъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
+                             page="346об",
+                             reviewed=False),
+                    # жених — «Тарасинъ-Кистеневъ»?; поручители по невесте — Дмитрий «Кистенев» и Федор Трофимович Паршин
+                    marriage(12, 30,
+                             groom=person("Андрей", "Тарасовъ", "Кистеневъ", comment="фамилия так («Тарасинъ Кистеневъ»?) — читается неуверенно"),
+                             groom_marriage_num=1, groom_age=18,
+                             bride=person("Ксенія", "Ѳеодорова", "Позднякова"), bride_marriage_num=1,
+                             witness1=person("Андрей", "Николаевъ", side=Side.GROOM, comment="фамилия не дочитана («Тайгинъ»?)"),
+                             witness2=person("Трофимъ", None, side=Side.GROOM, comment="отчество и фамилия не дочитаны"),
+                             witness3=person("Димитрій", None, "Кистеневъ", side=Side.BRIDE, comment="отчество не записано"),
+                             witness4=person("Ѳеодоръ", "Трофимовъ", "Паршинъ", side=Side.BRIDE),
+                             page="348об",
+                             reviewed=False),
+                    # невеста — Анна Васильевна Мальчикова
+                    marriage(13, 30,
+                             groom=person("Сергѣй", "Ѳеодоровъ", "Вяткинъ", comment="фамилия читается неуверенно"),
+                             groom_marriage_num=1, groom_age=18,
+                             bride=person("Анна", "Васильева", "Мальчикова"), bride_marriage_num=1,
+                             witness1=person("Ѳеодоръ", "Ѳоминъ", "Ширинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
+                             witness2=person("Петръ", "Павловъ", "Сафроновъ", side=Side.GROOM),
+                             witness3=person("Стефанъ", "Андреевъ", "Лисковъ", side=Side.BRIDE),
+                             witness4=person("Владиміръ", "Петровъ", "Крысановъ", side=Side.BRIDE),
+                             page="349об",
+                             reviewed=False),
+                    ),
+    *marriage_month(Month.APRIL,
+                    # жених — Егор Дмитриевич «Кистенев»; поручители — Андрей и Иван Николаевичи «Кистеневы»
+                    marriage(14, 9,
+                             groom=person("Егоръ", "Димитріевъ", "Кистеневъ"), groom_marriage_num=1, groom_age=25,
+                             bride=person("Анна", "Андреева", "Куранова", comment="фамилия читается неуверенно"), bride_marriage_num=1,
+                             witness1=person("Андрей", "Николаевъ", "Кистеневъ", side=Side.GROOM),
+                             witness2=person("Иванъ", "Николаевъ", "Кистеневъ", side=Side.GROOM),
+                             witness3=person("Иванъ", None, "Кистеневъ", side=Side.BRIDE, comment="отчество не дочитано"),
+                             witness4=person("Василій", "Ивановъ", "Пудиковъ", side=Side.BRIDE),
+                             page="349об",
+                             reviewed=False),
+                    ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+)

@@ -1,0 +1,97 @@
+from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, death, death_month,
+                          death_records, person, relative)
+from verso.ru.dsl.causes_of_death import OLD_AGE
+from verso.ru.dsl.statuses import (PEASANT_DAUGHTER, PEASANT_FEMALE, PEASANT_MALE, PEASANT_SON,
+                                   PEASANT_WIFE)
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям). ГАПО 182-5-302, альбом
+# Photos «1909 (ГАПО 182-5-302)» (pk 1229), ч. 3 — л. 49об пуст, л. 50 шмуцтитул, лл. 50об–70об (61 муж. / 51 жен.),
+# прочитана целиком 26.10.2026; импорта не было. Возраст и причина у сгиба, почти не читаются. Погребали свящ. Александр
+# Васильев Писарев и Павел Богословский.
+kirillovo_deaths_1909 = death_records(
+    "ГАПО",
+    "182",
+    "5",
+    "302",
+    "Кириллово",
+    "Казанская церковь",
+    1909,
+    *death_month(Month.APRIL,
+                 # Марфа, дочь Егора Михайловича Янина («Сырцовъ»)
+                 death(14, Gender.FEMALE, 2, 4,
+                       deceased=person("Марѳа", status=PEASANT_DAUGHTER),
+                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцовъ", comment="= Егор Михайлович Янин"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="54об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.MAY,
+                 # Пелагия, дочь Григория Семеновича «Назарова» и Параскевы Николаевны, р. 27.04.1909 (рожд. ж. №31)
+                 death(18, Gender.FEMALE, 17, 18,
+                       deceased=person("Пелагія", status=PEASANT_DAUGHTER),
+                       relatives=[relative(person("Григорій", "Семеновъ", "Назаровъ"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="56об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.JUNE,
+                 # Григорий, сын Василия Андреевича Ладыгина («Сѣрковъ»)
+                 death(22, Gender.MALE, 3, 4,
+                       deceased=person("Григорій", status=PEASANT_SON),
+                       relatives=[relative(person("Василій", "Андреевъ", "Сѣрковъ", comment="= Василий Андреевич Ладыгин"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="57об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.JULY,
+                 # Петр Акимович Мальчиков (вдовец Христины Акимовны, ум. 1895)
+                 death(31, Gender.MALE, 21, 22,
+                       deceased=person("Петръ", "Акимовъ", "Мальчиковъ"),
+                       cause_of_death=OLD_AGE,
+                       comment="возраст у сгиба («7…»)",
+                       page="59об",
+                       reviewed=False),
+                 # Марфа, дочь Якова Ефимовича Спиряева и Матроны Герасимовны Мальчиковой, р. 15.07.1909 (рожд. ж. №46)
+                 death(26, Gender.FEMALE, 26, 27,
+                       deceased=person("Марѳа", status=PEASANT_DAUGHTER),
+                       relatives=[relative(person("Іаковъ", "Ефимовъ", "Спиряевъ"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="60об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.AUGUST,
+                 # Никита, сын Матвея «Сырцова» (Янина), р. 26.05.1909 (рожд. м. №36: там отец «Матѳей Васильевъ»)
+                 death(42, Gender.MALE, 26, 27,
+                       deceased=person("Никита", status=PEASANT_SON),
+                       relatives=[relative(person("Матѳей", "Матѳеевъ", "Сырцовъ", comment="в рожд. сына (м. №36) — «Матѳей Васильевъ»"), Relationship.FATHER)],
+                       comment="возраст («3 м…») и причина в сгибе",
+                       page="63об",
+                       reviewed=False),
+                 # Димитрий, сын Михаила Константиновича Мальчикова
+                 death(43, Gender.MALE, 26, 27,
+                       deceased=person("Димитрій", status=PEASANT_SON),
+                       relatives=[relative(person("Михаилъ", "Константиновъ", "Мальчиковъ"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="63об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.SEPTEMBER,
+                 # Пелагия, дочь Стефана Ивановича Мальчикова
+                 death(33, Gender.FEMALE, 1, 2,
+                       deceased=person("Пелагія", status=PEASANT_DAUGHTER),
+                       relatives=[relative(person("Стефанъ", "Ивановъ", "Мальчиковъ"), Relationship.FATHER)],
+                       comment="возраст и причина в сгибе",
+                       page="63об",
+                       reviewed=False),
+                 ),
+    *death_month(Month.DECEMBER,
+                 # Дарья Порфирьевна, жена Никиты Козьмича Мальчикова
+                 death(50, Gender.FEMALE, 26, 27,
+                       deceased=person("Дарія", "Порфирьева", status=PEASANT_WIFE),
+                       relatives=[relative(person("Никита", "Косминъ", "Мальчиковъ"), Relationship.HUSBAND)],
+                       comment="возраст и причина в сгибе",
+                       page="70об",
+                       reviewed=False),
+                 ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+)

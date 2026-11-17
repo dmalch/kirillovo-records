@@ -1,0 +1,102 @@
+from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, death, death_month,
+                          death_records, page, person, relative)
+from verso.ru.dsl.causes_of_death import COLIC, DIARRHEA, NATURAL, TYPHUS
+from verso.ru.dsl.statuses import (DEACON, ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS, MAIDEN,
+                                   PEASANT_DAUGHTER, PEASANT_SON, SOLDIER_WIFE)
+
+# Выборка первой волны: только записи, где есть Мальчиковы или Янины. ГАПО 182-5-711, альбом Photos
+# «1869 (ГАПО 182-5-711)» (pk 1284), ч. 3 — лл. 119–151об, 174 погребения; прочитана целиком 03.10.2026. В графе дат
+# одно число (смерти); лист — в comment.
+kirillovo_deaths_1869 = death_records(
+    "ГАПО",
+    "182",
+    "5",
+    "711",
+    "Кириллово",
+    "Казанская церковь",
+    1869,
+    *page("?",
+          *death_month(Month.JANUARY,
+                       # «Самсона Наумова дочь девица Наталія» — дочь Самсона Наумовича Янина
+                       death(4, Gender.FEMALE, 5, None,
+                             deceased=person("Наталія", status=MAIDEN), age=16,
+                             relatives=[relative(person("Самсонъ", "Наумовъ", comment="фамилии нет; = Самсон Наумович Янин"), Relationship.FATHER)],
+                             cause_of_death="от сожжения",
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
+                             comment="л. 118об; «отъ сожженія»",
+                             reviewed=False),
+                       ),
+          *death_month(Month.JULY,
+                       # солдатка Мария Дмитриевна Мальчикова — жена Семена Герасимовича (брак 1828 №4, рекрут)?
+                       death(33, Gender.FEMALE, 15, None,
+                             deceased=person("Марія", "Димитріева", "Мальчикова", status=SOLDIER_WIFE), age=90,
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
+                             comment="л. 130об; возраст читается «90» (по РС 8 жене Семена Герасимовича ~65 — не «60» ли?)",
+                             reviewed=False),
+                       ),
+          *death_month(Month.AUGUST,
+                       # Пелагия, дочь Петра Акимовича Мальчикова, род. 24.04.1868 (рожд. 1868 ж. №22) — ей 1 г. 3 мес.,
+                       # в записи «½ году»; другой Пелагии у него быть не могло: жена умерла 12.10.1868
+                       death(41, Gender.FEMALE, 6, None,
+                             deceased=person("Пелагія", status=PEASANT_DAUGHTER), age="6 мес",
+                             relatives=[relative(person("Петръ", "Акимовъ", "Мальчиковъ"), Relationship.FATHER)],
+                             cause_of_death=DIARRHEA,
+                             priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 135об; возраст «½ году» расходится с крещением 25.04.1868",
+                             reviewed=False),
+                       # Стефан — сын Алексея Данииловича Янина (Гоголев Бор), крещ. 1.08.1869 (рожд. м. №50)
+                       death(47, Gender.MALE, 11, None,
+                             deceased=person("Стефанъ", status=PEASANT_SON, residence="Гоголев Бор"), age="2 нед",
+                             relatives=[relative(person("Алексѣй", "Даниловъ", comment="фамилии нет; = Алексей Даниилович Янин"), Relationship.FATHER)],
+                             cause_of_death=TYPHUS,
+                             priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 137об; возраст «½ мѣсяца»; причина читается «отъ тифа»",
+                             reviewed=False),
+                       # Василий — сын Климента Антоновича Мальчикова, род. 6.04.1869 (рожд. м. №27)
+                       death(52, Gender.MALE, 18, None,
+                             deceased=person("Василій", status=PEASANT_SON), age="4 мес",
+                             relatives=[relative(person("Климентъ", "Антоновъ"), Relationship.FATHER)],
+                             cause_of_death=DIARRHEA,
+                             priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
+                             deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
+                             comment="л. 138об; отец без фамилии — Климент Антонович Мальчиков",
+                             reviewed=False),
+                       ),
+          *death_month(Month.SEPTEMBER,
+                       # Василий — сын Стефана Емельяновича Мальчикова, род. 22.03.1869 (рожд. м. №25)
+                       death(68, Gender.MALE, 18, None,
+                             deceased=person("Василій", status=PEASANT_SON), age="6 мес",
+                             relatives=[relative(person("Стефанъ", "Емельяновъ", comment="в подлиннике «Амельяновъ»; фамилии нет — Мальчиков"), Relationship.FATHER)],
+                             cause_of_death=DIARRHEA,
+                             priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
+                             comment="л. 143об; возраст «½ году»",
+                             reviewed=False),
+                       ),
+          *death_month(Month.DECEMBER,
+                       # Яков — сын «Николая Константинова Малахѣева», крещ. 12.10.1869 (рожд. м. №74); = Николай
+                       # Константинович Мальчиков? не установлено
+                       death(82, Gender.MALE, 23, None,
+                             deceased=person("Іаковъ", status=PEASANT_SON), age="3 мес",
+                             relatives=[relative(person("Николай", "Константиновъ", "Малахѣевъ", comment="фамилия читается неуверенно"), Relationship.FATHER)],
+                             cause_of_death=COLIC,
+                             comment="л. 151об",
+                             reviewed=False),
+                       ),
+          ),
+    # Вторая волна (08.11.2026): дети замужних дочерей Мальчиковых и Яниных, найденные по имени мужа
+    *page("143об",
+          *death_month(Month.SEPTEMBER,
+                       # Артемий — сын Ефима Михайловича Стюхина и Марии Егоровны Мальчиковой, род. 6.09.1869 (рожд. м. №64)
+                       death(79, Gender.MALE, 21, None,
+                             deceased=person("Артемій", status=PEASANT_SON, comment="в подлиннике «Артимъ»"), age="1 мес",
+                             relatives=[relative(person("Ефимъ", "Михайловъ", "Стюхинъ"), Relationship.FATHER)],
+                             cause_of_death=DIARRHEA,
+                             comment="возраст «1 мѣсяцъ» (по рождению две недели); съ дьячкомъ Герасимомъ Григорьевымъ",
+                             reviewed=False),
+                       ),
+          ),
+    defaults=RecordDefaults(residence="Кириллово", status_male=ECON_PEASANT_MALE, status_female=ECON_PEASANT_FEMALE,
+                            cause_of_death=NATURAL),
+)
