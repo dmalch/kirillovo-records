@@ -21,7 +21,7 @@ kirillovo_deaths_1886 = death_records(
     *death_month(Month.MARCH,
                  # Константин Козьмич Мальчиков («Малахѣевъ» 1835–64, «Стрекалинъ» 1836)
                  death(7, Gender.MALE, 21, 22,
-                       deceased=person("Константинъ", "Казминъ", "Стрекалинъ", comment="«Стрекалинъ» — так в подлиннике; = Константин Козьмич Мальчиков"),
+                       deceased=person("Константинъ", "Казминъ", "Стрекалинъ", comment="«Стрекалинъ» — так в подлиннике; он же: Константин Козьмич Мальчиков"),
                        age=70,
                        cause_of_death=OLD_AGE,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -44,7 +44,7 @@ kirillovo_deaths_1886 = death_records(
                  # Гавриил, сын Андрея Сергеевича Серкова (Ладыгина), р. 14.07.1886 (рожд. м. №36)
                  death(28, Gender.MALE, 1, 2,
                        deceased=person("Гавріилъ", status=PEASANT_SON), age="3 нед",
-                       relatives=[relative(person("Андрей", "Сергѣевъ", "Серковъ", comment="= Андрей Сергеевич Ладыгин"), Relationship.FATHER)],
+                       relatives=[relative(person("Андрей", "Сергѣевъ", "Серковъ", comment="он же: Андрей Сергеевич Ладыгин"), Relationship.FATHER)],
                        cause_of_death=PLEURISY,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        comment="причина в подлиннике «отъ колотія»; возраст читается неуверенно",
@@ -82,7 +82,7 @@ kirillovo_deaths_1886 = death_records(
                  # Елена, дочь Михаила Васильевича Мальчикова («Юлинъ»), р. 20.05.1883 (рожд. 1883 ж. №26)
                  death(68, Gender.FEMALE, 22, 24,
                        deceased=person("Елена", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; = Михаил Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; он же: Михаил Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=MEASLES,
                        priest=person("Ѳеодоръ", None, "Виноградовъ", status=PRIEST, comment="«Покровской церкви священникъ»"),
                        comment="графа возраста пуста (дыра листа); причина «отъ кори»",

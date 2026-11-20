@@ -18,7 +18,7 @@ kirillovo_marriages_1882 = marriage_records(
     *marriage_month(Month.JANUARY,
                     # Василий Константинович Мальчиков («Поздняковъ»), вдовец: жена Евгения Сергеевна умерла 11.11.1881
                     marriage(4, 20,
-                             groom=person("Василій", "Константиновъ", "Мальчиковъ", comment="= Василий Константинович Мальчиков"),
+                             groom=person("Василій", "Константиновъ", "Мальчиковъ", comment="он же: Василий Константинович Мальчиков"),
                              groom_marriage_num=2, groom_age=20,
                              bride=person("Марія", "Ермолаева", "Данилова"), bride_marriage_num=1, bride_age=20,
                              witness1=person("Данилъ", "Савельевъ", "Игошинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
@@ -48,7 +48,7 @@ kirillovo_marriages_1882 = marriage_records(
     *marriage_month(Month.NOVEMBER,
                     # жених — Михаил Яковлевич «Алешинъ» (Гоголев Бор), сын Якова Андреевича «Алешина» (= Янина?)
                     marriage(17, 1,
-                             groom=person("Михаилъ", "Яковлевъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; = Янин?"),
+                             groom=person("Михаилъ", "Яковлевъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; он же: Янин?"),
                              groom_marriage_num=1, groom_age=18,
                              bride=person("Дарія", "Ѳомина", "Щербакова", residence="Гоголев Бор", comment="отчество читается неуверенно"),
                              bride_marriage_num=1, bride_age=19,
@@ -66,7 +66,7 @@ kirillovo_marriages_1882 = marriage_records(
                              groom=person("Василій", "Сергѣевъ", "Ладыгинъ"), groom_marriage_num=1, groom_age=20,
                              bride=person("Наталія", "Алексѣева", "Козлова"), bride_marriage_num=1, bride_age=17,
                              witness1=person("Герасимъ", "Александровъ", "Кидяевъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
-                             witness2=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.GROOM, comment="= Андрей Григорьевич Мальчиков"),
+                             witness2=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.GROOM, comment="он же: Андрей Григорьевич Мальчиков"),
                              witness3=person("Александръ", "Димитріевъ", "Ушаковъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
                              witness4=person("Трофимъ", "Пименовъ", "Дремковъ", side=Side.BRIDE, comment="отчество читается неуверенно"),
                              priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),

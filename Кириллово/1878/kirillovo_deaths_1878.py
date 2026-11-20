@@ -34,7 +34,7 @@ kirillovo_deaths_1878 = death_records(
                  # Николай, сын Семена Родионовича «Алешина» (= Янина?)
                  death(26, Gender.MALE, 16, 17,
                        deceased=person("Николай", status=PEASANT_SON, residence="Гоголев Бор"), age="6 мес",
-                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -45,7 +45,7 @@ kirillovo_deaths_1878 = death_records(
                  # Иван, сын Якова Андреевича «Алешина» (= Янина?)
                  death(36, Gender.MALE, 17, 18,
                        deceased=person("Иванъ", status=PEASANT_SON, residence="Гоголев Бор"), age="6 мес",
-                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Яков Андреевич Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Яков Андреевич Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -65,7 +65,7 @@ kirillovo_deaths_1878 = death_records(
                  # Анна, дочь Якова Андреевича «Алешина»
                  death(37, Gender.FEMALE, 6, 7,
                        deceased=person("Анна", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age=3,
-                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Яков Андреевич Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Яков Андреевич Янин?"), Relationship.FATHER)],
                        cause_of_death=SCARLATINA,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -77,7 +77,7 @@ kirillovo_deaths_1878 = death_records(
                  # тоже Матрена Ивановна); вдовец женился вторично 1.10.1878 (брак №11)
                  death(41, Gender.FEMALE, 1, 2,
                        deceased=person("Матрена", "Иванова", status=PEASANT_WIFE, residence="Гоголев Бор"), age=30,
-                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Яков Андреевич Янин?"), Relationship.HUSBAND)],
+                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Яков Андреевич Янин?"), Relationship.HUSBAND)],
                        cause_of_death=TYPHUS,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -85,7 +85,7 @@ kirillovo_deaths_1878 = death_records(
                        reviewed=False),
                  death(42, Gender.FEMALE, 2, 3,
                        deceased=person("Евдокія", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age=10,
-                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Яков Андреевич Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Яков Андреевич Янин?"), Relationship.FATHER)],
                        cause_of_death=TYPHUS,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        page="86об",
@@ -93,7 +93,7 @@ kirillovo_deaths_1878 = death_records(
                  # Пелагия Андреевна, жена солдата Матфея Яковлевича «Позднякова» (= Мальчикова)
                  death(43, Gender.FEMALE, 2, 3,
                        deceased=person("Пелагія", "Андреева", status=SOLDIER_WIFE), age=28,
-                       relatives=[relative(person("Матвѣй", "Яковлевъ", "Поздняковъ", status=SOLDIER, comment="= Матфей Яковлевич Мальчиков"), Relationship.HUSBAND)],
+                       relatives=[relative(person("Матвѣй", "Яковлевъ", "Поздняковъ", status=SOLDIER, comment="он же: Матфей Яковлевич Мальчиков"), Relationship.HUSBAND)],
                        cause_of_death=TYPHUS,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -102,7 +102,7 @@ kirillovo_deaths_1878 = death_records(
                  # Афанасий, сын Матвея Егоровича Янина («Сырдцевъ»), р. 1.05.1878 (близнец, рожд. м. №25)
                  death(55, Gender.MALE, 6, 7,
                        deceased=person("Аѳанасій", status=PEASANT_SON), age="1 мес",
-                       relatives=[relative(person("Матвѣй", "Егоровъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; = Матвей Егорович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Матвѣй", "Егоровъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; он же: Матвей Егорович Янин"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -131,7 +131,7 @@ kirillovo_deaths_1878 = death_records(
                  # Димитрий, сын Герасима Яковлевича «Позднякова» (= Мальчикова), р. 14.05.1878 (рожд. м. №30)
                  death(78, Gender.MALE, 26, 26,
                        deceased=person("Димитрій", status=PEASANT_SON), age="2 мес",
-                       relatives=[relative(person("Герасимъ", "Яковлевъ", "Поздняковъ", comment="= Герасим Яковлевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Герасимъ", "Яковлевъ", "Поздняковъ", comment="он же: Герасим Яковлевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -150,7 +150,7 @@ kirillovo_deaths_1878 = death_records(
     *death_month(Month.SEPTEMBER,
                  # «Родіонъ Яковлевъ Алешинъ» (Гоголев Бор) = Родион Яковлевич Янин, поручитель 1863 и 1864
                  death(98, Gender.MALE, 19, 21,
-                       deceased=person("Родіонъ", "Яковлевъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; = Родион Яковлевич Янин"),
+                       deceased=person("Родіонъ", "Яковлевъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; он же: Родион Яковлевич Янин"),
                        age=60,
                        cause_of_death=OLD_AGE,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),

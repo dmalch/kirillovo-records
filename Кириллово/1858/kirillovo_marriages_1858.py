@@ -97,11 +97,11 @@ kirillovo_marriages_1858 = marriage_records(
                           # невеста — Ксения, дочь Карпа Антоновича Янина («Хрипуновъ»); поручитель — её дядя Ѳедор Антонович
                           marriage(7, 22,
                                    groom=person("Андрей", "Никифоровъ", "Бѣловъ"), groom_marriage_num=1, groom_age=20,
-                                   bride=person("Ксенія", "Карпова", "Хрипунова", comment="«Карпа Антонова Хрипунова дочь»; = Ксения Карповна Янина"),
+                                   bride=person("Ксенія", "Карпова", "Хрипунова", comment="«Карпа Антонова Хрипунова дочь»; она же: Ксения Карповна Янина"),
                                    bride_marriage_num=1,
                                    witness1=person("Никифоръ", "Павловъ", "Бѣловъ", side=Side.GROOM),
                                    witness2=person("Павелъ", "Никифоровъ", "Онтиповъ", side=Side.GROOM),
-                                   witness3=person("Ѳеодоръ", "Антоновъ", "Хрипуновъ", side=Side.BRIDE, comment="= Ѳедор Антонович Янин"),
+                                   witness3=person("Ѳеодоръ", "Антоновъ", "Хрипуновъ", side=Side.BRIDE, comment="он же: Ѳедор Антонович Янин"),
                                    witness4=person("Трофимъ", "Ермолаевъ", "Позняковъ", side=Side.BRIDE, comment="отчество читается неуверенно"),
                                    priest=person("Василій", "Іоакимовъ", "Бѣльскій", status=HIEREUS),
                                    comment="кадр 45 альбома",

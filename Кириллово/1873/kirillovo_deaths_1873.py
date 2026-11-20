@@ -30,7 +30,7 @@ kirillovo_deaths_1873 = death_records(
                  # Федор, сын Сергея Карповича Янина («Хрипуновъ»; в 1871 — «Сырцевъ»)
                  death(18, Gender.MALE, 20, 21,
                        deceased=person("Ѳедоръ", status=PEASANT_SON), age=2,
-                       relatives=[relative(person("Сергѣй", "Карповъ", "Хрипуновъ", comment="«Хрипуновъ» — так в подлиннике; = Сергей Карпович Янин"),
+                       relatives=[relative(person("Сергѣй", "Карповъ", "Хрипуновъ", comment="«Хрипуновъ» — так в подлиннике; он же: Сергей Карпович Янин"),
                                            Relationship.FATHER)],
                        cause_of_death=SCARLATINA,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -39,7 +39,7 @@ kirillovo_deaths_1873 = death_records(
                  # Анна, дочь Семена Родионовича Янина («Алешинъ», Гоголев Бор), р. 28.01.1873 (рожд. ж. №3 штата Ремезова)
                  death(24, Gender.FEMALE, 25, 26,
                        deceased=person("Анна", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age=0.5,
-                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Семен Родионович Янин"),
+                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Семен Родионович Янин"),
                                            Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -63,7 +63,7 @@ kirillovo_deaths_1873 = death_records(
                  # ж. №13 штата Кроткова)
                  death(24, Gender.FEMALE, 21, 24,
                        deceased=person("Дарья", status=PEASANT_DAUGHTER), age="4 мес",
-                       relatives=[relative(person("Сергій", "Дементьевъ", "Серковъ", comment="«Серковъ» — так в подлиннике; = Сергей Дементьевич Ладыгин"),
+                       relatives=[relative(person("Сергій", "Дементьевъ", "Серковъ", comment="«Серковъ» — так в подлиннике; он же: Сергей Дементьевич Ладыгин"),
                                            Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Павелъ", "Ѳеофановъ", "Кротковъ", status=HIEREUS),

@@ -50,7 +50,7 @@ kirillovo_deaths_1898 = death_records(
                  # Георгий, сын Василия Сергеевича Ладыгина («Сѣрковъ»; сын Пелагии Семеновны Мальчиковой)
                  death(22, Gender.MALE, 1, 1,
                        deceased=person("Георгій", status=PEASANT_SON), age=1,
-                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="= Василий Сергеевич Ладыгин"), Relationship.FATHER)],
+                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="он же: Василий Сергеевич Ладыгин"), Relationship.FATHER)],
                        cause_of_death=MEASLES,
                        page="126об",
                        reviewed=False),

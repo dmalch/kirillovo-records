@@ -21,7 +21,7 @@ kirillovo_deaths_1890 = death_records(
                  # Василий, сын Матвея Матвеевича Янина («Сырцевъ»), р. 6.03.1889 (рожд. 1889 м. №20)
                  death(8, Gender.MALE, 10, 11,
                        deceased=person("Василій", status=PEASANT_SON), age=1,
-                       relatives=[relative(person("Матвѣй", None, "Сырцевъ", comment="= Матвей Матвеевич Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Матвѣй", None, "Сырцевъ", comment="он же: Матвей Матвеевич Янин"), Relationship.FATHER)],
                        cause_of_death=COUGH,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        page="181об",
@@ -70,7 +70,7 @@ kirillovo_deaths_1890 = death_records(
                  # Лазарь (рожд. м. №15); один ли это ребёнок, не установлено
                  death(28, Gender.MALE, 6, 7,
                        deceased=person("Захарій", status=PEASANT_SON), age="3 мес",
-                       relatives=[relative(person("Егоръ", None, "Сырцевъ", comment="= Егор Михайлович Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Егоръ", None, "Сырцевъ", comment="он же: Егор Михайлович Янин?"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        page="189об",
@@ -112,7 +112,7 @@ kirillovo_deaths_1890 = death_records(
                  # Акилина, дочь Гавриила Васильевича Мальчикова («Юлинъ»), р. 5.06.1889 (рожд. 1889 ж. №29)
                  death(63, Gender.FEMALE, 20, 21,
                        deceased=person("Акилина", status=PEASANT_DAUGHTER), age=1,
-                       relatives=[relative(person("Гавріилъ", None, "Юлинъ", comment="= Гавриил Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Гавріилъ", None, "Юлинъ", comment="он же: Гавриил Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=None,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="причина на рваном краю листа («отъ ка…»)",

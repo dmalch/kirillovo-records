@@ -22,7 +22,7 @@ kirillovo_births_1924 = birth_records(
                  # Яков Гаврилович «Юлин» и Анна Андреевна (их Василий — 1922 №191)
                  birth(25, Gender.FEMALE, 9, None,
                        child=person("Анисия", comment="в подлиннике — «Юлина Анисия»; имя читается неуверенно"),
-                       father=person("Яков", last_name_orig="Юлин", comment="= Яков Гаврилович Мальчиков «Юлин», р. 1897"),
+                       father=person("Яков", last_name_orig="Юлин", comment="он же: Яков Гаврилович Мальчиков «Юлин», р. 1897"),
                        mother=person("Анна", last_name_orig="Юлина"),
                        comment="Гражданская регистрация (ЗАГС); 3-й ребёнок (2 живых); отцу 26, матери 22; заявитель — отец; с. Кириллово",
                        page="229об",
@@ -30,7 +30,7 @@ kirillovo_births_1924 = birth_records(
                  # Егор Семенович «Юлин» и Матрона Михайловна (брак 1911 №18)
                  birth(43, Gender.MALE, 14, None,
                        child=person("Федор", comment="в подлиннике — «Юлин Федор Егоров»"),
-                       father=person("Егор", last_name_orig="Юлин", comment="= Егор Семенович Мальчиков «Юлин», р. 1893"),
+                       father=person("Егор", last_name_orig="Юлин", comment="он же: Егор Семенович Мальчиков «Юлин», р. 1893"),
                        mother=person("Матрена", last_name_orig="Юлина"),
                        comment="Гражданская регистрация (ЗАГС); запись 19 января; 6-й ребёнок (2 живых); отцу 31, матери 30; заявитель — отец; с. Кириллово",
                        page="232об",
@@ -67,7 +67,7 @@ kirillovo_births_1924 = birth_records(
                  birth(215, Gender.FEMALE, 29, None,
                        child=person("Александра", comment="в подлиннике — «Позднякова Ал…дра»: низ листа оборван, имя выцвело"),
                        father=person("Федор", "Васильев", last_name_orig="Поздняков"),
-                       mother=person("Евфросиния", "Петрова", last_name_orig="Позднякова", birth_last_name_modern_orth="Янина", comment="= Евфросиния Петровна «Сырцова»"),
+                       mother=person("Евфросиния", "Петрова", last_name_orig="Позднякова", birth_last_name_modern_orth="Янина", comment="она же: Евфросиния Петровна «Сырцова»"),
                        comment="Гражданская регистрация (ЗАГС); запись 31 марта; 3-й ребёнок (1 живой); родителям по 29?; заявитель — отец; с. Кириллово",
                        page="256об",
                        reviewed=False),
@@ -154,7 +154,7 @@ kirillovo_births_1924 = birth_records(
                  # Егор Семенович «Юлин» и Матрона Михайловна — те же, что у № 43 (январь 1924)
                  birth(646, Gender.MALE, 18, None,
                        child=person("Григорий"),
-                       father=person("Егор", last_name_orig="Юлин", comment="= Егор Семенович Мальчиков «Юлин»"),
+                       father=person("Егор", last_name_orig="Юлин", comment="он же: Егор Семенович Мальчиков «Юлин»"),
                        mother=person("Матрена", last_name_orig="Юлина"),
                        comment="Гражданская регистрация (ЗАГС); 5-й ребёнок (2 живых) — у № 43 того же года «6-й»; отцу 31; заявитель — отец; с. Кириллово",
                        page="349об",

@@ -33,7 +33,7 @@ kirillovo_deaths_1882 = death_records(
                  # Параскева Максимовна, жена Ивана Климентовича Мальчикова (брак 1872 №2)
                  death(12, Gender.FEMALE, 7, 8,
                        deceased=person("Параскева", "Максимова", status=PEASANT_WIFE), age=27,
-                       relatives=[relative(person("Иванъ", "Климовъ", "Мальчиковъ", comment="= Иван Климентович Мальчиков"), Relationship.HUSBAND)],
+                       relatives=[relative(person("Иванъ", "Климовъ", "Мальчиковъ", comment="он же: Иван Климентович Мальчиков"), Relationship.HUSBAND)],
                        cause_of_death=CONSUMPTION,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -44,7 +44,7 @@ kirillovo_deaths_1882 = death_records(
                  # Ирина, дочь Сергея Карповича Янина, р. 3.05.1882 (рожд. ж. №42); отец здесь «Сергѣй Карповъ Карповъ»
                  death(20, Gender.FEMALE, 15, 16,
                        deceased=person("Ирина", status=PEASANT_DAUGHTER), age="1 мес",
-                       relatives=[relative(person("Сергѣй", "Карповъ", "Карповъ", comment="так в подлиннике; = Сергей Карпович Янин («Сырцевъ»)"),
+                       relatives=[relative(person("Сергѣй", "Карповъ", "Карповъ", comment="так в подлиннике; он же: Сергей Карпович Янин («Сырцевъ»)"),
                                            Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -57,7 +57,7 @@ kirillovo_deaths_1882 = death_records(
                  # Матрена, дочь Николая Григорьевича Мальчикова («Юлинъ»), р. 13.11.1871 (рожд. 1871 ж. №59)
                  death(32, Gender.FEMALE, 17, 18,
                        deceased=person("Матрена", status=PEASANT_DAUGHTER), age=11,
-                       relatives=[relative(person("Николай", "Григорьевъ", "Юлинъ", comment="= Николай Григорьевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Николай", "Григорьевъ", "Юлинъ", comment="он же: Николай Григорьевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=SMALLPOX,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -87,7 +87,7 @@ kirillovo_deaths_1882 = death_records(
                  # Гликерия, дочь Николая Григорьевича Мальчикова («Юлинъ»), р. 14.05.1882 (рожд. ж. №46)
                  death(46, Gender.FEMALE, 12, 13,
                        deceased=person("Гликерія", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Николай", "Григорьевъ", "Юлинъ", comment="= Николай Григорьевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Николай", "Григорьевъ", "Юлинъ", comment="он же: Николай Григорьевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -109,7 +109,7 @@ kirillovo_deaths_1882 = death_records(
     *death_month(Month.DECEMBER,
                  # Елена Кирилловна, вдова Якова Максимовича «Позднякова» (= Мальчикова; ум. 18.02.1877)
                  death(104, Gender.FEMALE, 11, 12,
-                       deceased=person("Елена", "Кирѣева", "Позднякова", status=WIDOW, comment="«вдова крестьянка села Кириллова»; = Елена Кирилловна, вдова Якова Максимовича Мальчикова"),
+                       deceased=person("Елена", "Кирѣева", "Позднякова", status=WIDOW, comment="«вдова крестьянка села Кириллова»; она же: Елена Кирилловна, вдова Якова Максимовича Мальчикова"),
                        cause_of_death=OLD_AGE,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -119,7 +119,7 @@ kirillovo_deaths_1882 = death_records(
                  # Николай, сын Василия Сергеевича Ладыгина («Серковъ»), р. 8.12.1882 (рожд. м. №95)
                  death(91, Gender.MALE, 15, 16,
                        deceased=person("Николай", status=PEASANT_SON),
-                       relatives=[relative(person("Василій", "Сергѣевъ", "Серковъ", comment="«Серковъ» — так в подлиннике; = Василий Сергеевич Ладыгин"),
+                       relatives=[relative(person("Василій", "Сергѣевъ", "Серковъ", comment="«Серковъ» — так в подлиннике; он же: Василий Сергеевич Ладыгин"),
                                            Relationship.FATHER)],
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -129,7 +129,7 @@ kirillovo_deaths_1882 = death_records(
                  # Илия, сын Тимофея Михайловича Янина («Сырдцевъ»), р. 18.07.1882 (рожд. м. №63)
                  death(93, Gender.MALE, 28, 29,
                        deceased=person("Илія", status=PEASANT_SON),
-                       relatives=[relative(person("Тимоѳей", "Михайловъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; = Тимофей Михайлович Янин"),
+                       relatives=[relative(person("Тимоѳей", "Михайловъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; он же: Тимофей Михайлович Янин"),
                                            Relationship.FATHER)],
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),

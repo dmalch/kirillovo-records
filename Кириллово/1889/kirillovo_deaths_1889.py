@@ -95,7 +95,7 @@ kirillovo_deaths_1889 = death_records(
                  # Надежда, дочь Матвея Егоровича Янина («Сырцевъ»), р. 1871
                  death(44, Gender.FEMALE, 27, 29,
                        deceased=person("Надежда", None, "Сырцева", status=MAIDEN), age=18,
-                       relatives=[relative(person("Матвѣй", None, "Сырцевъ", comment="= Матвей Егорович Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Матвѣй", None, "Сырцевъ", comment="он же: Матвей Егорович Янин?"), Relationship.FATHER)],
                        cause_of_death=FEVER,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        page="261об",
@@ -104,7 +104,7 @@ kirillovo_deaths_1889 = death_records(
     *death_month(Month.NOVEMBER,
                  # Ирина Нестеровна Мальчикова, жена Григория Тимофеевича Разоренова (брак 1844); муж умер 10.12.1889
                  death(56, Gender.FEMALE, 23, 25,
-                       deceased=person("Ирина", "Нестерова", "Разоренова", status=PEASANT_WIFE, comment="= Ирина Нестеровна Мальчикова"),
+                       deceased=person("Ирина", "Нестерова", "Разоренова", status=PEASANT_WIFE, comment="она же: Ирина Нестеровна Мальчикова"),
                        age=70,
                        cause_of_death=OLD_AGE,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),

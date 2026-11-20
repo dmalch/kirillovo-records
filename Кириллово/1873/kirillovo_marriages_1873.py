@@ -18,7 +18,7 @@ kirillovo_marriages_1873 = marriage_records(
     *marriage_month(Month.NOVEMBER,
                     # штат Ремезова. Петр Михайлович Янин («Сырдцевъ»), сын Михаила Андреяновича
                     marriage(15, 9,
-                             groom=person("Петръ", "Михайловъ", "Сырдцевъ", comment="«Сырдцевъ» — так в подлиннике; = Петр Михайлович Янин"),
+                             groom=person("Петръ", "Михайловъ", "Сырдцевъ", comment="«Сырдцевъ» — так в подлиннике; он же: Петр Михайлович Янин"),
                              groom_marriage_num=1, groom_age=19,
                              bride=person("Анна", "Михайлова", "Киселева", residence="Кирилловские Выселки", comment="в подлиннике «Кисилева»?; фамилия читается неуверенно"),
                              bride_marriage_num=1, bride_age=20,
@@ -34,7 +34,7 @@ kirillovo_marriages_1873 = marriage_records(
                              groom=person("Ѳеодоръ", "Самсоновъ", "Янинъ"), groom_marriage_num=1, groom_age="17 л 6 мес",
                              bride=person("Ѳевронія", "Дементіева", "Миронова", residence="Кирилловские Выселки", comment="«крестьянская дочь»"),
                              bride_marriage_num=1, bride_age=19,
-                             witness1=person("Акимъ", "Филатовъ", "Жариковъ", side=Side.GROOM, comment="так в подлиннике; = Аким Филимонович Жариков?"),
+                             witness1=person("Акимъ", "Филатовъ", "Жариковъ", side=Side.GROOM, comment="так в подлиннике; он же: Аким Филимонович Жариков?"),
                              witness2=person("Савостьянъ", "Ивановъ", side=Side.GROOM, comment="имя читается неуверенно; фамилии нет"),
                              witness3=person("Иванъ", "Пахомовъ", "Власковъ", side=Side.BRIDE, comment="отчество читается неуверенно"),
                              witness4=person("Игнатъ", None, "Стукановъ", side=Side.BRIDE, comment="отчества нет"),

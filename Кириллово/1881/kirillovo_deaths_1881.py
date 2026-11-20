@@ -23,7 +23,7 @@ kirillovo_deaths_1881 = death_records(
                  # «Тимоѳей», как в браке 1879 №10
                  death(8, Gender.FEMALE, 23, 24,
                        deceased=person("Евдокія", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Георгій", "Михайловъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; = Тимофей Михайлович Янин? (Егор Михайлович женится лишь в 1883)"), Relationship.FATHER)],
+                       relatives=[relative(person("Георгій", "Михайловъ", "Сырцевъ", comment="в подлиннике «Сырдцевъ»; он же: Тимофей Михайлович Янин? (Егор Михайлович женится лишь в 1883)"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -36,7 +36,7 @@ kirillovo_deaths_1881 = death_records(
                  # «Щетининымъ», но других Стефанид осени 1880 г. в книге нет (ж. №66 — Гоголев Бор, №67 — Макушина)
                  death(16, Gender.FEMALE, 27, 28,
                        deceased=person("Стефанида", status=PEASANT_DAUGHTER), age="4 мес",
-                       relatives=[relative(person("Ѳеодоръ", "Климовъ", "Щетининъ", comment="так в подлиннике; = Федор Климентович Мальчиков?"),
+                       relatives=[relative(person("Ѳеодоръ", "Климовъ", "Щетининъ", comment="так в подлиннике; он же: Федор Климентович Мальчиков?"),
                                            Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -83,7 +83,7 @@ kirillovo_deaths_1881 = death_records(
                  # Алешинъ»; здесь ясно «Михаила». Сын Родиона Яковлевича «Алешина» (= Янина)?
                  death(50, Gender.FEMALE, 8, 9,
                        deceased=person("Анна", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="2 нед",
-                       relatives=[relative(person("Михаилъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Мирон Родионович 1877?"),
+                       relatives=[relative(person("Михаилъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Мирон Родионович 1877?"),
                                            Relationship.FATHER)],
                        cause_of_death="от кошки",
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -108,7 +108,7 @@ kirillovo_deaths_1881 = death_records(
                  # Евгения Сергеевна, жена Василия Константиновича «Позднякова» (= Мальчикова); сын Яков р. 29.11.1880
                  death(69, Gender.FEMALE, 11, 13,
                        deceased=person("Евгенія", "Сергѣева", status=PEASANT_WIFE),
-                       relatives=[relative(person("Василій", "Константиновъ", "Поздняковъ", comment="= Василий Константинович Мальчиков"),
+                       relatives=[relative(person("Василій", "Константиновъ", "Поздняковъ", comment="он же: Василий Константинович Мальчиков"),
                                            Relationship.HUSBAND)],
                        cause_of_death=CONSUMPTION,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),

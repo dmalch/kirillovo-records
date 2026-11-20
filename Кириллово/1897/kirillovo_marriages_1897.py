@@ -34,7 +34,7 @@ kirillovo_marriages_1897 = marriage_records(
                              reviewed=False),
                     # поручитель по невесте — Андрей Сергеевич Ладыгин (сын Пелагии Семеновны Мальчиковой)
                     marriage(6, 31,
-                             groom=person("Василій", "Васильевъ", "Абдулмясовъ", comment="= Аболмасов"), groom_marriage_num=1, groom_age=20,
+                             groom=person("Василій", "Васильевъ", "Абдулмясовъ", comment="он же: Аболмасов"), groom_marriage_num=1, groom_age=20,
                              bride=person("Марія", "Васильева", "Марычова", comment="фамилия читается неуверенно"),
                              bride_marriage_num=1, bride_age=19,
                              witness1=person("Андрей", "Ивановъ", "Щетининъ", side=Side.GROOM),

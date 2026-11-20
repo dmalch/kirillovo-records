@@ -25,7 +25,7 @@ kirillovo_marriages_1894 = marriage_records(
                              bride_marriage_num=1, bride_age=23,
                              witness1=person("Артамонъ", "Тимоѳеевъ", "Лапшинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness2=person("Петръ", "Уваровъ", "Чекинъ", side=Side.GROOM),
-                             witness3=person("Матвѣй", "Егоровъ", "Сырцевъ", side=Side.BRIDE, comment="= Матвей Егорович Янин"),
+                             witness3=person("Матвѣй", "Егоровъ", "Сырцевъ", side=Side.BRIDE, comment="он же: Матвей Егорович Янин"),
                              witness4=person("Ермолай", "Кононовъ", "Курановъ", side=Side.BRIDE),
                              page="73об",
                              reviewed=False),

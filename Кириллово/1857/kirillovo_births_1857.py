@@ -62,7 +62,7 @@ kirillovo_births_1857 = birth_records(
                        # Михаил Андреянович Янин — книга пишет его «Хрипуновъ» (прозвание Денисовичей)
                        birth(27, Gender.FEMALE, 1, 4,
                              child=person("Марія"),
-                             father=person("Михаилъ", "Адріановъ", "Хрипуновъ", comment="= Михаил Андреянович Янин"),
+                             father=person("Михаилъ", "Адріановъ", "Хрипуновъ", comment="он же: Михаил Андреянович Янин"),
                              mother=person("Параскева", "Данилова"),
                              god_parent1=person("Макаръ", "Степановъ", status=SOLDIER, comment="«въ безсрочномъ отпуску рядовый»; фамилия не разобрана"),
                              god_parent2=person("Анна", "Даніилова", "Софронова", status=KAZENNYJ_PEASANT_MAIDEN, comment="фамилия читается неуверенно"),

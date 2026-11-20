@@ -81,7 +81,7 @@ kirillovo_marriages_1888 = marriage_records(
                     # Гавриил Васильевич «Юлинъ», сын Василия Григорьевича Мальчикова; поручитель по жениху — Василий
                     # Леонтьевич Белов, муж его сестры Домны
                     marriage(11, 5,
-                             groom=person("Гавріилъ", "Васильевъ", "Юлинъ", comment="= Гавриил Васильевич Мальчиков"),
+                             groom=person("Гавріилъ", "Васильевъ", "Юлинъ", comment="он же: Гавриил Васильевич Мальчиков"),
                              groom_marriage_num=1, groom_age=18,
                              bride=person("Матрона", "Семенова", "Егорова"), bride_marriage_num=1, bride_age=20,
                              witness1=person("Иванъ", "Васильевъ", "Фесковъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
@@ -97,7 +97,7 @@ kirillovo_marriages_1888 = marriage_records(
                     marriage(16, 6,
                              groom=person("Василій", "Марковъ", "Абашевъ"), groom_marriage_num=1, groom_age=19,
                              bride=person("Евдокія", "Іосифова", "Сильверстова"), bride_marriage_num=1, bride_age=18,
-                             witness1=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.GROOM, comment="= Андрей Григорьевич Мальчиков"),
+                             witness1=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.GROOM, comment="он же: Андрей Григорьевич Мальчиков"),
                              witness2=person("Яковъ", "Марковъ", "Абашевъ", side=Side.GROOM),
                              witness3=person("Иванъ", "Васильевъ", "Сильверстовъ", side=Side.BRIDE),
                              witness4=person("Семенъ", "Зотовъ", "Галишниковъ", side=Side.BRIDE),

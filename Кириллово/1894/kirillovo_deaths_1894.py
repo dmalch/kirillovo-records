@@ -20,7 +20,7 @@ kirillovo_deaths_1894 = death_records(
                  # Иван, сын Егора Михайловича Янина («Сырцевъ»), р. 21.06.1891 (рожд. 1891 м. №50)
                  death(3, Gender.MALE, 29, 30,
                        deceased=person("Іоаннъ", status=PEASANT_SON), age="2 лет 6 мес",
-                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцевъ", comment="= Егор Михайлович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцевъ", comment="он же: Егор Михайлович Янин"), Relationship.FATHER)],
                        cause_of_death=SCARLET_FEVER,
                        comment="в подлиннике «2½ г.»",
                        page="80об",
@@ -40,7 +40,7 @@ kirillovo_deaths_1894 = death_records(
                  # Иван, сын Степана Васильевича Мальчикова («Юлинъ»), р. 19.02.1893 (рожд. 1893 м. №13)
                  death(26, Gender.MALE, 19, 20,
                        deceased=person("Іоаннъ", status=PEASANT_SON), age="1 лет 6 мес",
-                       relatives=[relative(person("Стефанъ", "Васильевъ", "Юлинъ", status=PRIVATE_SOLDIER, comment="«отставной рядовой»; = Степан Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Стефанъ", "Васильевъ", "Юлинъ", status=PRIVATE_SOLDIER, comment="«отставной рядовой»; он же: Степан Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        comment="в подлиннике «1½ г.»",
                        page="87об",

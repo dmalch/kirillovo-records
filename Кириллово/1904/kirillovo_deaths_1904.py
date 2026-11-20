@@ -20,7 +20,7 @@ kirillovo_deaths_1904 = death_records(
                  # Агафия, дочь Семена Васильевича Мальчикова («Юлинъ»), р. 5.02.1904 (рожд. ж. №12)
                  death(27, Gender.FEMALE, 8, 9,
                        deceased=person("Агафія", status=PEASANT_DAUGHTER), age="6 мес",
-                       relatives=[relative(person("Семенъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; = Семен Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Семенъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; он же: Семен Васильевич Мальчиков"), Relationship.FATHER)],
                        comment="в подлиннике «½ г.»",
                        page="135об",
                        reviewed=False),
@@ -28,7 +28,7 @@ kirillovo_deaths_1904 = death_records(
     *death_month(Month.JULY,
                  # Андрей Васильевич Мальчиков (жених 1842 №…, 21 г.)? — фамилия читается неуверенно
                  death(40, Gender.MALE, 27, 28,
-                       deceased=person("Андрей", "Васильевъ", "Мальчиковъ", comment="фамилия читается неуверенно («Ма…чиковъ»); = Андрей Васильевич Мальчиков (брак 1842)?"),
+                       deceased=person("Андрей", "Васильевъ", "Мальчиковъ", comment="фамилия читается неуверенно («Ма…чиковъ»); он же: Андрей Васильевич Мальчиков (брак 1842)?"),
                        age=85,
                        cause_of_death=OLD_AGE,
                        page="136об",
@@ -38,7 +38,7 @@ kirillovo_deaths_1904 = death_records(
                  # Елисавета, дочь Михаила Егоровича «Кистенева» (= «Малахаевъ»), р. 10.09.1904 (рожд. ж. №69)
                  death(39, Gender.FEMALE, 10, 12,
                        deceased=person("Елисавета", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Михаилъ", "Егоровъ", "Кистеневъ", comment="= Михаил Егорович Малахаев"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Егоровъ", "Кистеневъ", comment="он же: Михаил Егорович Малахаев"), Relationship.FATHER)],
                        cause_of_death=WEAKNESS,
                        comment="возраст в сгибе («2 …»); день смерти совпадает с днём рождения — так в подлиннике",
                        page="139об",
@@ -58,7 +58,7 @@ kirillovo_deaths_1904 = death_records(
                  # Феодосия, дочь Дмитрия Андреевича «Стрекалина» (= «Малахаевъ», «Кистеневъ»), р. 29.05.1904 (рожд. ж. №41)
                  death(52, Gender.FEMALE, 16, 17,
                        deceased=person("Ѳеодосія", status=PEASANT_DAUGHTER), age="6 мес",
-                       relatives=[relative(person("Димитрій", "Андреевъ", "Стрекалинъ", comment="= Дмитрий Андреевич Малахаев"), Relationship.FATHER)],
+                       relatives=[relative(person("Димитрій", "Андреевъ", "Стрекалинъ", comment="он же: Дмитрий Андреевич Малахаев"), Relationship.FATHER)],
                        cause_of_death=COUGH,
                        comment="в подлиннике «½ г.»; причина читается неуверенно («…кашли»)",
                        page="143об",

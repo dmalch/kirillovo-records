@@ -29,7 +29,7 @@ kirillovo_marriages_1911 = marriage_records(
                              bride=person("Домна", "Григорьева", "Щетинина"), bride_marriage_num=1,
                              witness1=person("Петръ", "Стефановъ", "Егоровъ", side=Side.GROOM),
                              witness2=person("Егоръ", "Стефановъ", "Егоровъ", side=Side.GROOM),
-                             witness3=person("Димитрій", "Андреевъ", "Кистеневъ", side=Side.BRIDE, comment="= Дмитрий Андреевич Малахаев"),
+                             witness3=person("Димитрій", "Андреевъ", "Кистеневъ", side=Side.BRIDE, comment="он же: Дмитрий Андреевич Малахаев"),
                              witness4=person("Михаилъ", "Трофимовъ", "Щетининъ", side=Side.BRIDE),
                              page="199",
                              reviewed=False),

@@ -32,7 +32,7 @@ kirillovo_deaths_1902 = death_records(
                  # Матрона Гавриловна Мальчикова, р. 2.11.1899 (рожд. 1899 ж. №77), дочь Гавриила Васильевича «Юлина» (ум.
                  # 1900); мать Матрона Семеновна вышла за Федора Тимофеевича (брак 1901 №9)
                  death(15, Gender.FEMALE, 4, 5,
-                       deceased=person("Матрона", status=PEASANT_DAUGHTER, comment="«падчерица»; = Матрона Гавриловна Мальчикова"), age=2,
+                       deceased=person("Матрона", status=PEASANT_DAUGHTER, comment="«падчерица»; она же: Матрона Гавриловна Мальчикова"), age=2,
                        relatives=[relative(person("Ѳеодоръ", "Тимоѳеевъ", "Шевлягинъ", status=SOLDIER, comment="«запасный рядовой»; отчим; в браке 1901 №9 фамилия прочитана «Шерденинъ»"), Relationship.STEP_FATHER)],
                        cause_of_death=COLD,
                        page="243об",
@@ -77,7 +77,7 @@ kirillovo_deaths_1902 = death_records(
     *death_month(Month.SEPTEMBER,
                  # Пелагия Семеновна Мальчикова, вдова Сергея Дементьевича Ладыгина («Сѣрковъ», ум. 26.04.1901)
                  death(52, Gender.FEMALE, 25, 26,
-                       deceased=person("Пелагія", "Семенова", "Сѣркова", status=WIDOW, comment="= Пелагия Семеновна Мальчикова, вдова Сергея Дементьевича Ладыгина"),
+                       deceased=person("Пелагія", "Семенова", "Сѣркова", status=WIDOW, comment="она же: Пелагия Семеновна Мальчикова, вдова Сергея Дементьевича Ладыгина"),
                        age=75,
                        cause_of_death=OLD_AGE,
                        page="259об",

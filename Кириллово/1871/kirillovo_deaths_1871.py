@@ -34,7 +34,7 @@ kirillovo_deaths_1871 = death_records(
                  # записей на полях крестик
                  death(25, Gender.FEMALE, 29, 30,
                        deceased=person("Елена", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="7 нед",
-                       relatives=[relative(person("Алексѣй", "Прокофіевъ", "Янинъ", comment="так в подлиннике; = Алексей Даниилович Янин? (в Гоголевом Бору есть и Алексей Прокофьевич Слѣповъ — восприемник 1878)"), Relationship.FATHER)],
+                       relatives=[relative(person("Алексѣй", "Прокофіевъ", "Янинъ", comment="так в подлиннике; он же: Алексей Даниилович Янин? (в Гоголевом Бору есть и Алексей Прокофьевич Слѣповъ — восприемник 1878)"), Relationship.FATHER)],
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
                        comment="причина смерти не написана; та же Елена записана ещё раз под №26 (3 июля)",
@@ -45,7 +45,7 @@ kirillovo_deaths_1871 = death_records(
                  # повтор записи №25 (см. выше)
                  death(26, Gender.FEMALE, 3, 4,
                        deceased=person("Елена", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="9 нед",
-                       relatives=[relative(person("Алексѣй", "Прокофіевъ", "Янинъ", comment="так в подлиннике; = Алексей Даниилович Янин? (в Гоголевом Бору есть и Алексей Прокофьевич Слѣповъ — восприемник 1878)"), Relationship.FATHER)],
+                       relatives=[relative(person("Алексѣй", "Прокофіевъ", "Янинъ", comment="так в подлиннике; он же: Алексей Даниилович Янин? (в Гоголевом Бору есть и Алексей Прокофьевич Слѣповъ — восприемник 1878)"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        comment="та же Елена, что в №25 (29 июня): погребение записано дважды",

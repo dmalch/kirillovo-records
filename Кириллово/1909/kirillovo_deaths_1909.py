@@ -20,7 +20,7 @@ kirillovo_deaths_1909 = death_records(
                  # Марфа, дочь Егора Михайловича Янина («Сырцовъ»)
                  death(14, Gender.FEMALE, 2, 4,
                        deceased=person("Марѳа", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцовъ", comment="= Егор Михайлович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцовъ", comment="он же: Егор Михайлович Янин"), Relationship.FATHER)],
                        comment="возраст и причина в сгибе",
                        page="54об",
                        reviewed=False),
@@ -38,7 +38,7 @@ kirillovo_deaths_1909 = death_records(
                  # Григорий, сын Василия Андреевича Ладыгина («Сѣрковъ»)
                  death(22, Gender.MALE, 3, 4,
                        deceased=person("Григорій", status=PEASANT_SON),
-                       relatives=[relative(person("Василій", "Андреевъ", "Сѣрковъ", comment="= Василий Андреевич Ладыгин"), Relationship.FATHER)],
+                       relatives=[relative(person("Василій", "Андреевъ", "Сѣрковъ", comment="он же: Василий Андреевич Ладыгин"), Relationship.FATHER)],
                        comment="возраст и причина в сгибе",
                        page="57об",
                        reviewed=False),

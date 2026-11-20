@@ -19,7 +19,7 @@ kirillovo_deaths_1918 = death_records(
     *death_month(Month.MARCH,
                  # Параскева Ивановна, вдова Степана Емельяновича Мальчикова («Бурлина», 2-й брак 1869)?
                  death(None, Gender.FEMALE, 15, 16,
-                       deceased=person("Параскева", "Иванова", "Мальчикова", status=WIDOW, comment="= вдова Степана Емельяновича Мальчикова? не установлено"),
+                       deceased=person("Параскева", "Иванова", "Мальчикова", status=WIDOW, comment="она же: вдова Степана Емельяновича Мальчикова? не установлено"),
                        cause_of_death=PNEUMONIA,
                        comment="возраст у корешка («7…»?)",
                        page="418об",
@@ -28,7 +28,7 @@ kirillovo_deaths_1918 = death_records(
     *death_month(Month.MAY,
                  # Мария Ермолаевна, вдова Василия Константиновича Мальчикова (урожд. Данилова, брак 1882)
                  death(None, Gender.FEMALE, 10, 12,
-                       deceased=person("Марія", "Ермолаева", "Мальчикова", status=WIDOW, comment="= вдова Василия Константиновича Мальчикова"),
+                       deceased=person("Марія", "Ермолаева", "Мальчикова", status=WIDOW, comment="она же: вдова Василия Константиновича Мальчикова"),
                        cause_of_death=CONSUMPTION,
                        comment="возраст у корешка («45»? — по браку 1882 в 20 л. ей около 56)",
                        page="420об",
@@ -40,7 +40,7 @@ kirillovo_deaths_1918 = death_records(
                        deceased=person("Ѳеодоръ"),
                        relatives=[relative(person("Георгій", "Семеновъ", "Юлинъ"), Relationship.FATHER)],
                        age="7 мес",
-                       comment="причина читается «отъ к…шки» (коклюш?); = рожд. 1917, 27/30 дек.",
+                       comment="причина читается «отъ к…шки» (коклюш?); он же: рожд. 1917, 27/30 дек.",
                        page="425об",
                        reviewed=False),
                  # «Иван Степанович Мальчиков»? — в корпусе такого нет

@@ -53,7 +53,7 @@ kirillovo_marriages_1899 = marriage_records(
                     marriage(29, 8,
                              groom=person("Ѳеодоръ", "Егоровъ", "Красиковъ"), groom_marriage_num=1, groom_age=20,
                              bride=person("Дарія", "Егорова", "Дыркина"), bride_marriage_num=1, bride_age=19,
-                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="= Михаил Васильевич Мальчиков"),
+                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="он же: Михаил Васильевич Мальчиков"),
                              witness2=person("Семенъ", "Ивановъ", "Красиковъ", side=Side.GROOM),
                              witness3=person("Петръ", "Ивановъ", "Щетининъ", side=Side.BRIDE),
                              witness4=person("Михаилъ", "Григорьевъ", None, side=Side.BRIDE, comment="фамилия у края («Ку…инъ»)"),

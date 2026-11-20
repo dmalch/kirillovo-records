@@ -739,7 +739,7 @@ kirillovo_births_1823 = birth_records(
                              father=person("?", "Григорьев"),
                              god_parent1=person("Федор", "Филипов"),
                              god_parent2=person("Параскева", "Евдокимова"),
-                             comment="- Григорьев - запись замарана чернилами"),
+                             comment="Григорьев - запись замарана чернилами"),
                        birth(78, Gender.MALE, 8, 14,
                              child=person("Андрей"),
                              father=person("Иван", "Кирилов"),

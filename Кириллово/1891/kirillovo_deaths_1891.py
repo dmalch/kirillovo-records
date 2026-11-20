@@ -108,7 +108,7 @@ kirillovo_deaths_1891 = death_records(
                  death(112, Gender.FEMALE, 30, 1,
                        b_month=Month.OCTOBER,
                        deceased=person("Ксенія", status=PEASANT_DAUGHTER), age="7 мес",
-                       relatives=[relative(person("Гавріилъ", "Васильевъ", "Юлинъ", comment="= Гавриил Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Гавріилъ", "Васильевъ", "Юлинъ", comment="он же: Гавриил Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="в подлиннике «7½» (мес.); запись под октябрём; по рождению ей 8½ мес.",
@@ -118,7 +118,7 @@ kirillovo_deaths_1891 = death_records(
     *death_month(Month.OCTOBER,
                  # Домна Васильевна Мальчикова, жена Василия Леонтьевича Белова (брак 1886 №18)
                  death(114, Gender.FEMALE, 13, 15,
-                       deceased=person("Домника", "Васильева", status=PEASANT_WIFE, comment="= Домна Васильевна Мальчикова"),
+                       deceased=person("Домника", "Васильева", status=PEASANT_WIFE, comment="она же: Домна Васильевна Мальчикова"),
                        age=23,
                        relatives=[relative(person("Василій", "Леонтіевъ", "Бѣловъ", status=PRIVATE_SOLDIER, comment="«рядовой»"), Relationship.HUSBAND)],
                        cause_of_death=FEVER,

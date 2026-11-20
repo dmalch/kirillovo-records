@@ -27,7 +27,7 @@ kirillovo_deaths_1917 = death_records(
                  # Параскева Алексеевна, жена Михаила Егоровича «Кистенева» (= Малахаева)
                  death(37, Gender.FEMALE, 6, 7,
                        deceased=person("Параскева", "Алексѣева", status=PEASANT_WIFE),
-                       relatives=[relative(person("Михаилъ", "Егоровъ", "Кистеневъ", comment="= Михаил Егорович Малахаев"), Relationship.HUSBAND)],
+                       relatives=[relative(person("Михаилъ", "Егоровъ", "Кистеневъ", comment="он же: Михаил Егорович Малахаев"), Relationship.HUSBAND)],
                        age=57,
                        page="364об",
                        reviewed=False),

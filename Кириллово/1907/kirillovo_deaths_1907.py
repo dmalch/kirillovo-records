@@ -19,7 +19,7 @@ kirillovo_deaths_1907 = death_records(
                  # Стефан, сын Павла Егоровича Янина («Сырцовъ»), р. 10.12.1906 (рожд. 1906 м. №89)
                  death(1, Gender.MALE, None, 1,
                        deceased=person("Стефанъ", status=PEASANT_SON),
-                       relatives=[relative(person("Павелъ", "Егоровъ", "Сырцовъ", comment="фамилия читается неуверенно; = Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Павелъ", "Егоровъ", "Сырцовъ", comment="фамилия читается неуверенно; он же: Янин?"), Relationship.FATHER)],
                        comment="умер 31.12.1906, погребён 1.01.1907; возраст и причина в сгибе",
                        page="123об",
                        reviewed=False),
@@ -34,7 +34,7 @@ kirillovo_deaths_1907 = death_records(
                  # Александра, дочь Павла Егоровича «Кистенева» (= «Малахаевъ»?)
                  death(36, Gender.FEMALE, 28, 29,
                        deceased=person("Александра", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Павелъ", "Егоровъ", "Кистеневъ", comment="= Павел Георгиевич Кистенев (поручитель 1906 №6)?"), Relationship.FATHER)],
+                       relatives=[relative(person("Павелъ", "Егоровъ", "Кистеневъ", comment="он же: Павел Георгиевич Кистенев (поручитель 1906 №6)?"), Relationship.FATHER)],
                        comment="возраст и причина не видны",
                        page="136об",
                        reviewed=False),

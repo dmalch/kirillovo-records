@@ -20,7 +20,7 @@ kirillovo_deaths_1899 = death_records(
                  # Агриппина Филипповна, жена Матвея Егоровича Янина («Сырцовъ»)
                  death(2, Gender.FEMALE, 4, 6,
                        deceased=person("Агриппина", "Филиппова", status=PEASANT_WIFE), age=50,
-                       relatives=[relative(person("Матѳей", "Егоровъ", "Сырцовъ", comment="= Матвей Егорович Янин"), Relationship.HUSBAND)],
+                       relatives=[relative(person("Матѳей", "Егоровъ", "Сырцовъ", comment="он же: Матвей Егорович Янин"), Relationship.HUSBAND)],
                        cause_of_death=COLD,
                        page="195об",
                        reviewed=False),

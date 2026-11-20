@@ -42,7 +42,7 @@ kirillovo_deaths_1912 = death_records(
                  # Марфа, дочь Матвея Матвеевича Янина («Сырцовъ»)
                  death(56, Gender.FEMALE, 8, 9,
                        deceased=person("Марѳа", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Матѳей", "Матѳеевъ", "Сырцовъ", comment="= Матвей Матвеевич Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Матѳей", "Матѳеевъ", "Сырцовъ", comment="он же: Матвей Матвеевич Янин"), Relationship.FATHER)],
                        comment="возраст у сгиба («6…»)",
                        page="310об",
                        reviewed=False),

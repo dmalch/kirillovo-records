@@ -37,14 +37,14 @@ kirillovo_deaths_1900 = death_records(
                  # Бурлины = Мальчиковы («Бурлинъ (Мальчиковъ тожъ)», брак 1895 №16)
                  death(47, Gender.FEMALE, 5, 6,
                        deceased=person("Параскева", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Григорій", "Стефановъ", "Бурлинъ", comment="= Григорий Степанович Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Григорій", "Стефановъ", "Бурлинъ", comment="он же: Григорий Степанович Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        comment="возраст у корешка («3 н.»?)",
                        page="109об",
                        reviewed=False),
                  # Гавриил Васильевич Мальчиков («Юлинъ»), сын Василия Григорьевича
                  death(69, Gender.MALE, 29, 30,
-                       deceased=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; = Гавриил Васильевич Мальчиков"),
+                       deceased=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; он же: Гавриил Васильевич Мальчиков"),
                        age=32,
                        cause_of_death=CONSUMPTION,
                        page="113об",

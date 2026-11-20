@@ -55,7 +55,7 @@ kirillovo_deaths_1893 = death_records(
     *death_month(Month.JULY,
                  # Андрей Григорьевич Мальчиков («Юлинъ»)
                  death(31, Gender.MALE, 10, 12,
-                       deceased=person("Андрей", "Григорьевъ", "Юлинъ", comment="= Андрей Григорьевич Мальчиков"), age=57,
+                       deceased=person("Андрей", "Григорьевъ", "Юлинъ", comment="он же: Андрей Григорьевич Мальчиков"), age=57,
                        cause_of_death=DROPSY,
                        comment="причина у края («отъ водян[ки]»)",
                        page="40об",

@@ -30,7 +30,7 @@ kirillovo_deaths_1870 = death_records(
                  # Наталья Матвеевна Фетисова, р. 22.08.1864 (рожд. 1864 ж. №78); мать — Евдокия Емельяновна Мальчикова
                  death(20, Gender.FEMALE, 1, 1,
                        deceased=person("Наталія", status=PEASANT_DAUGHTER), age=5,
-                       relatives=[relative(person("Матѳей", "Стефановъ", comment="фамилии нет; = Матвей Степанович Фетисов"), Relationship.FATHER)],
+                       relatives=[relative(person("Матѳей", "Стефановъ", comment="фамилии нет; он же: Матвей Степанович Фетисов"), Relationship.FATHER)],
                        cause_of_death=SMALLPOX,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        page="49об",

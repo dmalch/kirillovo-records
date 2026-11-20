@@ -61,7 +61,7 @@ kirillovo_marriages_1860 = marriage_records(
           *marriage_month(Month.MAY,
                           # жених — Андрей, сын Константина Козьмича Мальчикова («Малахѣевъ», как отец в 1835–36 и брат в 1859)
                           marriage(19, 1,
-                                   groom=person("Андрей", "Константиновъ", "Малахѣевъ", comment="= Андрей Константинович Мальчиков"),
+                                   groom=person("Андрей", "Константиновъ", "Малахѣевъ", comment="он же: Андрей Константинович Мальчиков"),
                                    groom_marriage_num=1, groom_age=20,
                                    bride=person("Настасія", "Леонтьева", "Бубенчикова"), bride_marriage_num=1, bride_age=20,
                                    witness1=person("Константинъ", "Ѳеодуловъ", "Абаевъ", side=Side.GROOM),

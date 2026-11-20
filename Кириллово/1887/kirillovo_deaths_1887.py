@@ -39,7 +39,7 @@ kirillovo_deaths_1887 = death_records(
                  # Агафия, дочь Николая Константиновича Мальчикова («Малахаевъ»), р. 3.02.1887 (рожд. ж. №12)
                  death(10, Gender.FEMALE, 17, 19,
                        deceased=person("Агаѳія", status=PEASANT_DAUGHTER), age="2 нед",
-                       relatives=[relative(person("Николай", "Константиновъ", "Малахаевъ", comment="= Николай Константинович Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Николай", "Константиновъ", "Малахаевъ", comment="он же: Николай Константинович Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="возраст у дыры листа",
@@ -50,7 +50,7 @@ kirillovo_deaths_1887 = death_records(
                  # Иоанн, сын Егора Михайловича Янина («Сырцевъ»), р. 22.02.1887 (рожд. м. №15)
                  death(11, Gender.MALE, 2, 4,
                        deceased=person("Іоаннъ", status=PEASANT_SON),
-                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцевъ", comment="= Егор Михайлович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Егоръ", "Михайловъ", "Сырцевъ", comment="он же: Егор Михайлович Янин"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="возраст в дыре листа",

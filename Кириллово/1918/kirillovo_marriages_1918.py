@@ -62,7 +62,7 @@ kirillovo_marriages_1918 = marriage_records(
                     marriage(12, 29,
                              groom=person("Николай", "Димитріевъ", "Борисовъ", comment="фамилия читается неуверенно"),
                              groom_marriage_num=1, groom_age=37,
-                             bride=person("Евдокія", None, "Серкова", comment="отчество у разрыва листа («Ан…ва»?); = Ладыгина? не установлено"),
+                             bride=person("Евдокія", None, "Серкова", comment="отчество у разрыва листа («Ан…ва»?); она же: Ладыгина? не установлено"),
                              bride_marriage_num=1, bride_age=20,
                              witness1=person("Петръ", "Косминъ", "Щетининъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness2=person("Петръ", "Никитинъ", "Голобоевъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
@@ -75,7 +75,7 @@ kirillovo_marriages_1918 = marriage_records(
                     # невеста — Фекла Михайловна «Кистенева» (дочь Михаила Егоровича?)
                     marriage(19, 4,
                              groom=person("Василій", "Никифоровъ", "Пялкинъ"), groom_marriage_num=1, groom_age="17 л 6 мес",
-                             bride=person("Ѳекла", "Михайлова", "Кистенева", comment="= дочь Михаила Егоровича Кистенева (Малахаева)? не установлено"),
+                             bride=person("Ѳекла", "Михайлова", "Кистенева", comment="она же: дочь Михаила Егоровича Кистенева (Малахаева)? не установлено"),
                              bride_marriage_num=1, bride_age=18,
                              witness1=person("Стефанъ", "Прокопіевъ", "Пялкинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness2=person("Петръ", "Стефановъ", "Егоровъ", side=Side.GROOM),

@@ -21,7 +21,7 @@ kirillovo_deaths_1877 = death_records(
     *death_month(Month.FEBRUARY,
                  # = Яков Максимович «Позняков/Мальчиков» (~1811–1813), отец Константина, Семена, Матфея, Герасима
                  death(5, Gender.MALE, 18, 20,
-                       deceased=person("Яковъ", "Максимовъ", "Поздняковъ", comment="= Яков Максимович Мальчиков"), age=65,
+                       deceased=person("Яковъ", "Максимовъ", "Поздняковъ", comment="он же: Яков Максимович Мальчиков"), age=65,
                        cause_of_death=PARALYSIS,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -31,7 +31,7 @@ kirillovo_deaths_1877 = death_records(
     *death_month(Month.MARCH,
                  # вдова Евдокия Ивановна Сырцева — жена Андреяна Денисовича Янина («Сырцевъ»), мать Михаила Андреяновича?
                  death(15, Gender.FEMALE, 26, 28,
-                       deceased=person("Евдокія", "Иванова", "Сырцева", status=WIDOW, comment="= вдова Андреяна Денисовича Янина?"), age=70,
+                       deceased=person("Евдокія", "Иванова", "Сырцева", status=WIDOW, comment="она же: вдова Андреяна Денисовича Янина?"), age=70,
                        cause_of_death=NATURAL,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -71,7 +71,7 @@ kirillovo_deaths_1877 = death_records(
                  # «Якова Андреева Алешина дочь Ирина» — Яков Андреевич Янин (Гоголев Бор; брак 1863 №35, рожд. 1872 ж. №37)?
                  death(23, Gender.FEMALE, 14, 15,
                        deceased=person("Ирина", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="1 мес",
-                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Яков Андреевич Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Яковъ", "Андреевъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Яков Андреевич Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -92,7 +92,7 @@ kirillovo_deaths_1877 = death_records(
                  # «Мирона Родионова Алешина сынъ Прокофій» — Мирон, сын Родиона Алексеевича Янина (Гоголев Бор)?
                  death(21, Gender.MALE, 23, 24,
                        deceased=person("Прокофій", status=PEASANT_SON, residence="Гоголев Бор"), age="2 нед",
-                       relatives=[relative(person("Миронъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; = Янин (Алексеевичи Гоголева Бора)?"), Relationship.FATHER)],
+                       relatives=[relative(person("Миронъ", "Родіоновъ", "Алешинъ", comment="«Алешинъ» — так в подлиннике; он же: Янин (Алексеевичи Гоголева Бора)?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -103,7 +103,7 @@ kirillovo_deaths_1877 = death_records(
                  # Илья, сын Михаила Андреяновича Янина («Сырцевъ»)
                  death(27, Gender.MALE, 11, 12,
                        deceased=person("Илія", status=PEASANT_SON, comment="в подлиннике «Илья»"), age="3 нед",
-                       relatives=[relative(person("Михаилъ", "Андріановъ", "Сырцевъ", comment="= Михаил Андреянович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Андріановъ", "Сырцевъ", comment="он же: Михаил Андреянович Янин"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),

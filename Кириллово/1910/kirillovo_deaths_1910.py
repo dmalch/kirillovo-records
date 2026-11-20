@@ -30,7 +30,7 @@ kirillovo_deaths_1910 = death_records(
                  # Николай, сын Павла Егоровича «Сырцова»? (как 1907 м. №1)
                  death(21, Gender.MALE, 18, 19,
                        deceased=person("Николай", status=PEASANT_SON),
-                       relatives=[relative(person("Павелъ", "Егоровъ", "Сырцовъ", comment="фамилия читается неуверенно («Св…цовъ»); = Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Павелъ", "Егоровъ", "Сырцовъ", comment="фамилия читается неуверенно («Св…цовъ»); он же: Янин?"), Relationship.FATHER)],
                        age="2 нед",
                        comment="возраст у сгиба читается неуверенно; причина в сгибе",
                        page="132об",
@@ -57,7 +57,7 @@ kirillovo_deaths_1910 = death_records(
                  # Леонтий, сын Ильи Андреевича «Кистенева», р. 13.06.1910 (рожд. м. №42)
                  death(34, Gender.MALE, 5, 6,
                        deceased=person("Леонтій", status=PEASANT_SON),
-                       relatives=[relative(person("Илья", "Андреевъ", "Кистеневъ", comment="= Илья Андреевич Молохаев"), Relationship.FATHER)],
+                       relatives=[relative(person("Илья", "Андреевъ", "Кистеневъ", comment="он же: Илья Андреевич Молохаев"), Relationship.FATHER)],
                        comment="возраст и причина в сгибе",
                        page="136об",
                        reviewed=False),

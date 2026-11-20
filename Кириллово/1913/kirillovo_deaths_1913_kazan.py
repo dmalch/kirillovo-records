@@ -65,7 +65,7 @@ kirillovo_deaths_1913_kazan = death_records(
                  # Акилина, дочь Дмитрия Андреевича «Кистенева» (= Малахаева), р. 5.06.1911 (рожд. 1911 ж. №50)
                  death(29, Gender.FEMALE, 9, 10,
                        deceased=person("Акилина", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Димитрій", "Андреевъ", "Кистеневъ", comment="= Дмитрий Андреевич Малахаев/Стрекалин"), Relationship.FATHER)],
+                       relatives=[relative(person("Димитрій", "Андреевъ", "Кистеневъ", comment="он же: Дмитрий Андреевич Малахаев/Стрекалин"), Relationship.FATHER)],
                        comment="возраст у сгиба",
                        page="63об",
                        reviewed=False),
@@ -86,7 +86,7 @@ kirillovo_deaths_1913_kazan = death_records(
     *death_month(Month.APRIL,
                  # Ксения Андреевна (урожд. Мальчикова, брак 1877 №11), жена Ивана Игнатьевича Ладыгина
                  death(44, Gender.FEMALE, 20, 21,
-                       deceased=person("Ксенія", "Андреева", status=PEASANT_WIFE, comment="= урожд. Мальчикова (брак 1877 №11)"),
+                       deceased=person("Ксенія", "Андреева", status=PEASANT_WIFE, comment="она же: урожд. Мальчикова (брак 1877 №11)"),
                        relatives=[relative(person("Иванъ", "Игнатовъ", "Ладыгинъ"), Relationship.HUSBAND)],
                        age=55,
                        page="68об",
@@ -164,7 +164,7 @@ kirillovo_deaths_1913_kazan = death_records(
                  # Михаил, сын Ильи Андреевича «Кистенева» (= Молохаева), р. 10.07.1911 (рожд. 1911 м. №70)
                  death(78, Gender.MALE, 7, 8,
                        deceased=person("Михаилъ", status=PEASANT_SON),
-                       relatives=[relative(person("Илья", "Андреевъ", "Кистеневъ", comment="= Илья Андреевич Молохаев"), Relationship.FATHER)],
+                       relatives=[relative(person("Илья", "Андреевъ", "Кистеневъ", comment="он же: Илья Андреевич Молохаев"), Relationship.FATHER)],
                        age=2,
                        page="88об",
                        reviewed=False),

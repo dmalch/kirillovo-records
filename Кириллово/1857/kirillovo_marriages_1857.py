@@ -92,7 +92,7 @@ kirillovo_marriages_1857 = marriage_records(
                                    groom=person("Василій", "Григорьевъ", "Юлинъ"), groom_marriage_num=1, groom_age=22,
                                    bride=person("Александра", "Симеонова", "Мальчикова", comment="«казеннаго крестьянина Симіона Герасимова Мальчикова дочь»"),
                                    bride_marriage_num=1, bride_age=23,
-                                   witness1=person("Константинъ", "Козьминъ", "Малахѣевъ", side=Side.GROOM, comment="в подлиннике «Казьминъ»; = Константин Козьмич Мальчиков"),
+                                   witness1=person("Константинъ", "Козьминъ", "Малахѣевъ", side=Side.GROOM, comment="в подлиннике «Казьминъ»; он же: Константин Козьмич Мальчиков"),
                                    witness2=person("Стефанъ", "Михайловъ", "Егоровъ", side=Side.GROOM),
                                    witness3=person("Сергѣй", "Дементьевъ", "Ладыгинъ", side=Side.BRIDE),
                                    witness4=person("Илья", "Игнатовъ", "Ковальковъ", side=Side.BRIDE),

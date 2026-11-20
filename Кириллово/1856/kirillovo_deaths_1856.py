@@ -104,7 +104,7 @@ kirillovo_deaths_1856 = death_records(
           *death_month(Month.APRIL,
                        # Егор Денисович Янин — книга пишет его «Хрипуновъ» (прозвание Денисовичей)
                        death(24, Gender.MALE, 3, 5,
-                             deceased=person("Георгій", "Денисовъ", "Хрипуновъ", comment="в подлиннике «Егоръ»; = Егор Денисович Янин"),
+                             deceased=person("Георгій", "Денисовъ", "Хрипуновъ", comment="в подлиннике «Егоръ»; он же: Егор Денисович Янин"),
                              age=35,
                              cause_of_death=CONSUMPTION,
                              priest=person("Петръ", "Іоанновъ", "Ремезовъ", status=HIEREUS),
@@ -114,7 +114,7 @@ kirillovo_deaths_1856 = death_records(
           *death_month(Month.MAY,
                        # вдова Егора Денисовича Янина, пережила его на месяц
                        death(25, Gender.FEMALE, 8, 10,
-                             deceased=person("Параскева", "Васильева", "Хрипунова", status=WIDOW, comment="= Параскева Васильевна Янина, вдова Егора Денисовича"),
+                             deceased=person("Параскева", "Васильева", "Хрипунова", status=WIDOW, comment="она же: Параскева Васильевна Янина, вдова Егора Денисовича"),
                              age=35,
                              cause_of_death=CONSUMPTION,
                              priest=person("Петръ", "Іоанновъ", "Ремезовъ", status=HIEREUS),

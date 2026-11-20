@@ -21,7 +21,7 @@ kirillovo_deaths_1905 = death_records(
                  # Матфей, сын Степана Васильевича Мальчикова («Юлинъ»), р. 4.08.1903 (рожд. 1903 м. №38)
                  death(9, Gender.MALE, 28, 1, b_month=Month.MARCH,
                        deceased=person("Матѳей", status=PEASANT_SON), age="1 лет 6 мес",
-                       relatives=[relative(person("Стефанъ", "Васильевъ", "Юлинъ", comment="= Степан Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Стефанъ", "Васильевъ", "Юлинъ", comment="он же: Степан Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        comment="в подлиннике «1½ г.»; умер 28 февраля, погребён 1 марта",
                        page="194об",
@@ -65,7 +65,7 @@ kirillovo_deaths_1905 = death_records(
                  # Татьяна, дочь Матвея Матвеевича Янина («Сырцовъ») и Александры Сергеевны Ладыгиной (брак 1887)
                  death(53, Gender.FEMALE, 11, 12,
                        deceased=person("Татіана", status=PEASANT_DAUGHTER), age=3,
-                       relatives=[relative(person("Матвѣй", "Матвѣевъ", "Сырцовъ", comment="= Матвей Матвеевич Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Матвѣй", "Матвѣевъ", "Сырцовъ", comment="он же: Матвей Матвеевич Янин"), Relationship.FATHER)],
                        comment="страница стоит слева на л. 187об, среди браков; причина на своей правой странице не найдена",
                        page="187об",
                        reviewed=False),

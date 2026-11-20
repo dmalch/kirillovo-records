@@ -33,9 +33,9 @@ kirillovo_deaths_1888 = death_records(
     *death_month(Month.MAY,
                  # Александра Михайловна Янина («Сырдцева»), дочь Михаила Андреяновича
                  death(16, Gender.FEMALE, 8, 10,
-                       deceased=person("Александра", "Михайлова", "Сырдцева", status=MAIDEN, comment="= Александра Михайловна Янина"),
+                       deceased=person("Александра", "Михайлова", "Сырдцева", status=MAIDEN, comment="она же: Александра Михайловна Янина"),
                        age=18,
-                       relatives=[relative(person("Михаилъ", None, "Сырдцевъ", comment="= Михаил Андреянович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", None, "Сырдцевъ", comment="он же: Михаил Андреянович Янин"), Relationship.FATHER)],
                        cause_of_death=THROAT,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="причина в подлиннике «отъ горловой боли»",
@@ -46,7 +46,7 @@ kirillovo_deaths_1888 = death_records(
                  # Акилина, дочь Михаила Васильевича Мальчикова («Юлинъ»), р. 11.06.1888 (рожд. ж. №35)
                  death(26, Gender.FEMALE, 24, 25,
                        deceased=person("Акилина", status=PEASANT_DAUGHTER), age="1 мес",
-                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", comment="= Михаил Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", comment="он же: Михаил Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        page="339об",
@@ -65,7 +65,7 @@ kirillovo_deaths_1888 = death_records(
     *death_month(Month.OCTOBER,
                  # Василий Григорьевич Мальчиков («Юлинъ»)
                  death(57, Gender.MALE, 14, 16,
-                       deceased=person("Василій", "Григорьевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; = Василий Григорьевич Мальчиков"),
+                       deceased=person("Василій", "Григорьевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; он же: Василий Григорьевич Мальчиков"),
                        age=50,
                        cause_of_death="отъ катарра желудка",
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),

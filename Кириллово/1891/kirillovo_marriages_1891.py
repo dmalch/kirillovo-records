@@ -86,7 +86,7 @@ kirillovo_marriages_1891 = marriage_records(
                  groom=person("Илія", "Андреевъ", "Малахаевъ"), groom_marriage_num=1, groom_age=19,
                  bride=person("Марія", "Александрова", "Баранова"), bride_marriage_num=1, bride_age=20,
                  witness1=person("Аѳанасій", "Ивановъ", "Калинкинъ", side=Side.GROOM),
-                 witness2=person("Димитрій", "Андреевъ", "Стрекалинъ", side=Side.GROOM, comment="фамилия читается неуверенно; = Дмитрий Андреевич «Малахаевъ»?"),
+                 witness2=person("Димитрій", "Андреевъ", "Стрекалинъ", side=Side.GROOM, comment="фамилия читается неуверенно; он же: Дмитрий Андреевич «Малахаевъ»?"),
                  witness3=person("Иванъ", "Егоровъ", "Верховъ", side=Side.BRIDE),
                  witness4=person("Димитрій", "Порфирьевъ", "Верховъ", side=Side.BRIDE),
                  priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
@@ -111,7 +111,7 @@ kirillovo_marriages_1891 = marriage_records(
         # невеста — Мария Андреевна Мальчикова («Юлина»), дочь Андрея Григорьевича
         marriage(16, 13,
                  groom=person("Іоаннъ", "Михайловъ", "Богачевъ"), groom_marriage_num=1, groom_age=18,
-                 bride=person("Марія", "Андреева", "Юлина", comment="= Мария Андреевна Мальчикова"),
+                 bride=person("Марія", "Андреева", "Юлина", comment="она же: Мария Андреевна Мальчикова"),
                  bride_marriage_num=1, bride_age=23,
                  witness1=person("Василій", "Архиповъ", "Богачевъ", side=Side.GROOM),
                  witness2=person("Иванъ", "Филипповъ", "Мурашевъ", side=Side.GROOM),

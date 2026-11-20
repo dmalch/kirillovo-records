@@ -46,7 +46,7 @@ kirillovo_deaths_1906 = death_records(
                  # Тимофей, сын Василия Сергеевича Ладыгина («Сѣрковъ»), р. 25.02.1904 (рожд. 1904 м. №13)
                  death(20, Gender.MALE, 27, 28,
                        deceased=person("Тимоѳей", status=PEASANT_SON), age=2,
-                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="= Василий Сергеевич Ладыгин"), Relationship.FATHER)],
+                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="он же: Василий Сергеевич Ладыгин"), Relationship.FATHER)],
                        cause_of_death=HERNIA,
                        comment="причина читается неуверенно («грыжи»?)",
                        page="59об",
@@ -70,7 +70,7 @@ kirillovo_deaths_1906 = death_records(
                  # Елисавета, дочь Михаила Егоровича «Кистенева» (= «Малахаевъ»); запись о рождении не найдена
                  death(33, Gender.FEMALE, 23, 24,
                        deceased=person("Елисавета", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Михаилъ", "Георгіевъ", "Кистеневъ", comment="= Михаил Егорович Малахаев"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Георгіевъ", "Кистеневъ", comment="он же: Михаил Егорович Малахаев"), Relationship.FATHER)],
                        comment="возраст и причина закрыты вклеенным бланком; у отца в 1904 умерла новорождённая Елисавета — эта вторая",
                        page="65об",
                        reviewed=False),
@@ -87,7 +87,7 @@ kirillovo_deaths_1906 = death_records(
                  # Феодор, сын Тимофея Михайловича «Юлина», р. 6.06.1906 (рожд. м. №36)
                  death(48, Gender.MALE, 3, 4,
                        deceased=person("Ѳеодоръ", status=PEASANT_SON), age="2 мес",
-                       relatives=[relative(person("Тимоѳей", "Михайловъ", "Юлинъ", comment="= Тимофей Михайлович Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Тимоѳей", "Михайловъ", "Юлинъ", comment="он же: Тимофей Михайлович Мальчиков"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        page="68об",
                        reviewed=False),
@@ -105,7 +105,7 @@ kirillovo_deaths_1906 = death_records(
                  # Андрей, сын Григория Семеновича «Назарова», р. 17.10.1906 (рожд. м. №79)
                  death(67, Gender.MALE, 10, 11,
                        deceased=person("Андрей", status=PEASANT_SON), age="8 нед",
-                       relatives=[relative(person("Григорій", "Семеновъ", "Назаровъ", comment="= Григорий Семенович Липатов?"), Relationship.FATHER)],
+                       relatives=[relative(person("Григорій", "Семеновъ", "Назаровъ", comment="он же: Григорий Семенович Липатов?"), Relationship.FATHER)],
                        comment="возраст читается неуверенно; причина в сгибе («…шки»)",
                        page="76об",
                        reviewed=False),

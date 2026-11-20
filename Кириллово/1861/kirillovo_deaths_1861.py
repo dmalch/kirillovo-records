@@ -31,13 +31,13 @@ kirillovo_deaths_1861 = death_records(
           *death_month(Month.NOVEMBER,
                        # Антон Иванович — отец Яниных-Антоновичей (Карп, Ѳедор, Ульяна, Ксения), книга пишет их «Хрипуновы»
                        death(73, Gender.MALE, 4, 6,
-                             deceased=person("Антонъ", "Ивановъ", "Хрипуновъ", comment="= Антон Иванович Янин"), age=60,
+                             deceased=person("Антонъ", "Ивановъ", "Хрипуновъ", comment="он же: Антон Иванович Янин"), age=60,
                              priest=person("Андрей", last_name_orig="Глазуновъ", status=HIEREUS),
                              comment="скан 793",
                              reviewed=False),
                        # Семен Яковлевич — сын Якова Максимовича; жених 1859 №15 («Мальчиковъ»)
                        death(78, Gender.MALE, 23, 25,
-                             deceased=person("Семенъ", "Яковлевъ", "Позняковъ", comment="= Семен Яковлевич Мальчиков (брак 1859 №15)"), age=22,
+                             deceased=person("Семенъ", "Яковлевъ", "Позняковъ", comment="он же: Семен Яковлевич Мальчиков (брак 1859 №15)"), age=22,
                              cause_of_death=DIARRHEA,
                              priest=person("Андрей", last_name_orig="Глазуновъ", status=HIEREUS),
                              comment="скан 794",

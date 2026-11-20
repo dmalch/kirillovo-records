@@ -60,7 +60,7 @@ kirillovo_births_1860 = birth_records(
                        # по имени матери — фамилий Яниных в записи нет)
                        birth(46, Gender.MALE, 9, 11,
                              child=person("Ѳеодоръ"),
-                             father=person("Михаилъ", "Григорьевъ", "Нестеровъ", residence="Гоголев Бор", comment="= Михаил Григорьевич Тихонов"),
+                             father=person("Михаилъ", "Григорьевъ", "Нестеровъ", residence="Гоголев Бор", comment="он же: Михаил Григорьевич Тихонов"),
                              mother=person("Варвара", "Андреева"),
                              god_parent1=person("Никифоръ", "Григорьевъ", "Романовъ", residence="Гоголев Бор"),
                              god_parent2=person("Меланія", "Романова", "Романова", status=SOLDIER_WIFE, residence="Гоголев Бор"),
@@ -86,7 +86,7 @@ kirillovo_births_1860 = birth_records(
                              child=person("Симеонъ"),
                              father=person("Андрей", "Никифоровъ", "Бѣловъ"),
                              mother=person("Ксенія", "Карпова"),
-                             god_parent1=person("Ермолай", "Карповъ", "Сырцевъ", status=SOLDIER, comment="«въ безсрочномъ отпуску рядовый Симбирскаго пѣхотнаго полка 6-го баталіона»; = Ермолай Карпович Янин"),
+                             god_parent1=person("Ермолай", "Карповъ", "Сырцевъ", status=SOLDIER, comment="«въ безсрочномъ отпуску рядовый Симбирскаго пѣхотнаго полка 6-го баталіона»; он же: Ермолай Карпович Янин"),
                              god_parent2=person("Татіана", "Никитина", "Бѣлова", status=KAZENNYJ_PEASANT_MAIDEN),
                              priest=person("Василій", "Іоакимовъ", "Бѣльскій", status=HIEREUS),
                              comment="скан 623",
@@ -95,7 +95,7 @@ kirillovo_births_1860 = birth_records(
                        # Мальчиковъ» (брак №15); восприемница — его сестра Татиана
                        birth(76, Gender.MALE, 30, 31,
                              child=person("Василій"),
-                             father=person("Константинъ", "Яковлевъ", "Позняковъ", comment="= Константин Яковлевич Мальчиков (1859)"),
+                             father=person("Константинъ", "Яковлевъ", "Позняковъ", comment="он же: Константин Яковлевич Мальчиков (1859)"),
                              mother=person("Ксенія", "Митрофанова"),
                              god_parent1=person("Димитрій", "Митрофановъ", "Верховъ"),
                              god_parent2=person("Татіана", "Яковлева", "Познякова", status=KAZENNYJ_PEASANT_MAIDEN, comment="«Якова Максимова Познякова дочь»"),

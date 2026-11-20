@@ -20,7 +20,7 @@ kirillovo_deaths_1869 = death_records(
                        # «Самсона Наумова дочь девица Наталія» — дочь Самсона Наумовича Янина
                        death(4, Gender.FEMALE, 5, None,
                              deceased=person("Наталія", status=MAIDEN), age=16,
-                             relatives=[relative(person("Самсонъ", "Наумовъ", comment="фамилии нет; = Самсон Наумович Янин"), Relationship.FATHER)],
+                             relatives=[relative(person("Самсонъ", "Наумовъ", comment="фамилии нет; он же: Самсон Наумович Янин"), Relationship.FATHER)],
                              cause_of_death="от сожжения",
                              priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
                              deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -49,7 +49,7 @@ kirillovo_deaths_1869 = death_records(
                        # Стефан — сын Алексея Данииловича Янина (Гоголев Бор), крещ. 1.08.1869 (рожд. м. №50)
                        death(47, Gender.MALE, 11, None,
                              deceased=person("Стефанъ", status=PEASANT_SON, residence="Гоголев Бор"), age="2 нед",
-                             relatives=[relative(person("Алексѣй", "Даниловъ", comment="фамилии нет; = Алексей Даниилович Янин"), Relationship.FATHER)],
+                             relatives=[relative(person("Алексѣй", "Даниловъ", comment="фамилии нет; он же: Алексей Даниилович Янин"), Relationship.FATHER)],
                              cause_of_death=TYPHUS,
                              priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                              comment="л. 137об; возраст «½ мѣсяца»; причина читается «отъ тифа»",

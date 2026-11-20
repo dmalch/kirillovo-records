@@ -20,7 +20,7 @@ kirillovo_marriages_1886 = marriage_records(
                     # Егор Федорович Янин («Сырдцевъ») и Анисия Козьминична Мальчикова; поручители по жениху — Герасим
                     # Яковлевич Мальчиков и Григорий Трофимович Поздняков
                     marriage(2, 27,
-                             groom=person("Егоръ", "Ѳеодоровъ", "Сырдцевъ", comment="= Егор Федорович Янин"),
+                             groom=person("Егоръ", "Ѳеодоровъ", "Сырдцевъ", comment="он же: Егор Федорович Янин"),
                              groom_marriage_num=1, groom_age=21,
                              bride=person("Анисія", "Козмина", "Мальчикова", comment="в подлиннике «Мальчкова»; конец отчества в дыре листа"),
                              bride_marriage_num=1, bride_age=19,
@@ -68,18 +68,18 @@ kirillovo_marriages_1886 = marriage_records(
                     # Григорьевич и Михаил Васильевич Мальчиковы («Юлины»)
                     marriage(18, 2,
                              groom=person("Василій", "Леонтьевъ", "Бѣловъ"), groom_marriage_num=1, groom_age=19,
-                             bride=person("Домника", "Васильева", "Юлина", comment="«Юлина» — так в подлиннике; = Домна Васильевна Мальчикова"),
+                             bride=person("Домника", "Васильева", "Юлина", comment="«Юлина» — так в подлиннике; она же: Домна Васильевна Мальчикова"),
                              bride_marriage_num=1, bride_age=20,
                              witness1=person("Алексѣй", "Стефановъ", "Верховъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness2=person("Иванъ", "Никитинъ", "Бѣловъ", side=Side.GROOM),
-                             witness3=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.BRIDE, comment="= Андрей Григорьевич Мальчиков"),
-                             witness4=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.BRIDE, comment="= Михаил Васильевич Мальчиков"),
+                             witness3=person("Андрей", "Григорьевъ", "Юлинъ", side=Side.BRIDE, comment="он же: Андрей Григорьевич Мальчиков"),
+                             witness4=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.BRIDE, comment="он же: Михаил Васильевич Мальчиков"),
                              priest=person("Ѳеодоръ", None, "Виноградовъ", status=PRIEST, comment="«Покровской церкви священникъ»"),
                              page="240об",
                              reviewed=False),
                     # Дмитрий Андреевич, сын Андрея Константиновича Мальчикова («Малахаевъ»)
                     marriage(19, 2,
-                             groom=person("Димитрій", "Андреевъ", "Малахаевъ", comment="= Дмитрий Андреевич Мальчиков?"),
+                             groom=person("Димитрій", "Андреевъ", "Малахаевъ", comment="он же: Дмитрий Андреевич Мальчиков?"),
                              groom_marriage_num=1, groom_age=19,
                              bride=person("Дарія", "Васильева", "Харитонова"), bride_marriage_num=1, bride_age=19,
                              witness1=person("Антонъ", "Сидоровъ", "Липатовъ", side=Side.GROOM),

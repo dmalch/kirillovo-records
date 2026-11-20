@@ -23,7 +23,7 @@ kirillovo_marriages_1895 = marriage_records(
                              bride=person("Екатерина", "Антонова", "Абаимова", comment="фамилия читается неуверенно («Абашева»?)"),
                              bride_marriage_num=1, bride_age=19,
                              witness1=person("Лаврентій", "Андреевъ", "Чекмуринъ", side=Side.GROOM),
-                             witness2=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, side=Side.GROOM, comment="«запасный рядовой»; = Гавриил Васильевич Мальчиков"),
+                             witness2=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, side=Side.GROOM, comment="«запасный рядовой»; он же: Гавриил Васильевич Мальчиков"),
                              witness3=person("Егоръ", "Яковлевъ", "Абашевъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
                              witness4=person("Андрей", "Ивановъ", "Щетининъ", side=Side.BRIDE),
                              page="126об",
@@ -33,7 +33,7 @@ kirillovo_marriages_1895 = marriage_records(
                     # невеста — Стефанида Ильинична, вдова Максима Михайловича Янина («Сырцевъ», брак 1890 №17; ум. 30.05.1895)
                     marriage(12, 23,
                              groom=person("Прокопій", "Матвѣевъ", "Исаевъ"), groom_marriage_num=1, groom_age=25,
-                             bride=person("Стефанида", "Ильина", "Сырцева", comment="= вдова Максима Михайловича Янина"),
+                             bride=person("Стефанида", "Ильина", "Сырцева", comment="она же: вдова Максима Михайловича Янина"),
                              bride_marriage_num=2, bride_age=22,
                              witness1=person("Егоръ", "Егоровъ", None, side=Side.GROOM, comment="фамилия под краем листа"),
                              witness2=person("Даніилъ", "Семеновъ", "Чекураевъ", side=Side.GROOM),

@@ -18,7 +18,7 @@ kirillovo_deaths_1908 = death_records(
                  # Иоанн, сын Петра Федоровича Янина («Сырцовъ»), р. 29.03.1907 (рожд. 1907 м. №17)
                  death(7, Gender.MALE, 8, 9,
                        deceased=person("Іоаннъ", status=PEASANT_SON),
-                       relatives=[relative(person("Петръ", "Ѳеодоровъ", "Сырцовъ", comment="= Петр Федорович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Петръ", "Ѳеодоровъ", "Сырцовъ", comment="он же: Петр Федорович Янин"), Relationship.FATHER)],
                        comment="возраст («1…») и причина в сгибе",
                        page="181об",
                        reviewed=False),

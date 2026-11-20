@@ -20,7 +20,7 @@ kirillovo_deaths_1896 = death_records(
     *death_month(Month.MARCH,
                  # Михаил Адрианович (Андреянович) Янин
                  death(14, Gender.MALE, 19, 20,
-                       deceased=person("Михаилъ", "Адріановъ", "Сырцевъ", comment="= Михаил Андреянович Янин"), age=68,
+                       deceased=person("Михаилъ", "Адріановъ", "Сырцевъ", comment="он же: Михаил Андреянович Янин"), age=68,
                        cause_of_death=PARALYSIS,
                        page="203об",
                        reviewed=False),
@@ -28,7 +28,7 @@ kirillovo_deaths_1896 = death_records(
     *death_month(Month.APRIL,
                  # Мария Егоровна Янина («Сырцова»), жена Ефима Михайловича Стюхина (брак 1867 №6)
                  death(10, Gender.FEMALE, 7, 9,
-                       deceased=person("Марія", "Егорова", status=PEASANT_WIFE, comment="= Мария Егоровна Янина"), age=45,
+                       deceased=person("Марія", "Егорова", status=PEASANT_WIFE, comment="она же: Мария Егоровна Янина"), age=45,
                        relatives=[relative(person("Евфимій", "Михайловъ", "Стюхинъ"), Relationship.HUSBAND)],
                        cause_of_death=PARALYSIS,
                        page="204об",

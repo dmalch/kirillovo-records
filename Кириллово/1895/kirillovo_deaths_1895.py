@@ -48,7 +48,7 @@ kirillovo_deaths_1895 = death_records(
                  # Максим Михайлович Янин («Сырцевъ», брак 1890 №17); вдова Стефанида вышла 23.10.1895 (брак №12)
                  death(18, Gender.MALE, 30, 1,
                        b_month=Month.JUNE,
-                       deceased=person("Максимъ", "Михайловъ", "Сырцевъ", status=SOLDIER, comment="«запасный рядовой»; = Максим Михайлович Янин"),
+                       deceased=person("Максимъ", "Михайловъ", "Сырцевъ", status=SOLDIER, comment="«запасный рядовой»; он же: Максим Михайлович Янин"),
                        cause_of_death=CONSUMPTION,
                        comment="записан под июнем; возраст под ниткой переплета («2…»)",
                        page="138об",

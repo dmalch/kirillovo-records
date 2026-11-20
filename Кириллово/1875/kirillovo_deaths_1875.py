@@ -32,7 +32,7 @@ kirillovo_deaths_1875 = death_records(
                  # Домника, дочь Михаила Андреяновича Янина («Сырдцевъ»)
                  death(13, Gender.FEMALE, 1, 4,
                        deceased=person("Домника", status=PEASANT_DAUGHTER), age=1,
-                       relatives=[relative(person("Михаилъ", "Андріановъ", "Сырдцевъ", comment="= Михаил Андреянович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Андріановъ", "Сырдцевъ", comment="он же: Михаил Андреянович Янин"), Relationship.FATHER)],
                        cause_of_death=SMALLPOX,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        page="284об",

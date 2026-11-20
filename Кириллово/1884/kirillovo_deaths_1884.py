@@ -21,7 +21,7 @@ kirillovo_deaths_1884 = death_records(
                  # Яков, сын Василия Сергеевича Ладыгина («Сѣрковъ»), р. 21.10.1883 (рожд. 1883 м. №88)
                  death(18, Gender.MALE, 11, 12,
                        deceased=person("Яковъ", status=PEASANT_SON), age=0.5,
-                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="«Сѣрковъ» — так в подлиннике; = Василий Сергеевич Ладыгин"),
+                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="«Сѣрковъ» — так в подлиннике; он же: Василий Сергеевич Ладыгин"),
                                            Relationship.FATHER)],
                        cause_of_death=COUGH,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),

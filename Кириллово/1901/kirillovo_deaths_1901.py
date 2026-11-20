@@ -38,7 +38,7 @@ kirillovo_deaths_1901 = death_records(
     *death_month(Month.APRIL,
                  # Сергей Дементьевич Ладыгин («Сѣрковъ»), муж Пелагии Семеновны Мальчиковой
                  death(23, Gender.MALE, 26, 27,
-                       deceased=person("Сергѣй", "Дементьевъ", "Сѣрковъ", comment="= Сергей Дементьевич Ладыгин"), age=73,
+                       deceased=person("Сергѣй", "Дементьевъ", "Сѣрковъ", comment="он же: Сергей Дементьевич Ладыгин"), age=73,
                        comment="причина закрыта зажимом",
                        page="173",
                        reviewed=False),
@@ -65,8 +65,8 @@ kirillovo_deaths_1901 = death_records(
     *death_month(Month.NOVEMBER,
                  # Ирина Матвеевна Янина («Сырцова»), жена Василия Андреевича Ладыгина (брак 1901 №12)
                  death(48, Gender.FEMALE, 24, 25,
-                       deceased=person("Ирина", "Матѳеева", status=PEASANT_WIFE, comment="= Ирина Матвеевна Сырцова (Янина)"), age=20,
-                       relatives=[relative(person("Василій", "Андреевъ", "Сѣрковъ", comment="= Василий Андреевич Ладыгин"), Relationship.HUSBAND)],
+                       deceased=person("Ирина", "Матѳеева", status=PEASANT_WIFE, comment="она же: Ирина Матвеевна Сырцова (Янина)"), age=20,
+                       relatives=[relative(person("Василій", "Андреевъ", "Сѣрковъ", comment="он же: Василий Андреевич Ладыгин"), Relationship.HUSBAND)],
                        cause_of_death=PARALYSIS,
                        page="189об",
                        reviewed=False),

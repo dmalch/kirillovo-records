@@ -75,7 +75,7 @@ kirillovo_deaths_1911 = death_records(
     *death_month(Month.SEPTEMBER,
                  # Матвей Егорович Янин («Сырцовъ»), вдовец Агриппины Филипповны (ум. 1899)
                  death(58, Gender.MALE, 8, 9,
-                       deceased=person("Матвѣй", "Егоровъ", "Сырцовъ", comment="«вдовый»; = Матвей Егорович Янин"),
+                       deceased=person("Матвѣй", "Егоровъ", "Сырцовъ", comment="«вдовый»; он же: Матвей Егорович Янин"),
                        age=73,
                        page="225об",
                        reviewed=False),

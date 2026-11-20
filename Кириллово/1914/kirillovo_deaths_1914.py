@@ -43,7 +43,7 @@ kirillovo_deaths_1914 = death_records(
                  # Павел, сын Игната Михайловича Мальчикова («Мамчиковъ»), р. 11.12.1912 (рожд. 1912 м. №104)
                  death(38, Gender.MALE, 5, 6,
                        deceased=person("Павелъ", status=PEASANT_SON),
-                       relatives=[relative(person("Игнатъ", "Михайловъ", "Мамчиковъ", comment="= Игнат Михайлович Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Игнатъ", "Михайловъ", "Мамчиковъ", comment="он же: Игнат Михайлович Мальчиков"), Relationship.FATHER)],
                        age="1 г 6 мес",
                        page="158об",
                        reviewed=False),

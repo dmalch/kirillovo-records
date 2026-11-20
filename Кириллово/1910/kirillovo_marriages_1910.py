@@ -23,7 +23,7 @@ kirillovo_marriages_1910 = marriage_records(
                              witness1=person("Герасимъ", "Стефановъ", "Сапуновъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness2=person("Тимоѳей", None, side=Side.GROOM, comment="отчество и фамилия не дочитаны («Бо…овъ»)"),
                              witness3=person("Иванъ", "Никифоровъ", "Степанчиковъ", side=Side.BRIDE, comment="фамилия читается неуверенно"),
-                             witness4=person("Николай", "Максимовъ", "Мальчиковъ", side=Side.BRIDE, comment="= Николай Максимович «Дунаев» (восприемник 1910 м. №20)?"),
+                             witness4=person("Николай", "Максимовъ", "Мальчиковъ", side=Side.BRIDE, comment="он же: Николай Максимович «Дунаев» (восприемник 1910 м. №20)?"),
                              page="115об",
                              reviewed=False),
                     # жених — Иоанн Иоаннович Мальчиков; поручитель — Василий Мальчиков

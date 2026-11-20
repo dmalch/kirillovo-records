@@ -45,10 +45,10 @@ kirillovo_marriages_1896 = marriage_records(
                              reviewed=False),
                     # Павел Прокопьевич Мальчиков («Юлинъ»); поручитель по жениху — Михаил Васильевич «Юлинъ»
                     marriage(14, 8,
-                             groom=person("Павелъ", "Прокопіевъ", "Юлинъ", comment="= Павел Прокопьевич Мальчиков"),
+                             groom=person("Павелъ", "Прокопіевъ", "Юлинъ", comment="он же: Павел Прокопьевич Мальчиков"),
                              groom_marriage_num=1, groom_age=18,
                              bride=person("Акилина", "Ефремова", "Пялкина"), bride_marriage_num=1, bride_age=19,
-                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="= Михаил Васильевич Мальчиков"),
+                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="он же: Михаил Васильевич Мальчиков"),
                              witness2=person("Василій", "Алексѣевъ", "Кочегинъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness3=person("Алексѣй", "Прокофьевъ", "Пялкинъ", side=Side.BRIDE),
                              witness4=person("Ѳеодоръ", None, None, side=Side.BRIDE, comment="отчество и фамилия ушли под край листа"),

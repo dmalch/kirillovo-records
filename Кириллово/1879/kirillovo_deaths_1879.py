@@ -65,7 +65,7 @@ kirillovo_deaths_1879 = death_records(
                  # Татьяна, дочь Семена Родионовича «Алешина» (= Янина?), р. 14.01.1879 (рожд. ж. №3)
                  death(11, Gender.FEMALE, 18, 19,
                        deceased=person("Татіана", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="3 мес",
-                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="«Алешинъ» — так в подлиннике; = Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Семенъ", "Родіоновъ", "Алешинъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="«Алешинъ» — так в подлиннике; он же: Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -76,7 +76,7 @@ kirillovo_deaths_1879 = death_records(
                  # Тимофей, сын Матвея Егоровича Янина («Сырдцевъ»), р. 1.05.1878 (близнец, рожд. 1878 м. №26)
                  death(24, Gender.MALE, 18, 19,
                        deceased=person("Тимоѳей", status=PEASANT_SON), age=1,
-                       relatives=[relative(person("Матвѣй", "Егоровъ", "Сырцевъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="в подлиннике «Сырдцевъ»; = Матвей Егорович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Матвѣй", "Егоровъ", "Сырцевъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="в подлиннике «Сырдцевъ»; он же: Матвей Егорович Янин"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -87,7 +87,7 @@ kirillovo_deaths_1879 = death_records(
                  # Иоанн, сын Михаила Васильевича Мальчикова («Юлинъ»), р. 5.07.1879 (рожд. м. №53)
                  death(32, Gender.MALE, 27, 28,
                        deceased=person("Іоаннъ", status=PEASANT_SON), age="3 нед",
-                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="= Михаил Васильевич Мальчиков"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Васильевъ", "Юлинъ", status=GOSUDARSTVENNYJ_PEASANT_MALE, comment="он же: Михаил Васильевич Мальчиков"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),

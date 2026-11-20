@@ -21,7 +21,7 @@ kirillovo_deaths_1872 = death_records(
                  # Евдокии Емельяновны Мальчиковой, р. 1.01.1872 (рожд. м. №1)? Отца писец назвал по деду?
                  death(9, Gender.MALE, 11, 12,
                        deceased=person("Михаилъ", status=PEASANT_SON), age="6 мес",
-                       relatives=[relative(person("Стефанъ", None, "Ѳетисовъ", comment="так в подлиннике; = Матвей Степанович Фетисов?"), Relationship.FATHER)],
+                       relatives=[relative(person("Стефанъ", None, "Ѳетисовъ", comment="так в подлиннике; он же: Матвей Степанович Фетисов?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        comment="возраст в подлиннике «½»",
@@ -32,7 +32,7 @@ kirillovo_deaths_1872 = death_records(
                  # Акилина, дочь Алексея Данииловича Янина (Гоголев Бор), р. 2.06.1872 (рожд. ж. №28)
                  death(17, Gender.FEMALE, 24, 26,
                        deceased=person("Акилина", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="1 мес",
-                       relatives=[relative(person("Алексѣй", None, "Янинъ", comment="отчества нет; = Алексей Даниилович Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Алексѣй", None, "Янинъ", comment="отчества нет; он же: Алексей Даниилович Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        page="111об",

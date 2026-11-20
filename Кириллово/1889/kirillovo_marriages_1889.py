@@ -19,11 +19,11 @@ kirillovo_marriages_1889 = marriage_records(
                     # Иван Андреевич Мальчиков («Юлинъ»), сын Андрея Григорьевича; поручитель по жениху — Михаил Васильевич
                     # «Юлинъ»
                     marriage(2, 3,
-                             groom=person("Іоаннъ", "Андреевъ", "Юлинъ", comment="= Иван Андреевич Мальчиков"),
+                             groom=person("Іоаннъ", "Андреевъ", "Юлинъ", comment="он же: Иван Андреевич Мальчиков"),
                              groom_marriage_num=1, groom_age="17 лет 11 мес",
                              bride=person("Анна", "Иванова", "Каргова", comment="фамилия читается неуверенно"),
                              bride_marriage_num=1, bride_age=19,
-                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="= Михаил Васильевич Мальчиков"),
+                             witness1=person("Михаилъ", "Васильевъ", "Юлинъ", side=Side.GROOM, comment="он же: Михаил Васильевич Мальчиков"),
                              witness2=person("Иванъ", "Васильевъ", "Решетовъ", side=Side.GROOM, comment="фамилия читается неуверенно"),
                              witness3=person("Николай", "Ильинъ", "Ковальковъ", side=Side.BRIDE),
                              witness4=person("Василій", None, "Бѣловъ", side=Side.BRIDE, comment="фамилия у дыры листа"),

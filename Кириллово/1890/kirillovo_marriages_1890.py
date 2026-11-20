@@ -19,7 +19,7 @@ kirillovo_marriages_1890 = marriage_records(
                     # Максим Михайлович Янин («Сырцевъ»), сын Михаила Андреяновича; поручитель по жениху — Василий Семенович
                     # Мальчиков
                     marriage(17, 4,
-                             groom=person("Максимъ", "Михайловъ", "Сырцевъ", status=SOLDIER, comment="«запасный рядовой»; = Максим Михайлович Янин"),
+                             groom=person("Максимъ", "Михайловъ", "Сырцевъ", status=SOLDIER, comment="«запасный рядовой»; он же: Максим Михайлович Янин"),
                              groom_marriage_num=1, groom_age=24,
                              bride=person("Стефанида", "Ильина", "Баенкова", comment="«Керенскаго уѣзда села Татарской Лаки солдатская дочь»; фамилия читается неуверенно"),
                              bride_marriage_num=1, bride_age=21,
@@ -36,7 +36,7 @@ kirillovo_marriages_1890 = marriage_records(
                              groom_marriage_num=1, groom_age=18,
                              bride=person("Марія", "Іоаннова", "Ларина", comment="«рядоваго дочь»"),
                              bride_marriage_num=1, bride_age=18,
-                             witness1=person("Прокопій", "Андреевъ", "Юлинъ", side=Side.GROOM, comment="= Прокопий Андреевич Мальчиков"),
+                             witness1=person("Прокопій", "Андреевъ", "Юлинъ", side=Side.GROOM, comment="он же: Прокопий Андреевич Мальчиков"),
                              witness2=person("Ермолай", "Степановъ", "Сапроновъ", status=SOLDIER, side=Side.GROOM, comment="«запасный ефрейторъ»"),
                              witness3=person("Иванъ", "Ивановъ", "Ларинъ", side=Side.BRIDE),
                              witness4=person("Яковъ", "Егоровъ", "Ларинъ", side=Side.BRIDE),

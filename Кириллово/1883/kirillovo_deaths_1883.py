@@ -34,7 +34,7 @@ kirillovo_deaths_1883 = death_records(
                  # Матрена, дочь рядового Михаила Родионовича «Алешина» (Гоголев Бор), р. 1.11.1882 (рожд. 1882 ж. №87)
                  death(2, Gender.FEMALE, 11, 12,
                        deceased=person("Матрена", status=PEASANT_DAUGHTER, residence="Гоголев Бор"), age="3 нед",
-                       relatives=[relative(person("Михаилъ", "Родіоновъ", "Алешинъ", status=SOLDIER, comment="«рядовой»; «Алешинъ» — так в подлиннике; = Янин?"), Relationship.FATHER)],
+                       relatives=[relative(person("Михаилъ", "Родіоновъ", "Алешинъ", status=SOLDIER, comment="«рядовой»; «Алешинъ» — так в подлиннике; он же: Янин?"), Relationship.FATHER)],
                        cause_of_death=COLIC,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),
@@ -46,7 +46,7 @@ kirillovo_deaths_1883 = death_records(
                  # вдова Акилина Степановна Мальчикова — вдова Семена Емельяновича (брак 1848 №31: Акилина Степановна
                  # Кашелева, 25 л.)?
                  death(10, Gender.FEMALE, 5, 6,
-                       deceased=person("Акилина", "Стефанова", "Мальчикова", status=WIDOW, comment="«вдова крестьянка села Кириллова»; = вдова Семена Емельяновича?"),
+                       deceased=person("Акилина", "Стефанова", "Мальчикова", status=WIDOW, comment="«вдова крестьянка села Кириллова»; она же: вдова Семена Емельяновича?"),
                        age=55,
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        deacon=person("Матѳей", last_name_orig="Рождественскій", status=DEACON),

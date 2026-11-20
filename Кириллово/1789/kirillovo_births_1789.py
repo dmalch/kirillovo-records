@@ -175,7 +175,7 @@ kirillovo_births_1789 = birth_records(
                                    child=person("Макей"),
                                    father=person("Артемий", "Кирилов"),
                                    god_parent1=person("Меркул", "Александров"),
-                                   comment="- имя не видно из-за шнуровки"),
+                                   comment="имя не видно из-за шнуровки"),
                              birth(20, Gender.MALE, 12, 20,
                                    child=person("Корнилий"),
                                    father=person("Агап", "Степанов"),

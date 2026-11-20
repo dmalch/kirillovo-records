@@ -59,10 +59,10 @@ kirillovo_births_1875 = birth_records(
                  # Прокопий Андреевич Мальчиков («Юлинъ»); восприемница — его сестра Агафия
                  birth(23, Gender.FEMALE, 21, 22,
                        child=person("Татіана"),
-                       father=person("Прокофій", "Андреевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; = Прокопий Андреевич Мальчиков"),
+                       father=person("Прокофій", "Андреевъ", "Юлинъ", comment="«Юлинъ» — так в подлиннике; он же: Прокопий Андреевич Мальчиков"),
                        mother=person("Агриппина", "Самсонова", comment="отчество читается неуверенно («Самсова»?); в 1885 — «Ѳедорова»"),
                        god_parent1=person("Иванъ", "Васильевъ", "Шашкинъ"),
-                       god_parent2=person("Агаѳія", "Андреева", "Юлина", status=MAIDEN, comment="= Агафия Андреевна Мальчикова"),
+                       god_parent2=person("Агаѳія", "Андреева", "Юлина", status=MAIDEN, comment="она же: Агафия Андреевна Мальчикова"),
                        page="256об",
                        reviewed=False),
                  # восприемница — Матрона Ивановна «Алешина» (из Яниных Гоголева Бора)
@@ -79,7 +79,7 @@ kirillovo_births_1875 = birth_records(
                  # Михаил Родионович Янин («Алешинъ», Гоголев Бор; брак 8.11.1874)
                  birth(55, Gender.MALE, 2, 3,
                        child=person("Матѳей"),
-                       father=person("Михаилъ", "Родіоновъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; = Михаил Родионович Янин"),
+                       father=person("Михаилъ", "Родіоновъ", "Алешинъ", residence="Гоголев Бор", comment="«Алешинъ» — так в подлиннике; он же: Михаил Родионович Янин"),
                        mother=person("Анна", "Васильева"),
                        god_parent1=person("Иванъ", "Семеновъ", "Даронинъ", residence="Гоголев Бор"),
                        god_parent2=person("Наталія", "Васильева", "Назарова", status=SOLDIER_WIFE, residence="Гоголев Бор"),
@@ -90,7 +90,7 @@ kirillovo_births_1875 = birth_records(
                        child=person("Наталія"),
                        father=person("Іона", "Васильевъ", "Назаровъ", residence="Гоголев Бор"),
                        mother=person("Пелагія", "Григорьева"),
-                       god_parent1=person("Яковъ", "Андреевъ", "Алешинъ", residence="Гоголев Бор", comment="= Яков Андреевич Янин"),
+                       god_parent1=person("Яковъ", "Андреевъ", "Алешинъ", residence="Гоголев Бор", comment="он же: Яков Андреевич Янин"),
                        god_parent2=person("Татіана", "Михайлова", "Глумушина", residence="Гоголев Бор"),
                        page="261об",
                        reviewed=False),
@@ -122,7 +122,7 @@ kirillovo_births_1875 = birth_records(
                        father=person("Павелъ", "Ѳеодоровъ", "Хохловъ", status=PRIVATE_SOLDIER),
                        mother=person("Дарія", "Іонова"),
                        god_parent1=person("Григорій", "Меркуловъ", "Чекмуринъ", status=PRIVATE_SOLDIER),
-                       god_parent2=person("Ксенія", "Карпова", "Бѣлова", status=WIDOW, comment="= Ксения Карповна Янина"),
+                       god_parent2=person("Ксенія", "Карпова", "Бѣлова", status=WIDOW, comment="она же: Ксения Карповна Янина"),
                        page="266об",
                        reviewed=False),
                  # Иван Григорьевич Разоренов, сын Ирины Нестеровны Мальчиковой; восприемник — Николай Иванович Мальчиков

@@ -76,7 +76,7 @@ kirillovo_births_1866 = birth_records(
                        # (ср. 1864: «Андрея Трифонова Тришина дочь»). Матрона умерла 12.11.1866 (смерть ж. №64)
                        birth(100, Gender.FEMALE, 6, None,
                              child=person("Матрона"),
-                             father=person("Игнатій", "Андреевъ", "Трифоновъ", comment="= Игнат Андреевич Тришин"),
+                             father=person("Игнатій", "Андреевъ", "Трифоновъ", comment="он же: Игнат Андреевич Тришин"),
                              mother=person("Ѳеодосія", "Андріанова"),
                              god_parent1=person("Герасимъ", "Дементьевъ", "Каровинъ"),
                              god_parent2=person("Евдокія", status=MAIDEN, comment="отчество и фамилия не разобраны («Ка…»)"),
@@ -101,7 +101,7 @@ kirillovo_births_1866 = birth_records(
                              child=person("Даніилъ"),
                              father=person("Ѳеодоръ", "Ивановъ", "Поздняковъ"),
                              mother=person("Марія", "Назарова"),
-                             god_parent1=person("Константинъ", "Яковлевъ", "Поздняковъ", comment="= Константин Яковлевич Мальчиков (1859)"),
+                             god_parent1=person("Константинъ", "Яковлевъ", "Поздняковъ", comment="он же: Константин Яковлевич Мальчиков (1859)"),
                              god_parent2=person("Марія", "Логинова", "Шевлягина", status=ZHONKA),
                              priest=person("Андрей", last_name_orig="Тихомировъ", status=HIEREUS),
                              comment="л. 221об",

@@ -30,7 +30,7 @@ kirillovo_births_1899 = birth_records(
                  # Василий Сергеевич Ладыгин («Сѣрковъ»), сын Пелагии Семеновны Мальчиковой
                  birth(11, Gender.MALE, 3, 6,
                        child=person("Герасимъ"),
-                       father=person("Василій", "Сергѣевъ", "Сѣрковъ", comment="= Василий Сергеевич Ладыгин"),
+                       father=person("Василій", "Сергѣевъ", "Сѣрковъ", comment="он же: Василий Сергеевич Ладыгин"),
                        mother=person("Марія", "Ильина"),
                        god_parent1=person("Иванъ", "Яковлевъ", "Аболмасовъ"),
                        god_parent2=person("Марія", "Васильева", "Сѣркова", status=MAIDEN),
@@ -83,7 +83,7 @@ kirillovo_births_1899 = birth_records(
                  birth(76, Gender.FEMALE, 21, 26,
                        child=person("Марѳа"),
                        father=person("Иванъ", "Игнатовъ", "Ладыгинъ", status=SOLDIER, comment="«отпускной рядовой»"),
-                       mother=person("Ксенія", "Андреева", status=SOLDIER_WIFE, comment="= Ксения Андреевна Мальчикова"),
+                       mother=person("Ксенія", "Андреева", status=SOLDIER_WIFE, comment="она же: Ксения Андреевна Мальчикова"),
                        god_parent1=person("Трифонъ", "Ивановъ", "Калининъ"),
                        god_parent2=person("Анастасія", "Трофимова", "Ладыгина", status=ZHONKA),
                        comment="на полях: «свидетельство выдано 4/XI-40 г.»",
@@ -94,7 +94,7 @@ kirillovo_births_1899 = birth_records(
                  # Гавриил Васильевич Мальчиков («Юлинъ»)
                  birth(77, Gender.FEMALE, 2, 4,
                        child=person("Матрона"),
-                       father=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; = Гавриил Васильевич Мальчиков"),
+                       father=person("Гавріилъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; он же: Гавриил Васильевич Мальчиков"),
                        mother=person("Матрона", "Семенова", status=SOLDIER_WIFE),
                        god_parent1=person("Матвѣй", "Арсеньевъ", "Парамоновъ", comment="отчество читается неуверенно"),
                        god_parent2=person("Марія", "Васильева", "Сѣркова", status=MAIDEN, comment="фамилия читается неуверенно"),
@@ -105,7 +105,7 @@ kirillovo_births_1899 = birth_records(
                  # Семен Васильевич Мальчиков («Юлинъ») и Ирина Ивановна Чекмурина (брак 1892)
                  birth(74, Gender.MALE, 9, 11,
                        child=person("Стефанъ"),
-                       father=person("Семенъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; = Семен Васильевич Мальчиков"),
+                       father=person("Семенъ", "Васильевъ", "Юлинъ", status=SOLDIER, comment="«запасный рядовой»; он же: Семен Васильевич Мальчиков"),
                        mother=person("Ирина", "Иванова", status=SOLDIER_WIFE),
                        god_parent1=person("Илья", "Ивановъ", "Кубышкинъ"),
                        god_parent2=person("Анна", "Степанова", "Юлина", status=MAIDEN),

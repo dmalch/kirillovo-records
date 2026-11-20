@@ -78,7 +78,7 @@ kirillovo_deaths_1892 = death_records(
                  # Параскева, дочь Василия Сергеевича Ладыгина («Сѣрковъ»)
                  death(34, Gender.FEMALE, 26, 27,
                        deceased=person("Параскева", status=PEASANT_DAUGHTER),
-                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="= Василий Сергеевич Ладыгин"), Relationship.FATHER)],
+                       relatives=[relative(person("Василій", "Сергѣевъ", "Сѣрковъ", comment="он же: Василий Сергеевич Ладыгин"), Relationship.FATHER)],
                        cause_of_death=DIARRHEA,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="возраст в дыре листа",
@@ -88,7 +88,7 @@ kirillovo_deaths_1892 = death_records(
                  death(44, Gender.MALE, 30, 1,
                        b_month=Month.DECEMBER,
                        deceased=person("Андрей", status=PEASANT_SON),
-                       relatives=[relative(person("Егоръ", "Ѳеодоровъ", "Сырцевъ", comment="= Егор Федорович Янин"), Relationship.FATHER)],
+                       relatives=[relative(person("Егоръ", "Ѳеодоровъ", "Сырцевъ", comment="он же: Егор Федорович Янин"), Relationship.FATHER)],
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        comment="записан под «Декабрь»; возраст и причина в дыре листа",
                        page="48об",
