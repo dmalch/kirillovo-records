@@ -91,7 +91,7 @@ kirillovo_births_1862 = birth_records(
             father=person("Игнатъ", "Еѳимовъ", last_name_orig="Кленинъ"),
             mother=person("Ирина", "Еѳимова", status=KAZENNYJ_PEASANT_LEGAL_WIFE),
             god_parent1=person("Самсонъ", "Наумовъ", last_name_orig="Янинъ"),
-            god_parent2=person("Матрена", status="казенная крестьянская дочь девка"),
+            god_parent2=person("Матрена", "Еѳимова", status="казенная крестьянская дочь девка"),
             relatives=[relative(person("Еѳимъ", "Митрофановъ"), Relationship.FATHER, "восприемника №2")],
         ),
         birth(

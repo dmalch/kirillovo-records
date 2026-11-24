@@ -1,9 +1,9 @@
 # Последняя выгрузка из рабочего репозитория; files — всё, что вправе лежать в этом дереве.
 schema = 1
-source_commit = "f4e9d50d8b197d66f5e8890534839b0f69d23b4b"
-made_at = "2026-11-20T19:28:47+00:00"
-verso_tag = "v0.1.45"
-verso_commit = "4e73ce08a8c32e776c92fbce4d384d9ee4973f74"
+source_commit = "6024ece7635d0cced835c28e1a538f6b8c7c856f"
+made_at = "2026-11-24T16:02:15+00:00"
+verso_tag = "v0.1.47"
+verso_commit = "d045fa86496953cb95c9e805715696f4d81216fd"
 dsl_files = 415
 files = [
   ".github/workflows/ci.yml",
