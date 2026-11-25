@@ -12,6 +12,8 @@ from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, bir
 # (= Федор Васильевич Поздняков × Евфросиния Петровна «Сырцова», брак 1920?).
 # № 678 (л. 452): лицевой стороны в скане архива нет — снята Голяковым 03.11.2026 по выборке из базы ЗАГС ГАПО
 # (Drive и Photos, «Ф.Р-2854 оп.17 д.10 л.452.jpg»); оборот 452об — в альбоме.
+# Возраст родителей — в father_age=/mother_age= (Ф50): 25.11.2026 перенесён из comment= кодмодом
+# verso fix-parent-ages, цифры как прочитаны; сомнение («27 (?)», второе прочтение) осталось в comment=.
 kirillovo_births_1922 = birth_records(
     "ГАПО", "2854", "17", "10", "Кириллово", "",
     1922,
@@ -26,7 +28,7 @@ kirillovo_births_1922 = birth_records(
                              child=person("Иван"),
                              father=person("Тимофей", "Степанов", last_name_orig="Юлин", comment="он же: сын Степана Васильевича «Юлина» (1895)?"),
                              mother=person("Евфимия", "Федорова", last_name_orig="Юлина"),
-                             comment="Гражданская регистрация (ЗАГС); запись 18 марта; отцу 27, матери 25; у этой четы в 1920 г. (№ 215) — тоже «Иван»",
+                             father_age=27, mother_age=25, comment="Гражданская регистрация (ЗАГС); запись 18 марта; у этой четы в 1920 г. (№ 215) — тоже «Иван»",
                              page="015",
                              reviewed=False),
                        ),
@@ -35,7 +37,7 @@ kirillovo_births_1922 = birth_records(
                              child=person("Василий"),
                              father=person("Яков", "Гаврилов", last_name_orig="Юлин", comment="р. 22.10.1897 — = Иаков, сын Гавриила Васильевича «Юлина» (1897 №30, р. 21.10)"),
                              mother=person("Анна", "Андреева", last_name_orig="Юлина"),
-                             comment="Гражданская регистрация (ЗАГС); запись 12 апреля; матери 20",
+                             mother_age=20, comment="Гражданская регистрация (ЗАГС); запись 12 апреля",
                              page="043",
                              reviewed=False),
                        ),
@@ -44,7 +46,7 @@ kirillovo_births_1922 = birth_records(
                              child=person("Анисья"),
                              father=person("Василий", last_name_orig="Стрекалин"),
                              mother=person("Татьяна", last_name_orig="Стрекалина"),
-                             comment="Гражданская регистрация (ЗАГС); запись 21 июня; отцу 38, матери 38",
+                             father_age=38, mother_age=38, comment="Гражданская регистрация (ЗАГС); запись 21 июня",
                              page="164",
                              reviewed=False),
                        ),
@@ -68,7 +70,7 @@ kirillovo_births_1922 = birth_records(
                              child=person("Татьяна"),
                              father=person("Евфимий", last_name_orig="Варенов", comment="имя читается неуверенно"),
                              mother=person("Марина", last_name_orig="Сырцова", comment="у матери своя фамилия — «Сырцова» (Янины)"),
-                             comment="Гражданская регистрация (ЗАГС); вставной бланк «Выпись»; запись 29 июля; отцу 45, матери 35",
+                             father_age=45, mother_age=35, comment="Гражданская регистрация (ЗАГС); вставной бланк «Выпись»; запись 29 июля",
                              page="268",
                              reviewed=False),
                        ),
@@ -92,7 +94,7 @@ kirillovo_births_1922 = birth_records(
                              child=person("Степан"),
                              father=person("Федор", "Герасимов", last_name_orig="Мальчиков", comment="в подлиннике «Гер.»"),
                              mother=person("Мавра", "Иванова", last_name_orig="Мальчикова", comment="в подлиннике «Ив.»"),
-                             comment="Гражданская регистрация (ЗАГС); муж. № 351; запись 11 ноября; отцу 38, матери 37; 9-й ребёнок (5 живых); заявитель — отец; на обороте «умер 1922 № 493»; с. Кириллово",
+                             father_age=38, mother_age=37, comment="Гражданская регистрация (ЗАГС); муж. № 351; запись 11 ноября; 9-й ребёнок (5 живых); заявитель — отец; на обороте «умер 1922 № 493»; с. Кириллово",
                              page="452",
                              reviewed=False),
                        birth(687, Gender.MALE, 17, None,
