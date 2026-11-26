@@ -79,4 +79,17 @@ kirillovo_marriages_1923 = marriage_records(
         residence="Кириллово",
     ),
     civil=True,
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.JANUARY,
+                    marriage(None, 22,
+                             groom=person("Николай"), groom_marriage_num=1,
+                             bride=person(None, comment="Мария"), bride_marriage_num=1,
+                             case="д.15", page="л.193", reviewed=False),
+                 ),
+    *marriage_month(Month.FEBRUARY,
+                    marriage(None, 6,
+                             groom=person(None, comment="Какаев Василий"), groom_marriage_num=1,
+                             bride=person(None, comment="Мальчикова Анастасия"), bride_marriage_num=1,
+                             case="д.40", page="л.7", reviewed=False),
+                 ),
 )

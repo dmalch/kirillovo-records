@@ -1805,4 +1805,12 @@ kirillovo_births_1926 = birth_records(
         residence="Кириллово",
     ),
     civil=True,
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *birth_month(Month.DECEMBER,
+                 birth(None, Gender.MALE, 25, 25,
+                       child=person("Иван"),
+                       father=person("Сергей", None, "Кириллович"),
+                       mother=person(None, comment="Фекла Степановна"),
+                       case="д.40", page="л.51", reviewed=False),
+                 ),
 )

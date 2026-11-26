@@ -109,4 +109,11 @@ kirillovo_marriages_1902 = marriage_records(
                     ),
     defaults=RecordDefaults(residence="Кириллово", status_male=GOSUDARSTVENNYJ_PEASANT_MALE,
                             status_female=GOSUDARSTVENNYJ_PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.NOVEMBER,
+                    marriage(None, 10,
+                             groom=person(None, comment="Дыркин Василий Иванович"), groom_marriage_num=1,
+                             bride=person("Мокеева", None, "Анна"), bride_marriage_num=1,
+                             case="д.14", page="л.44", reviewed=False),
+                 ),
 )

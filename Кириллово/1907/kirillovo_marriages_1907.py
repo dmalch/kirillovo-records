@@ -48,4 +48,11 @@ kirillovo_marriages_1907 = marriage_records(
                              reviewed=False),
                     ),
     defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.NOVEMBER,
+                    marriage(None, 9,
+                             groom=person("Максим", "Дмитриевич", "Романов"), groom_marriage_num=1,
+                             bride=person(None, comment="Мария Игнатьевна Киселева"), bride_marriage_num=1,
+                             case="д.14", page="л.82", reviewed=False),
+                 ),
 )
