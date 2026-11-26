@@ -154,4 +154,12 @@ kirillovo_births_1917 = birth_records(
                        reviewed=False),
                  ),
     defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *birth_month(Month.JUNE,
+                 birth(None, Gender.FEMALE, 16, 16,
+                       child=person(None, comment="Тростникова Пелагея"),
+                       father=person(None, comment="Тростников Василий"),
+                       mother=person(None, comment="Тростникова Евдокия"),
+                       case="д.10", page="л.221", reviewed=False),
+                 ),
 )

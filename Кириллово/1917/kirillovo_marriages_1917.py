@@ -70,4 +70,17 @@ kirillovo_marriages_1917 = marriage_records(
                              reviewed=False),
                     ),
     defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.JANUARY,
+                    marriage(None, 24,
+                             groom=person(None, comment="Тимофей Яковлев Лапшин"), groom_marriage_num=1,
+                             bride=person(None, comment="не разобрано"), bride_marriage_num=1,
+                             case="д.14", page="л.31", reviewed=False),
+                 ),
+    *marriage_month(Month.JULY,
+                    marriage(None, 19,
+                             groom=person(None, comment="Лисков Матвей"), groom_marriage_num=1,
+                             bride=person(None, comment="Тряшкина Татьяна"), bride_marriage_num=1,
+                             case="д.14", page="л.39", reviewed=False),
+                 ),
 )

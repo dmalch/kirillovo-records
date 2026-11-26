@@ -51,4 +51,11 @@ kirillovo_marriages_1914 = marriage_records(
                              reviewed=False),
                     ),
     defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.FEBRUARY,
+                    marriage(None, 2,
+                             groom=person(None, comment="Кирсанов Михаил Павлович"), groom_marriage_num=1,
+                             bride=person(None, comment="Солдатова Анна Михайловна"), bride_marriage_num=1,
+                             case="д.14", page="л.81", reviewed=False),
+                 ),
 )

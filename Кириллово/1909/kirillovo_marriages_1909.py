@@ -90,4 +90,11 @@ kirillovo_marriages_1909 = marriage_records(
                              reviewed=False),
                     ),
     defaults=RecordDefaults(residence="Кириллово", status_male=PEASANT_MALE, status_female=PEASANT_FEMALE),
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *marriage_month(Month.NOVEMBER,
+                    marriage(None, 11,
+                             groom=person("Леонтий", "Семенович", "Губин"), groom_marriage_num=1,
+                             bride=person(None, comment="Мария Григорьевна Чернышева"), bride_marriage_num=1,
+                             case="д.14", page="л.40", reviewed=False),
+                 ),
 )

@@ -1689,4 +1689,12 @@ kirillovo_births_1925 = birth_records(
         residence="Кириллово",
     ),
     civil=True,
+    # --- Автоматически распознано (Batch OCR ЗАГС, reviewed=False) ---
+    *birth_month(Month.JANUARY,
+                 birth(None, Gender.MALE, 12, 12,
+                       child=person(None, comment="Василий"),
+                       father=person(None, comment="Авдонин Иван Михайлович, 25 лет"),
+                       mother=person(None, comment="Авдонина Пелагея Ивановна, 24 года"),
+                       case="д.10", page="л.431", reviewed=False),
+                 ),
 )
