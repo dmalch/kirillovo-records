@@ -4,7 +4,8 @@ from verso.ru.dsl.causes_of_death import (ANGINA, CONSTIPATION, CONSUMPTION, DIA
                                           FEVER, HEADACHE, INTERNAL, KILLED, MEASLES, NATURAL,
                                           PLEURISY, SCARLET_FEVER, SMALLPOX, STOMACH, SUFFOCATION)
 from verso.ru.dsl.statuses import (ECON_PEASANT_FEMALE, ECON_PEASANT_GIRL, ECON_PEASANT_MALE,
-                                   ECON_PEASANT_WIDOW, ECON_PEASANT_ZHONKA, SOLDIER_WIFE)
+                                   ECON_PEASANT_WIDOW, ECON_PEASANT_ZHONKA, RETIRED_SOLDIER,
+                                   SOLDIER_WIFE)
 
 kirillovo_deaths_1815 = death_records(
     "ЦГАРМ", "57", "1", "394", "Кириллово", "Успенская",
@@ -129,7 +130,7 @@ kirillovo_deaths_1815 = death_records(
                        ),
           *death_month(Month.JUNE,
                        death(8, Gender.MALE, 2, None,
-                             deceased=person("Тимофей", "Никифоровъ", status="военный отставной солдат"),
+                             deceased=person("Тимофей", "Никифоровъ", status=RETIRED_SOLDIER, comment="военный отставной солдат"),
                              age=60,
                              cause_of_death=FEVER),
                        death(9, Gender.MALE, 4, None,

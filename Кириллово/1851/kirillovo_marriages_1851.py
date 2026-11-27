@@ -1,6 +1,6 @@
 from verso.ru.dsl import (Month, RecordDefaults, marriage, marriage_month, marriage_records, page,
                           person)
-from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE
+from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, SOLDIER_WIDOW
 
 kirillovo_marriages_1851 = marriage_records(
     "ЦГАРМ",
@@ -19,7 +19,7 @@ kirillovo_marriages_1851 = marriage_records(
                 1,
                 groom=person("Конон", "Николаев", last_name_orig="Макушин"),
                 groom_marriage_num=2,
-                bride=person("Феврония", "Иванова", last_name_orig="Митрошина", status="вдова солдатка"),
+                bride=person("Феврония", "Иванова", last_name_orig="Митрошина", status=SOLDIER_WIDOW, comment="вдова солдатка"),
                 bride_marriage_num=2,
                 witness1=person("Андрей", "Григорьев", last_name_orig="Мальчиков"),
                 witness2=person("Иосиф", "Сидоров", last_name_orig="Верхов"),

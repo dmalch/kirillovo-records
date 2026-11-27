@@ -1,6 +1,6 @@
 from verso.ru.dsl import Gender, Month, RecordDefaults, birth, birth_month, birth_records, person
 from verso.ru.dsl.statuses import (DEACON, HIEREUS, KAZENNYJ_PEASANT_FEMALE, KAZENNYJ_PEASANT_MALE,
-                                   MAIDEN, MESHCHANIN, ZHONKA)
+                                   MAIDEN, MESHCHANIN, SOLDIER, ZHONKA)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их замужние дочери). ГАПО 182-5-732,
 # альбом Photos «1871 (ГАПО 182-5-732)» (pk 3616), ч. 1 — лл. 1об–32, 135 рождений; прочитана целиком 05.10.2026.
@@ -19,7 +19,7 @@ kirillovo_births_1871 = birth_records(
                  # мать — Феврония Петровна Мальчикова (брак 1852 №34)
                  birth(5, Gender.MALE, 16, 17,
                        child=person("Иванъ"),
-                       father=person("Трофимъ", "Пимоновъ", "Бубенчиковъ", status="солдат в бессрочном отпуску"),
+                       father=person("Трофимъ", "Пимоновъ", "Бубенчиковъ", status=SOLDIER, comment="солдат в бессрочном отпуску"),
                        mother=person("Февронія", "Петрова"),
                        god_parent1=person("Кириллъ", "Андреевъ", "Широковъ"),
                        god_parent2=person("Татіана", None, "Бубенчикова", status=ZHONKA, comment="отчество не написано"),
@@ -33,7 +33,7 @@ kirillovo_births_1871 = birth_records(
                        child=person("Марія"),
                        father=person("Климентъ", "Ильинъ", "Мальчиковъ", comment="отчество так в подлиннике (не перенесено ли с восприемницы «Варвара Ильина»?); он же: Климент Антонович Мальчиков"),
                        mother=person("Вѣра", "Давыдова"),
-                       god_parent1=person("Трофимъ", "Пимоновъ", "Бубенчиковъ", status="солдат в бессрочном отпуску"),
+                       god_parent1=person("Трофимъ", "Пимоновъ", "Бубенчиковъ", status=SOLDIER, comment="солдат в бессрочном отпуску"),
                        god_parent2=person("Варвара", "Ильина", comment="«крестьянская жена»; она же: Варвара Ильинична Спасова, урожд. Мальчикова"),
                        priest=person("Павелъ", "Ѳеофановъ", "Кротковъ", status=HIEREUS),
                        page="3об",

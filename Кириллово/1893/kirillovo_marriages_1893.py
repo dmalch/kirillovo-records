@@ -1,6 +1,7 @@
 from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
                           person)
-from verso.ru.dsl.statuses import PEASANT_FEMALE, PEASANT_MALE, SOLDIER, UNTER_OFFICER
+from verso.ru.dsl.statuses import (PEASANT_FEMALE, PEASANT_MALE, RETIRED_SOLDIER, SOLDIER,
+                                   UNTER_OFFICER)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям). ГАПО 182-5-306, альбом
 # Photos «1893 (ГАПО 182-5-306)» (pk 1204), ч. 2 — лл. 22об–30об, 30 браков (январь 2, апрель 2, июнь 1, июль 2, август 1,
@@ -47,7 +48,7 @@ kirillovo_marriages_1893 = marriage_records(
                              witness1=person("Василій", "Платоновъ", "Бубенчиковъ", side=Side.GROOM),
                              witness2=person("Андрей", "Николаевъ", "Молохаевъ", side=Side.GROOM),
                              witness3=person("Ѳеодоръ", "Самсоновъ", "Янинъ", side=Side.BRIDE),
-                             witness4=person("Павелъ", "Петровъ", "Турутинъ", status="отставной рядовой", side=Side.BRIDE),
+                             witness4=person("Павелъ", "Петровъ", "Турутинъ", status=RETIRED_SOLDIER, comment="отставной рядовой", side=Side.BRIDE),
                              page="26об",
                              reviewed=False),
                     # поручитель по жениху — Прокопий Андреевич Мальчиков («Юлинъ»)

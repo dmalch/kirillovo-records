@@ -1,7 +1,7 @@
 from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
                           person)
 from verso.ru.dsl.statuses import (GOSUDARSTVENNYJ_PEASANT_FEMALE, GOSUDARSTVENNYJ_PEASANT_MALE,
-                                   SOLDIER)
+                                   RETIRED_SOLDIER, SOLDIER)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и их родня по прозваниям), и импортные записи.
 # ГАПО 182-5-306, альбом Photos «1895 (ГАПО 182-5-306)» (pk 1188), ч. 2 — лл. 125об–132об, 28 браков (январь 8, апрель 1,
@@ -70,7 +70,7 @@ kirillovo_marriages_1895 = marriage_records(
             bride=person("Анастасия", "Иванова", last_name_orig="Платончикова"),
             bride_marriage_num=1,
             witness1=person("Яков", "Касьмин", last_name_orig="Чичеров", side=Side.GROOM),
-            witness2=person("Иван", "Силантьев", last_name_orig="Богачев", status="отставной рядовой", side=Side.GROOM),
+            witness2=person("Иван", "Силантьев", last_name_orig="Богачев", status=RETIRED_SOLDIER, comment="отставной рядовой", side=Side.GROOM),
             witness3=person("Михаил", "Васильев", last_name_orig="Силуянов", side=Side.BRIDE),
             witness4=person("Михаил", None, side=Side.BRIDE, comment="в подлиннике «Михаилъ …ановъ» (Тимановъ?)"),
             groom_age=23,

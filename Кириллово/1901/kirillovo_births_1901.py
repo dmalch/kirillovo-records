@@ -42,7 +42,7 @@ kirillovo_births_1901 = birth_records(
                        child=person("Василий", "Ильин", "Мальчиков"),
                        father=person("Илья", "Петров", "Мальчиков"),
                        mother=person("Феврония", "Андреева"),
-                       god_parent1=person("Даниил", "Фетисов", status="запасной унтер-офицер"),
+                       god_parent1=person("Даниил", "Фетисов", status=UNTER_OFFICER, comment="запасной унтер-офицер"),
                        god_parent2=person("Татьяна", "Гаврилова", last_name_orig="Лискова", status=MAIDEN),
                        comment=" дата под вопросом по источнику; сверено по скану 25.10.2026: Василий умер 2.03.1901 (смерть м. №14)",
                        page="122об"),

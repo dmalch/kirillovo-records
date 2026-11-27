@@ -1,7 +1,7 @@
 from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
                           person)
 from verso.ru.dsl.statuses import (DEACON, HIEREUS, KAZENNYJ_PEASANT_FEMALE,
-                                   KAZENNYJ_PEASANT_MAIDEN, KAZENNYJ_PEASANT_MALE)
+                                   KAZENNYJ_PEASANT_MAIDEN, KAZENNYJ_PEASANT_MALE, SOLDIER)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины. ГАПО 182-5-732, альбом Photos
 # «1871 (ГАПО 182-5-732)» (pk 3616), ч. 2 — лл. 33об–42, 38 браков; прочитана целиком 05.10.2026.
@@ -66,7 +66,7 @@ kirillovo_marriages_1871 = marriage_records(
                              reviewed=False),
                     # поручитель по жениху — «Самсонъ Наумовъ» без фамилии (= Самсон Наумович Янин?)
                     marriage(29, 8,
-                             groom=person("Антонъ", "Мироновъ", status="солдат Грузинского гренадерского Его Высочества великого князя Константина Николаевича полка", comment="имя отца и фамилия читаются неуверенно («Антонъ Мир…овъ, сынъ Буланова»?)"),
+                             groom=person("Антонъ", "Мироновъ", status=SOLDIER, comment="солдат Грузинского гренадерского Его Высочества великого князя Константина Николаевича полка; имя отца и фамилия читаются неуверенно («Антонъ Мир…овъ, сынъ Буланова»?)"),
                              groom_marriage_num=2, groom_age=55,
                              bride=person("Анна", "Савельева", "Шишкина", status=KAZENNYJ_PEASANT_FEMALE, comment="«крестьянка»"),
                              bride_marriage_num=2, bride_age=54,

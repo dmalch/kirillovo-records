@@ -3,7 +3,8 @@ from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, birth, bi
 from verso.ru.dsl.statuses import (DEACON, DYACHOK, ECON_PEASANT_DEVA, ECON_PEASANT_FEMALE,
                                    ECON_PEASANT_GIRL, ECON_PEASANT_LEGAL_WIFE, ECON_PEASANT_MAIDEN,
                                    ECON_PEASANT_MALE, ECON_PEASANT_WIDOW, ECON_PEASANT_ZHONKA,
-                                   HIEREUS, PRIEST, RETIRED_SOLDIER, SEXTON, SOLDIER_WIFE)
+                                   HIEREUS, PRIEST, RETIRED_SOLDIER, SEXTON, SOLDIER_WIFE,
+                                   UNTER_OFFICER)
 
 kirillovo_births_1818 = birth_records(
     "ЦГАРМ", "57", "6", "96", "Кириллово", "Успенская",
@@ -41,7 +42,7 @@ kirillovo_births_1818 = birth_records(
                        birth(7, Gender.MALE, 8, 13,
                              child=person("Афонасій"),
                              father=person("Дарофей", "Ермолавъ"),
-                             god_parent1=person("Сергей", "Ивановъ", "Перинъ?", status="унтер-офицер Иркутского гусарского полка", comment="Фамилия восприемника неразборчива")),
+                             god_parent1=person("Сергей", "Ивановъ", "Перинъ?", status=UNTER_OFFICER, comment="унтер-офицер Иркутского гусарского полка; Фамилия восприемника неразборчива")),
                        birth(8, Gender.MALE, 9, 13,
                              child=person("Ермолай"),
                              father=person("Сидоръ", "Тимофевъ"),
@@ -200,7 +201,7 @@ kirillovo_births_1818 = birth_records(
                        birth(42, Gender.MALE, 4, 7,
                              child=person("Кирилъ"),
                              father=person("Миронъ", "Яковлевъ"),
-                             god_parent1=person("Яковъ", "Яковлевъ", status="вахмистр Иркутского конного полка")),
+                             god_parent1=person("Яковъ", "Яковлевъ", status=UNTER_OFFICER, comment="вахмистр Иркутского конного полка")),
                        birth(43, Gender.FEMALE, k_day=7,
                              child=person("Дарья"),
                              father=person("Кузма", "Петровъ"),
@@ -748,7 +749,7 @@ kirillovo_births_1818 = birth_records(
                        birth(157, Gender.MALE, 9, 14,
                              child=person("Андрей"),
                              father=person("Акимъ", "Потаповъ"),
-                             god_parent1=person("Андрей", "Карнеевъ", status="унтер-офицер Иркутского гусарского полка")),
+                             god_parent1=person("Андрей", "Карнеевъ", status=UNTER_OFFICER, comment="унтер-офицер Иркутского гусарского полка")),
                        birth(158, Gender.MALE, 11, 20,
                              child=person("Иванъ"),
                              father=person("Трафимъ", "Ефсеевъ"),

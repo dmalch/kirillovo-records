@@ -2,7 +2,7 @@ from verso.ru.dsl import (Gender, Month, RecordDefaults, Relationship, death, de
                           death_records, person, relative)
 from verso.ru.dsl.causes_of_death import COLIC, DIARRHEA, HEADACHE, MEASLES
 from verso.ru.dsl.statuses import (HIEREUS, PEASANT_DAUGHTER, PEASANT_FEMALE, PEASANT_MALE,
-                                   PEASANT_SON)
+                                   PEASANT_SON, RETIRED_SOLDIER)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и дети их замужних дочерей). ГАПО 182-5-305, альбом
 # Photos «1892 (ГАПО 182-5-305)» (pk 1370), ч. 3 — лл. 37об–51об, 56 муж. / 40 жен., прочитана целиком 25.10.2026; л. 37 —
@@ -68,7 +68,7 @@ kirillovo_deaths_1892 = death_records(
                  # Андрей Константинович «Малахаевъ», отставной рядовой — Андрей Константинович Мальчиков, отец Дмитрия
                  # и Ильи Андреевичей «Малахаевых»? не установлено
                  death(36, Gender.MALE, 21, 23,
-                       deceased=person("Андрей", "Константиновъ", "Малахаевъ", status="отставной рядовой"), age=55,
+                       deceased=person("Андрей", "Константиновъ", "Малахаевъ", status=RETIRED_SOLDIER, comment="отставной рядовой"), age=55,
                        cause_of_death=HEADACHE,
                        priest=person("Александръ", "Васильевъ", "Писаревъ", status=HIEREUS),
                        page="46об",

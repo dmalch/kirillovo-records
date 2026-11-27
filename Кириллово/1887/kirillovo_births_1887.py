@@ -1,7 +1,8 @@
 from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, birth_records, christening,
                           person)
 from verso.ru.dsl.statuses import (GOSUDARSTVENNYJ_PEASANT_FEMALE, GOSUDARSTVENNYJ_PEASANT_MALE,
-                                   HIEREUS, MAIDEN, MESHCHANIN_FEMALE, SOLDIER, SOLDIER_WIFE, ZHONKA)
+                                   HIEREUS, MAIDEN, MESHCHANIN_FEMALE, SOLDIER, SOLDIER_WIFE,
+                                   UNTER_OFFICER, ZHONKA)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и дети их замужних дочерей), и импортные записи.
 # ГАПО 182-5-305, альбом Photos «1887 (ГАПО 182-5-305)» (pk 1333, 64 кадра, файлы по листам; в Verso «кадр1» = л. 353,
@@ -123,7 +124,7 @@ kirillovo_births_1887 = birth_records(
                      child=person("Павел"),
                      father=person("Степан", "Емельянов", last_name_orig="Мальчиков"),
                      mother=person("Параскева", "Иванова"),
-                     god_parent1=person("Петр", "Иванов", last_name_orig="Спиряев", status="уволенный унтер-офицер"),
+                     god_parent1=person("Петр", "Иванов", last_name_orig="Спиряев", status=UNTER_OFFICER, comment="уволенный унтер-офицер"),
                      god_parent2=person("Васса", "Ефимова", last_name_orig="Мальчикова", status=ZHONKA),
                      comment="Отчество восприемницы 2 (Ефимова?) — под вопросом в источнике",
                      page="367об",

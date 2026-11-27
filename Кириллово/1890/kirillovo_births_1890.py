@@ -1,6 +1,6 @@
 from verso.ru.dsl import Gender, Month, RecordDefaults, birth, birth_month, birth_records, person
-from verso.ru.dsl.statuses import (HIEREUS, MAIDEN, PEASANT_FEMALE, PEASANT_MALE, SOLDIER,
-                                   UNTER_OFFICER, ZHONKA)
+from verso.ru.dsl.statuses import (HIEREUS, MAIDEN, PEASANT_FEMALE, PEASANT_MALE, RETIRED_SOLDIER,
+                                   SOLDIER, UNTER_OFFICER, ZHONKA)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины (и дети их замужних дочерей), и импортные записи.
 # ГАПО 182-5-305, альбом Photos «1890 (ГАПО 182-5-305)» (pk 1324, 72 кадра, файлы по листам; в Verso «кадр1» — обложка,
@@ -38,7 +38,7 @@ kirillovo_births_1890 = birth_records(
                      child=person("Анна"),
                      father=person("Герасим", "Яковлев", last_name_orig="Мальчиков"),
                      mother=person("Евдокия", "Кириллова"),
-                     god_parent1=person("Иван", "Силантьев", last_name_orig="Богачев", status="отставной унтер-офицер"),
+                     god_parent1=person("Иван", "Силантьев", last_name_orig="Богачев", status=UNTER_OFFICER, comment="отставной унтер-офицер"),
                      god_parent2=person("Анна", "Платонова", last_name_orig="Широкова", status=ZHONKA),
                      page="136об",
                  ),
@@ -159,7 +159,7 @@ kirillovo_births_1890 = birth_records(
                      11,
                      14,
                      child=person("Михаил"),
-                     father=person("Матвей", "Косьмин", last_name_orig="Мальчиков", status="отставной рядовой"),
+                     father=person("Матвей", "Косьмин", last_name_orig="Мальчиков", status=RETIRED_SOLDIER, comment="отставной рядовой"),
                      mother=person("Гликерия", "Степанова"),
                      god_parent1=person("Тимофей", "Степанов", last_name_orig="Широков"),
                      god_parent2=person("Анна", "Матвеева", last_name_orig="Мальчикова", status=MAIDEN),

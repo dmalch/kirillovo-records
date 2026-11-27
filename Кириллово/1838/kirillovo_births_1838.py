@@ -1,6 +1,6 @@
 from verso.ru.dsl import (Gender, Month, RecordDefaults, birth, birth_month, birth_records, page,
                           person)
-from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS
+from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS, SOLDIER
 
 kirillovo_births_1838 = birth_records(
     "ЦГАРМ",
@@ -173,7 +173,7 @@ kirillovo_births_1838 = birth_records(
                 11,
                 17,
                 child=person("Трофим", "Акимов", last_name_orig="Мальчиков"),
-                father=person("Аким", "Григорьев", last_name_orig="Мальчиков", status="отданный в солдаты"),
+                father=person("Аким", "Григорьев", last_name_orig="Мальчиков", status=SOLDIER, comment="отданный в солдаты"),
                 mother=person("Екатерина", "Григорьева"),
                 god_parent1=person("Петр", "Григорьев", last_name_orig="Мальчиков"),
                 god_parent2=person("Ксения", "Стефанова", last_name_orig="Егорова"),

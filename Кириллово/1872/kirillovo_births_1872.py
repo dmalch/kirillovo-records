@@ -1,5 +1,5 @@
 from verso.ru.dsl import Gender, Month, RecordDefaults, birth, birth_month, birth_records, person
-from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS, MAIDEN
+from verso.ru.dsl.statuses import ECON_PEASANT_FEMALE, ECON_PEASANT_MALE, HIEREUS, MAIDEN, SOLDIER
 
 # SELECTIVE EXTRACT: Only Мальчиков-family related entries from 1872 metric book.
 # Archive reference unknown for this period; using placeholder.
@@ -93,7 +93,7 @@ kirillovo_births_1872 = birth_records(
                  # Андрей Константинович Мальчиков (брак 1860 с Анастасией Леонтьевной Бубенчиковой)
                  birth(36, Gender.MALE, 24, 26,
                        child=person("Илія"),
-                       father=person("Андрей", "Константиновъ", "Мальчиковъ", status="солдат в бессрочном отпуску"),
+                       father=person("Андрей", "Константиновъ", "Мальчиковъ", status=SOLDIER, comment="солдат в бессрочном отпуску"),
                        mother=person("Анастасія", "Леонтьева", comment="в подлиннике «Настасія»"),
                        god_parent1=person("Антонъ", "Сидоровъ", "Назаровъ"),
                        god_parent2=person("Евдокія", "Ѳотіева", "Мальчикова"),
@@ -107,7 +107,7 @@ kirillovo_births_1872 = birth_records(
                        child=person("Иванъ"),
                        father=person("Герасимъ", "Яковлевъ", "Поздняковъ", comment="он же: Герасим Яковлевич Мальчиков"),
                        mother=person("Дарія", "Савельева"),
-                       god_parent1=person("Иванъ", "Силантьевъ", "Богачевъ", status="рядовой солдат в бессрочном отпуску"),
+                       god_parent1=person("Иванъ", "Силантьевъ", "Богачевъ", status=SOLDIER, comment="рядовой солдат в бессрочном отпуску"),
                        god_parent2=person("Татіана", "Трофимова", status=MAIDEN),
                        priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
                        page="84об",

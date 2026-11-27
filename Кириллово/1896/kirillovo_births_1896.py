@@ -114,7 +114,7 @@ kirillovo_births_1896 = birth_records(
                        child=person("Пелагея"),
                        father=person("Василий", "Степанов", last_name_orig="Мальчиков"),
                        mother=person("Анна", "Никитина"),
-                       god_parent1=person("Даниил", "Никитин", last_name_orig="Фетисов", status="запасной рядовой"),
+                       god_parent1=person("Даниил", "Никитин", last_name_orig="Фетисов", status=SOLDIER, comment="запасной рядовой"),
                        god_parent2=person("Феодосия", "Иванова", last_name_orig="Фетисова"),
                        comment="Фамилия матери в записи не указана (сверено по скану 29.09.2026); "
                                "прежняя «Фетисова?» была догадкой по восприемникам Фетисовым.",

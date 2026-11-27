@@ -1,7 +1,7 @@
 from verso.ru.dsl import (Month, RecordDefaults, Side, marriage, marriage_month, marriage_records,
                           person)
 from verso.ru.dsl.statuses import (DEACON, GOSUDARSTVENNYJ_PEASANT_FEMALE,
-                                   GOSUDARSTVENNYJ_PEASANT_MALE, HIEREUS)
+                                   GOSUDARSTVENNYJ_PEASANT_MALE, HIEREUS, SOLDIER)
 
 # Выборка первой волны: только записи, где есть Мальчиковы или Янины. ГАПО 182-5-734, альбом Photos
 # «1877 (ГАПО 182-5-734)» (pk 1352), ч. 2 — лл. 1об–8, 29 браков (январь 10, апрель 3, ноябрь 16); прочитана целиком
@@ -54,7 +54,7 @@ kirillovo_marriages_1877 = marriage_records(
                              bride=person("Варвара", "Егорова", "Малахова", comment="она же: Варвара Егоровна Мальчикова (р. 1859)?"),
                              bride_marriage_num=1, bride_age=19,
                              witness1=person("Яковъ", "Стефановъ", "Мешечковъ", side=Side.GROOM),
-                             witness2=person("Антипъ", "Ефимовъ", "Костиковъ", status="военный писарь в бессрочном отпуску", side=Side.GROOM),
+                             witness2=person("Антипъ", "Ефимовъ", "Костиковъ", status=SOLDIER, comment="военный писарь в бессрочном отпуску", side=Side.GROOM),
                              witness3=person("Андрей", "Кондратьевъ", side=Side.BRIDE, comment="фамилия не разобрана («К…инъ»)"),
                              witness4=person("Климентъ", "Антоновъ", "Мальчиковъ", side=Side.BRIDE),
                              priest=person("Василій", "Іоанновъ", "Ремезовъ", status=HIEREUS),
